@@ -1,0 +1,33 @@
+import {assertCompanyScope} from '../../policy/src/index.js';
+import {createHmac,createHash,timingSafeEqual} from 'node:crypto';
+import {z} from 'zod';
+import {AppError,positiveId,type Principal} from '../../contracts/src/index.js';
+export const changeScanSchema=z.object({since:z.string().datetime({offset:true}),through:z.string().datetime({offset:true}),company_id:z.number().int().nonnegative().safe().optional(),technician:z.literal('self').optional(),page_size:z.number().int().min(1).max(100).default(50),cursor:z.string().max(16000).optional()}).strict();
+export async function scanTicketChanges(p:Principal,input:unknown,invoke:(p:Principal,name:string,args:unknown)=>Promise<any>){
+ const a=changeScanSchema.parse(input),from=Date.parse(a.since),through=Date.parse(a.through);if(from>=through||through>Date.now()||through-from>31*86400000)throw new AppError('invalid_input','Use a past change window no longer than 31 days.');
+ if(a.company_id!==undefined)assertCompanyScope(p,a.company_id);
+ const conditions:any[]=[{field:'lastActivityDate',op:'gte',value:a.since},{field:'lastActivityDate',op:'lte',value:a.through}];if(a.company_id!==undefined)conditions.push({field:'companyID',op:'eq',value:a.company_id});if(a.technician)conditions.push({field:'assignedResourceID',op:'eq',value:p.resourceId});
+ const r=await invoke(p,'at_query',{entity:'Tickets',filter:{op:'and',conditions},page_size:a.page_size,...(a.cursor?{cursor:a.cursor}:{})});
+ if(!r||!['partial','succeeded'].includes(r.status)||!Array.isArray(r.data)||r.data.length>a.page_size||!r.completeness||typeof r.completeness.complete!=='boolean'||r.completeness.returned!==r.data.length||r.data.some((row:any)=>!row||!positiveId(row.id)))throw new AppError('dependency_unavailable','The change scan source returned an invalid bounded result.');
+ const next=r.completeness.next_cursor;if(r.completeness.complete?(next!==null&&next!==undefined):(typeof next!=='string'||next.length===0))throw new AppError('dependency_unavailable','The change scan source returned contradictory completeness.');
+ return{...r,window:{since:a.since,through:a.through},sync_limitations:['Activity-window scan only; deletions and records without a usable activity timestamp are not detected.','Follow all source continuations with this same window before advancing it. Use overlapping windows and deduplicate IDs; this is not an atomic snapshot or a complete replica.'],effects:'Read-only; no business changes or external messages.'};
+}
+export interface InboxDb {query(sql:string,values?:any[]):Promise<{rows:any[]}>}
+const payload=z.object({Action:z.enum(['Create','Update','Delete','Deactivated']),Guid:z.string().uuid(),EntityType:z.string().min(1).max(80),Id:z.number().int().nonnegative().safe(),EventTime:z.string().min(1).max(80).refine(v=>Number.isFinite(Date.parse(v))),SequenceNumber:z.number().int().nonnegative().safe()});
+export type WebhookBinding={tenantId:string;guid:string;entityType:string;secret:string};
+/** Payload fields are deliberately discarded. Events are hints; current records still require authorization. */
+export class WebhookInbox {
+ constructor(private db:InboxDb,private bindings:WebhookBinding[]){if(bindings.some(b=>!b||typeof b.secret!=='string'||!b.tenantId||!z.string().uuid().safeParse(b.guid).success||!b.entityType||b.secret.length<16||b.secret.length>64)||new Set(bindings.map(b=>b.guid.toLowerCase())).size!==bindings.length)throw Error('Invalid webhook bindings.');}
+ async receive(request:Request):Promise<Response>{
+  const answer=(status:number)=>Response.json({accepted:status===200},{status,headers:{'cache-control':'no-store'}});
+  if(request.method!=='POST')return answer(405);const signature=request.headers.get('x-hook-signature');if(!signature||!/^sha1=[A-Za-z0-9+/]{27}=$/.test(signature))return answer(401);
+  const reader=request.body?.getReader();if(!reader)return answer(400);let bytes=0;const chunks:Uint8Array[]=[];
+  const deadline=Date.now()+10000;
+  try{for(;;){let timer:ReturnType<typeof setTimeout>|undefined;const r=await Promise.race([reader.read(),new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(new Error('Request deadline')),Math.max(1,deadline-Date.now()));})]).finally(()=>clearTimeout(timer));if(r.done)break;bytes+=r.value.length;if(bytes>65536)return answer(413);chunks.push(r.value);}}catch{return answer(400);}finally{await reader.cancel();}
+  const raw=Buffer.concat(chunks);let event:z.infer<typeof payload>;try{event=payload.parse(JSON.parse(raw.toString('utf8')));}catch{return answer(400);}
+  const binding=this.bindings.find(b=>b.guid.toLowerCase()===event.Guid.toLowerCase()&&b.entityType===event.EntityType);if(!binding)return answer(401);
+  const supplied=Buffer.from(signature.slice(5),'base64'),expected=createHmac('sha1',binding.secret).update(raw).digest();if(supplied.length!==expected.length||!timingSafeEqual(supplied,expected))return answer(401);
+  try{await this.db.query(`INSERT INTO webhook_inbox(tenant_id,webhook_guid,sequence_number,entity_type,entity_id,action,event_time,body_hash) VALUES($1,$2,$3,$4,$5,$6,$7,$8) ON CONFLICT(tenant_id,webhook_guid,sequence_number) DO NOTHING`,[binding.tenantId,event.Guid.toLowerCase(),event.SequenceNumber,event.EntityType,event.Id,event.Action,new Date(event.EventTime).toISOString(),createHash('sha256').update(raw).digest('hex')]);return answer(200);}catch{return answer(503);}
+ }
+ async status(p:Principal){if(!p.capabilities.includes('platform.manage'))throw new AppError('forbidden','Webhook diagnostics require platform management.');const r=await this.db.query(`SELECT webhook_guid,entity_type,count(*)::int AS received,max(sequence_number) AS latest_sequence,max(received_at) AS last_received, bool_or(action='Deactivated') AS saw_deactivation FROM webhook_inbox WHERE tenant_id=$1 GROUP BY webhook_guid,entity_type`,[p.tenantId]);const gaps=await this.db.query(`SELECT count(*)::int AS sequence_gaps FROM (SELECT sequence_number,lag(sequence_number) OVER(PARTITION BY webhook_guid ORDER BY sequence_number) AS previous FROM webhook_inbox WHERE tenant_id=$1) events WHERE previous IS NOT NULL AND sequence_number>previous+1`,[p.tenantId]);return{configured_subscriptions:this.bindings.filter(b=>b.tenantId===p.tenantId).length,streams:r.rows,sequence_gaps:gaps.rows[0]?.sequence_gaps??0,limitations:['Receipt-only inbox; no business records are changed and no complete mirror is claimed.','Sequence gaps or deactivation require source reconciliation. Out-of-order delivery may temporarily appear as a gap.','A LAN-only endpoint cannot receive direct Autotask cloud callouts. No subscriptions are created automatically.']};}
+}

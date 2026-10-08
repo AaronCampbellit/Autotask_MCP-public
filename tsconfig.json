@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "types": ["node"],
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "work/build",
+    "rootDir": ".",
+    "resolveJsonModule": true,
+    "sourceMap": true
+  },
+  "include": ["apps/**/*.ts", "packages/**/*.ts", "registry/**/*.ts", "scripts/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["work", "node_modules"]
+}

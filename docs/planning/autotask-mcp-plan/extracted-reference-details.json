@@ -1,0 +1,3244 @@
+[
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ActionTypesEntity.htm",
+    "title": "ActionTypes",
+    "details": {
+      "Entity Name": "ActionTypes",
+      "Entity Path": "/atservicesrest/v1.0/ActionTypes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AdditionalInvoiceFieldValuesEntity.htm",
+    "title": "AdditionalInvoiceFieldValues",
+    "details": {
+      "Entity Name": "AdditionalInvoiceFieldValues",
+      "Entity Path": "/atservicesrest/v1.0/AdditionalInvoiceFieldValues",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AppointmentsEntity.htm",
+    "title": "Appointments",
+    "details": {
+      "Entity Name": "Appointments",
+      "Entity Path": "/atservicesrest/v1.0/Appointments",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleAttachmentsEntity.htm",
+    "title": "ArticleAttachments",
+    "details": {
+      "Entity Name": "ArticleAttachment",
+      "Entity Path": "/atservicesrest/v1.0/ArticleAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseArticles",
+      "URLs": "ArticleAttachments/{id} (GET)\nArticleAttachments/query (GET, POST)\nArticleAttachments/query/count (GET, POST)\nArticleAttachments/entityInformation (GET)\nArticleBaseAttachments/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleConfigurationItemCategoryAssociationsEntity.htm",
+    "title": "ArticleConfigurationItemCategoryAssociations",
+    "details": {
+      "Entity Name": "ArticleConfigurationItemCategoryAssociation",
+      "Entity Path": "/atservicesrest/v1.0/ArticleConfigurationItemCategoryAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseArticles",
+      "URLs": "ArticleConfigurationItemCategoryAssociations/{id} (GET)\nArticleConfigurationItemCategoryAssociations/query (GET, POST)\nArticleConfigurationItemCategoryAssociations/query/count (GET, POST)\nArticleConfigurationItemCategoryAssociations/entityInformation (GET)\nArticleConfigurationItemCategoryAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleNotesEntity.htm",
+    "title": "ArticleNotes",
+    "details": {
+      "Entity Name": "ArticleNote",
+      "Entity Path": "/atservicesrest/v1.0/ArticleNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseArticles",
+      "URLs": "ArticleNotes/{id} (GET)\nArticleNotes/query (GET, POST)\nArticleNotes/query/count (GET, POST)\nArticleNotes/entityInformation (GET)\nArticleNotes/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticlePlainTextContentEntity.htm",
+    "title": "ArticlePlainTextContent",
+    "details": {
+      "Entity Name": "ArticlePlainTextContent",
+      "Entity Path": "/atservicesrest/v1.0/ArticlePlainTextContent",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseArticles",
+      "URLs": "ArticleContent{id} (GET)\nArticleContent/query (GET, POST)\nArticleContent/query/count (GET, POST)\nArticleContent/entityInformation (GET)\nArticleContent/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleTagAssociationsEntity.htm",
+    "title": "ArticleTagAssociations",
+    "details": {
+      "Entity Name": "ArticleTagAssociation",
+      "Entity Path": "/atservicesrest/v1.0/ArticleTagAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseArticles",
+      "URLs": "ArticleTagAssociations/{id} (GET)\nArticleTagAssociations/query (GET, POST)\nArticleTagAssociations/query/count (GET, POST)\nArticleTagAssociations/entityInformation (GET)\nArticleTagAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleTicketAssociationsEntity.htm",
+    "title": "ArticleTicketAssociations",
+    "details": {
+      "Entity Name": "ArticleTicketAssociation",
+      "Entity Path": "/atservicesrest/v1.0/ArticleTicketAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseArticles",
+      "URLs": "ArticleTicketAssociations/{id} (GET)\nArticleTicketAssociations/query (GET, POST)\nArticleTicketAssociations/query/count (GET, POST)\nArticleTicketAssociations/entityInformation (GET)\nArticleTicketAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleToArticleAssociationsEntity.htm",
+    "title": "ArticleToArticleAssociations",
+    "details": {
+      "Entity Name": "ArticleToArticleAssociation",
+      "Entity Path": "/atservicesrest/v1.0/ArticleToArticleAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseArticles",
+      "URLs": "ArticleToArticleAssociations/{id} (GET)\nArticleToArticleAssociations/query (GET, POST)\nArticleToArticleAssociations/query/count (GET, POST)\nArticleToArticleAssociations/entityInformation (GET)\nArticleToArticleAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleToDocumentAssociationsEntity.htm",
+    "title": "ArticleToDocumentAssociations",
+    "details": {
+      "Entity Name": "ArticleToDocumentAssociation",
+      "Entity Path": "/atservicesrest/v1.0/ArticleToDocumentAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "ArticleToDocumentAssociations/{id} (GET)\nArticleToDocumentAssociations/query (GET, POST)\nArticleToDocumentAssociations/query/count (GET, POST)\nArticleToDocumentAssociations/entityInformation (GET)\nArticleToDocumentAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AttachmentInfoEntity.htm",
+    "title": "AttachmentInfo (REST API)",
+    "details": {
+      "Entity Name": "AttachmentInfo",
+      "Entity Path": "/atservicesrest/v1.0/AttachmentInfo",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingCodesEntity.htm",
+    "title": "BillingCodes",
+    "details": {
+      "Entity Name": "BillingCodes",
+      "Entity Path": "/atservicesrest/v1.0/BillingCodes",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingItemApprovalLevelsEntity.htm",
+    "title": "BillingItemApprovalLevels",
+    "details": {
+      "Entity Name": "BillingItemApprovalLevels",
+      "Entity Path": "/atservicesrest/v1.0/BillingItemApprovalLevels",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingItemsEntity.htm",
+    "title": "BillingItems",
+    "details": {
+      "Entity Name": "BillingItems",
+      "Entity Path": "/atservicesrest/v1.0/BillingItems",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChangeOrderChargesEntity.htm",
+    "title": "ChangeOrderCharges",
+    "details": {
+      "Entity Name": "ChangeOrderCharges",
+      "Entity Path": "/atservicesrest/v1.0/ChangeOrderCharges",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions.",
+    "operation_conditions": {
+      "update": {
+        "documented_false_flag": "Billing"
+      },
+      "delete": {
+        "documented_false_flag": "Billing"
+      }
+    }
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChangeRequestLinksEntity.htm",
+    "title": "ChangeRequestLinks",
+    "details": {
+      "Entity Name": "ChangeRequestLinks",
+      "Entity Path": "/atservicesrest/v1.0/ChangeRequestLinks",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChecklistLibrariesEntity.htm",
+    "title": "ChecklistLibraries",
+    "details": {
+      "Entity Name": "ChecklistLibraries",
+      "Entity Path": "/atservicesrest/v1.0/ChecklistLibraries",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "ChecklistLibraryChecklistItems",
+      "URLs": "ChecklistLibraries​/query (GET, POST)\nChecklistLibraries​/{id} (GET, DELETE)\nChecklistLibraries​/query​/count (GET, POST)\nChecklistLibraries (PUT, POST, PATCH)\nChecklistLibraries​/entityInformation (GET)\nChecklistLibraries​/entityInformation​/fields (GET)\nChecklistLibraries​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChecklistLibraryChecklistItemsEntity.htm",
+    "title": "ChecklistLibraryChecklistItems",
+    "details": {
+      "Entity Name": "ChecklistLibraryChecklistItems",
+      "Entity Path": "/atservicesrest/v1.0/ChecklistLibraryChecklistItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ClassificationIconsEntity.htm",
+    "title": "ClassificationIcons",
+    "details": {
+      "Entity Name": "ClassificationIcons",
+      "Entity Path": "/atservicesrest/v1.0/ClassificationIcons",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ClientPortalUsersEntity.htm",
+    "title": "ClientPortalUsers",
+    "details": {
+      "Entity Name": "ClientPortalUsers",
+      "Entity Path": "/atservicesrest/v1.0/ClientPortalUsers",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ComanagedAssociationsEntity.htm",
+    "title": "ComanagedAssociations",
+    "details": {
+      "Entity Name": "ComanagedAssociations",
+      "Entity Path": "/atservicesrest/v1.0/ComanagedAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompaniesEntity.htm",
+    "title": "Companies",
+    "details": {
+      "Can Create": "[yes]",
+      "Can Delete": "false",
+      "Can Query": "[yes]",
+      "Can Update": "[yes]",
+      "Can Have UDFs": "[yes]",
+      "Supports webhooks": "[yes]",
+      "Parent": "None",
+      "Children": "CompanyAlerts\nCompanyAttachments\nContacts\nCompanyLocations\nCompanyNotes\nCompanySiteConfigurations\nCompanyTeams\nCompanyToDos"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyAlertsEntity.htm",
+    "title": "CompanyAlerts",
+    "details": {
+      "Entity Name": "Companies",
+      "Entity Path": "/atservicesrest/v1.0/CompanyAlerts",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyAttachmentsEntity.htm",
+    "title": "CompanyAttachments",
+    "details": {
+      "Entity Name": "CompanyAttachments",
+      "Entity Path": "/atservicesrest/v1.0/CompanyAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyCategoriesEntity.htm",
+    "title": "CompanyCategories",
+    "details": {
+      "Entity Name": "CompanyCategory",
+      "Entity Path": "/atservicesrest/v1.0/CompanyCategories",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "None",
+      "URLs": "CompanyCategories/{id} (GET, PUT, PATCH)\nCompanyCategories/query (GET, POST)\nCompanyCategories/query/count (GET, POST)\nCompanyCategories/entityInformation (GET)\nCompanyCategories/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyLocationsEntity.htm",
+    "title": "CompanyLocations",
+    "details": {
+      "Entity Name": "CompanyLocations",
+      "Entity Path": "/atservicesrest/v1.0/CompanyLocations",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyNoteAttachmentsEntity.htm",
+    "title": "CompanyNoteAttachments",
+    "details": {
+      "Entity Name": "CompanyNoteAttachment",
+      "Entity Path": "/atservicesrest/v1.0/CompanyNoteAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "CompanyNotes",
+      "URLs": "CompanyNoteAttachments​/entityInformation (GET)\nCompanyNoteAttachments​/entityInformation​/fields (GET)\nCompanyNoteAttachments​/query (GET, POST)\nCompanyNoteAttachments​/{id} (GET)\nCompanyNoteAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyNotesEntity.htm",
+    "title": "CompanyNotes",
+    "details": {
+      "Entity Name": "CompanyNotes",
+      "Entity Path": "/atservicesrest/v1.0/CompanyNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanySiteConfigurationsEntity.htm",
+    "title": "CompanySiteConfigurations",
+    "details": {
+      "Entity Name": "CompanySiteConfigurations",
+      "Entity Path": "/atservicesrest/v1.0/CompanySiteConfigurations",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyTeamsEntity.htm",
+    "title": "CompanyTeams",
+    "details": {
+      "Entity Name": "CompanyTeams",
+      "Entity Path": "/atservicesrest/v1.0/CompanyTeams",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyToDosEntity.htm",
+    "title": "CompanyToDos",
+    "details": {
+      "Entity Name": "CompanyToDos",
+      "Entity Path": "/atservicesrest/v1.0/CompanyToDos",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemAttachmentsEntity.htm",
+    "title": "ConfigurationItemAttachments",
+    "details": {
+      "Entity Name": "ConfigurationItemAttachment",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemAttachment",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ConfigurationItems",
+      "URLs": "ConfigurationItemAttachments​/entityInformation (GET)\nConfigurationItemAttachments​/entityInformation​/fields (GET)\nConfigurationItemAttachments​/query (GET, POST)\nConfigurationItemAttachments​/{id} (GET)\nConfigurationItemAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemBillingProductAssociationsEntity.htm",
+    "title": "ConfigurationItemBillingProductAssociations",
+    "details": {
+      "Entity Name": "ConfigurationItemBillingProductAssociations",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemBillingProductAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemCategoriesEntity.htm",
+    "title": "ConfigurationItemCategories",
+    "details": {
+      "Entity Name": "ConfigurationItemCategories",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemCategories",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "ConfigurationItemCategoryUdfAssociations",
+      "URLs": "ConfigurationItemCategories​/query (GET, POST)\nConfigurationItemCategories​/{id} (GET)\nConfigurationItemCategories​/query​/count (GET, POST)\nConfigurationItemCategories (PUT, POST, PATCH)\nConfigurationItemCategories​/entityInformation (GET)\nConfigurationItemCategories​/entityInformation​/fields (GET)\nConfigurationItemCategories​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemCategoryUdfAssociationsEntity.htm",
+    "title": "ConfigurationItemCategoryUdfAssociations",
+    "details": {
+      "Entity Name": "ConfigurationItemCategoryUdfAssociations",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemCategoryUdfAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemDnsRecordsEntity.htm",
+    "title": "ConfigurationItemDnsRecords",
+    "details": {
+      "Entity Name": "ConfigurationItemDnsRecord",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemDnsRecords",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ConfigurationItems",
+      "Children": "None",
+      "URLs": "ConfigurationItemDnsRecords/{id} (GET)\nConfigurationItemDnsRecords/query (GET, POST)\nConfigurationItemDnsRecords/query/count (GET, POST)\nConfigurationItemDnsRecords/entityInformation (GET)\nConfigurationItemDnsRecords/entityInformation/fields (GET)\nConfigurationItems/{parentId}/DnsRecords(GET, POST)\nConfigurationItems/{parentId}/DnsRecords/{id} (GET, DELETE)\nConfigurationItems/{parentId}/DnsRecords/entityInformation (GET)\nConfigurationItems/{parentId}/DnsRecords/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemNoteAttachmentsEntity.htm",
+    "title": "ConfigurationItemNoteAttachments",
+    "details": {
+      "Entity Name": "ConfigurationItemNoteAttachments",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemNoteAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ConfigurationItemNotes",
+      "URLs": "ConfigurationItemNoteAttachments​/entityInformation (GET)\nConfigurationItemNoteAttachments​/entityInformation​/fields (GET)\nConfigurationItemNoteAttachments​/query (GET, POST)\nConfigurationItemNoteAttachments​/{id} (GET)\nConfigurationItemNoteAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemNotesEntity.htm",
+    "title": "ConfigurationItemNotes",
+    "details": {
+      "Entity Name": "ConfigurationItems",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemRelatedItemsEntity.htm",
+    "title": "ConfigurationItemRelatedItems",
+    "details": {
+      "Entity Name": "ConfigurationItemRelatedItem",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemRelatedItems",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ConfigurationItems",
+      "Children": "Any compatible entity",
+      "URLs": "ConfigurationItemRelatedItems/{id} (GET)\nConfigurationItemRelatedItems/query (GET, POST)\nConfigurationItemRelatedItems/query/count (GET, POST)\nConfigurationItemRelatedItems/entityInformation (GET)\nConfigurationItemRelatedItems/entityInformation/fields (GET)\nConfigurationItems\nConfigurationItems/{parentId}/RelatedItems(GET, POST)\nConfigurationItems/{parentId}/RelatedItems/{id} (GET, DELETE)\nConfigurationItems/{parentId}/RelatedItems/entityInformation (GET)\nConfigurationItems/{parentId}/RelatedItems/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemSslSubjectAlternativeNameEntity.htm",
+    "title": "ConfigurationItemSslSubjectAlternativeName",
+    "details": {
+      "Entity Name": "ConfigurationItemSslSubjectAlternativeName",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemSslSubjectAlternativeNames",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ConfigurationItems",
+      "Children": "None",
+      "URLs": "ConfigurationItemSslSubjectAlternativeNames/{id} (GET)\nConfigurationItemSslSubjectAlternativeNames/query (GET, POST)\nConfigurationItemSslSubjectAlternativeNames/query/count (GET, POST)\nConfigurationItemSslSubjectAlternativeNames/entityInformation (GET)\nConfigurationItemSslSubjectAlternativeNames/entityInformation/fields (GET)\nConfigurationItems/{parentId}/SslSubjectAlternativeNames (GET, POST)\nConfigurationItems/{parentId}/SslSubjectAlternativeNames/{id} (GET, DELETE)\nConfigurationItems/{parentId}/SslSubjectAlternativeNames/entityInformation (GET)\nConfigurationItems/{parentId}/SslSubjectAlternativeNames/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemTypesEntity.htm",
+    "title": "ConfigurationItemTypes",
+    "details": {
+      "Entity Name": "ConfigurationItemTypes",
+      "Entity Path": "/atservicesrest/v1.0/ConfigurationItemTypes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemsEntity.htm",
+    "title": "ConfigurationItems",
+    "details": {
+      "Can Create": "[yes]",
+      "Can Delete": "false",
+      "Can Query": "[yes]",
+      "Can Update": "[yes]",
+      "Can Have UDFs": "[yes]",
+      "Parent": "None",
+      "Children": "ConfigurationItemAttachments\nConfigurationItemBillingProductAssociations\nConfigurationItemDnsRecords\nConfigurationItemNotes\nConfigurationItemRelatedItems\nConfigurationItemSslSubjectAlternativeName",
+      "Full path": "https://webservices[n].autotask.net/atservicesrest/v1.0/ConfigurationItems",
+      "Entity URLs": "ConfigurationItems/entityInformation (GET)\nConfigurationItems/entityInformation/fields (GET)\nConfigurationItems/entityInformation​/userDefinedFields (GET)\nConfigurationItems/{id} (GET)\nConfigurationItems​/query (GET, POST)\nConfigurationItems​/query​/count (GET, POST)\nConfigurationItems (PUT, POST, PATCH)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactBillingProductAssociationsEntity.htm",
+    "title": "ContactBillingProductAssociations",
+    "details": {
+      "Entity Name": "ContactBillingProductAssociations",
+      "Entity Path": "/atservicesrest/v1.0/ContactBillingProductAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactGroupContactsEntity.htm",
+    "title": "ContactGroupContacts",
+    "details": {
+      "Entity Name": "ContactGroupContacts",
+      "Entity Path": "/atservicesrest/v1.0/ContactGroupContacts",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactGroupsEntity.htm",
+    "title": "ContactGroups",
+    "details": {
+      "Entity Name": "ContactGroups",
+      "Entity Path": "/atservicesrest/v1.0/ContactGroups",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "ContactGroupContacts",
+      "URLs": "ContactGroups​/query (GET, POST)\nContactGroups​/{id} (GET, DELETE)\nContactGroups​/query​/count (GET, POST)\nContactGroups (PUT, POST, PATCH)\nContactGroups​/entityInformation (GET)\nContactGroups​/entityInformation​/fields (GET)\nContactGroups​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactsEntity.htm",
+    "title": "Contacts",
+    "details": {
+      "Entity Name": "Contacts",
+      "Entity Path": "/atservicesrest/v1.0/Contacts",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "[yes]",
+      "Supports webhooks": "[yes]"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBillingRulesEntity.htm",
+    "title": "ContractBillingRules",
+    "details": {
+      "Entity Name": "ContractBillingRules",
+      "Entity Path": "/atservicesrest/v1.0/ContractBillingRules",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBlockHourFactorsEntity.htm",
+    "title": "ContractBlockHourFactors",
+    "details": {
+      "Entity Name": "ContractBlockHourFactors",
+      "Entity Path": "/atservicesrest/v1.0/ContractBlockHourFactors",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBlocksEntity.htm",
+    "title": "ContractBlocks",
+    "details": {
+      "Entity Name": "ContractBlocks",
+      "Entity Path": "/atservicesrest/v1.0/ContractBlocks",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractChargesEntity.htm",
+    "title": "ContractCharges",
+    "details": {
+      "Entity Name": "ContractCharges",
+      "Entity Path": "/atservicesrest/v1.0/ContractCharges",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions.",
+    "operation_conditions": {
+      "update": {
+        "documented_false_flag": "isBilled"
+      },
+      "delete": {
+        "documented_false_flag": "isBilled"
+      }
+    }
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionBillingCodesEntity.htm",
+    "title": "ContractExclusionBillingCodes",
+    "details": {
+      "Entity Name": "ContractExclusionBillingCodes",
+      "Entity Path": "/atservicesrest/v1.0/ContractExclusionBillingCodes",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionRolesEntity.htm",
+    "title": "ContractExclusionRoles",
+    "details": {
+      "Entity Name": "ContractExclusionRoles",
+      "Entity Path": "/atservicesrest/v1.0/ContractExclusionRoles",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetExcludedRolesEntity.htm",
+    "title": "ContractExclusionSetExcludedRoles",
+    "details": {
+      "Entity Name": "ContractExclusionSetExcludedRoles",
+      "Entity Path": "/atservicesrest/v1.0/ContractExclusionSetExcludedRoles",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetExcludedWorkTypesEntity.htm",
+    "title": "ContractExclusionSetExcludedWorkTypes",
+    "details": {
+      "Entity Name": "ContractExclusionSetExcludedWorkTypes",
+      "Entity Path": "/atservicesrest/v1.0/ContractExclusionSetExcludedWorkTypes",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetsEntity.htm",
+    "title": "ContractExclusionSets",
+    "details": {
+      "Entity Name": "ContractExclusionSets",
+      "Entity Path": "/atservicesrest/v1.0/ContractExclusionSets",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "ContractExclusionSetExcludedRoles, ContractExclusionSetExcludedWorkTypes",
+      "URLs": "ContractExclusionSets​/query (GET, POST)\nContractExclusionSets​/{id} (GET, DELETE)\nContractExclusionSets​/query​/count (GET, POST)\nContractExclusionSets (PUT, POST, PATCH)\nContractExclusionSets​/entityInformation (GET)\nContractExclusionSets​/entityInformation​/fields (GET)\nContractExclusionSets​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractMilestonesEntity.htm",
+    "title": "ContractMilestones",
+    "details": {
+      "Entity Name": "ContractMilestones",
+      "Entity Path": "/atservicesrest/v1.0/ContractMilestones",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractNoteAttachmentsEntity.htm",
+    "title": "ContractNoteAttachments",
+    "details": {
+      "Entity Name": "ContractNoteAttachment",
+      "Entity Path": "/atservicesrest/v1.0/ContractNoteAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ContractNotes",
+      "URLs": "ContractNoteAttachments​/entityInformation (GET)\nContractNoteAttachments​/entityInformation​/fields (GET)\nContractNoteAttachments​/query (GET, POST)\nContractNoteAttachments​/{id} (GET)\nContractNoteAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractNotesEntity.htm",
+    "title": "ContractNotes",
+    "details": {
+      "Entity Name": "ContractNotes",
+      "Entity Path": "/atservicesrest/v1.0/ContractNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "Contracts",
+      "URLs": "ContractNotes​/query (GET, POST)\nContractNotes​/{id} (GET)\nContractNotes​/query​/count (GET, POST)\nContractNotes​/entityInformation (GET)\nContractNotes​/entityInformation​/fields (GET)\nContractNotes​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRatesEntity.htm",
+    "title": "ContractRates",
+    "details": {
+      "Entity Name": "ContractRates",
+      "Entity Path": "/atservicesrest/v1.0/ContractRates",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRetainersEntity.htm",
+    "title": "ContractRetainers",
+    "details": {
+      "Entity Name": "ContractRetainers",
+      "Entity Path": "/atservicesrest/v1.0/ContractRetainers",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRoleCostsEntity.htm",
+    "title": "ContractRoleCosts",
+    "details": {
+      "Entity Name": "ContractRoleCosts",
+      "Entity Path": "/atservicesrest/v1.0/ContractRoleCosts",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceAdjustmentsEntity.htm",
+    "title": "ContractServiceAdjustments",
+    "details": {
+      "Entity Name": "ContractServiceAdjustments",
+      "Entity Path": "/atservicesrest/v1.0/ContractServiceAdjustments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundleAdjustmentsEntity.htm",
+    "title": "ContractServiceBundleAdjustments",
+    "details": {
+      "Entity Name": "ContractServiceBundleAdjustments",
+      "Entity Path": "/atservicesrest/v1.0/ContractServiceBundleAdjustments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundleUnitsEntity.htm",
+    "title": "ContractServiceBundleUnits",
+    "details": {
+      "Entity Name": "ContractServiceBundleUnits",
+      "Entity Path": "/atservicesrest/v1.0/ContractServiceBundleUnits",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundlesEntity.htm",
+    "title": "ContractServiceBundles",
+    "details": {
+      "Entity Name": "ContractServiceBundles",
+      "Entity Path": "/atservicesrest/v1.0/ContractServiceBundles",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceUnitsEntity.htm",
+    "title": "ContractServiceUnits",
+    "details": {
+      "Entity Name": "ContractServiceUnits",
+      "Entity Path": "/atservicesrest/v1.0/ContractServiceUnits",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServicesEntity.htm",
+    "title": "ContractServices",
+    "details": {
+      "Entity Name": "ContractServices",
+      "Entity Path": "/atservicesrest/v1.0/ContractServices",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractTicketPurchasesEntity.htm",
+    "title": "ContractTicketPurchases",
+    "details": {
+      "Entity Name": "ContractTicketPurchases",
+      "Entity Path": "/atservicesrest/v1.0/ContractTicketPurchases",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractsEntity.htm",
+    "title": "Contracts",
+    "details": {
+      "Entity Name": "Contracts",
+      "Entity Path": "/atservicesrest/v1.0/Contracts",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]",
+      "Parent": "None",
+      "Children": "ContractBillingRules, ContractBlockHourFactors, ContractBlocks, ContractCharges, ContractExclusionBillingCodes, ContractExclusionRoles, ContractMilestones, ContractNotes, ContractRates, ContractRetainers, ContractRoleCosts, ContractServiceAdjustments, ContractServiceBundleAdjustments, ContractServiceBundles, ContractServiceBundleUnits, ContractServices, ContractServiceUnits, ContractTicketPurchases",
+      "URLs": "Contracts​/query (GET, POST)\nContracts​/{id} (GET)\nContracts​/query​/count (GET, POST)\nContracts (PUT, POST, PATCH)\nContracts​/entityInformation (GET)\nContracts​/entityInformation​/fields (GET)\nContracts​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CountriesEntity.htm",
+    "title": "Countries",
+    "details": {
+      "Entity Name": "Countries",
+      "Entity Path": "/atservicesrest/v1.0/Countries",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CurrenciesEntity.htm",
+    "title": "Currencies",
+    "details": {
+      "Entity Name": "Currencies",
+      "Entity Path": "/atservicesrest/v1.0/Currencies",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTaskActivityLogsEntity.htm",
+    "title": "DeletedTaskActivityLogs",
+    "details": {
+      "Entity Name": "DeletedTaskActivityLog",
+      "Entity Path": "/atservicesrest/v1.0/DeletedTaskActivityLogs",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTicketActivityLogsEntity.htm",
+    "title": "DeletedTicketActivityLogs",
+    "details": {
+      "Entity Name": "DeletedTicketActivityLog",
+      "Entity Path": "/atservicesrest/v1.0/DeletedTicketActivityLogs",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTicketLogsEntity.htm",
+    "title": "DeletedTicketLogs",
+    "details": {
+      "Entity Name": "DeletedTicketLog",
+      "Entity Path": "/atservicesrest/v1.0/DeletedTicketLogs",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DepartmentsEntity.htm",
+    "title": "Departments",
+    "details": {
+      "Entity Name": "Departments",
+      "Entity Path": "/atservicesrest/v1.0/Departments",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentAttachmentsEntity.htm",
+    "title": "DocumentAttachments",
+    "details": {
+      "Entity Name": "DocumentAttachment",
+      "Entity Path": "/atservicesrest/v1.0/DocumentAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "Children": "None",
+      "URLs": "DocumentAttachments/{id} (GET, DELETE)\nDocumentAttachments/query (GET, POST)\nDocumentAttachments/query/count (GET, POST)\nDocumentAttachments/ (POST, PUT, PATCH)\nDocumentAttachments/entityInformation (GET)\nDocumentAttachments/entityInformation/fields (GET)\nDocuments/{parentId}/Attachments(GET, POST)\nDocuments/{parentId}/Attachments/{id} (GET, DELETE)\nDocuments/{parentId}/Attachments/entityInformation (GET)\nDocuments/{parentId}/Attachments/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentCategoriesEntity.htm",
+    "title": "DocumentCategories",
+    "details": {
+      "Entity Name": "DocumentCategory",
+      "Entity Path": "/atservicesrest/v1.0/DocumentCategories",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "Documents",
+      "URLs": "DocumentCategories/{id} (GET, DELETE)\nDocumentCategories/query (GET, POST)\nDocumentCategories/query/count (GET, POST)\nDocumentCategories/ (POST, PUT, PATCH)\nDocumentCategories/entityInformation (GET)\nDocumentCategories/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentChecklistItemsEntity.htm",
+    "title": "DocumentChecklistItems",
+    "details": {
+      "Entity Name": "DocumentChecklistItem",
+      "Entity Path": "/atservicesrest/v1.0/DocumentChecklistItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentChecklistItems​/query (GET)\nDocumentChecklistItems​/query (POST)\nDocumentChecklistItems​/{id} (GET)\nDocumentChecklistItems​/query​/count (GET)\nDocumentChecklistItems​/query​/count (POST)\n​DocumentChecklistItems​/entityInformation (GET)\nDocumentChecklistItems​/entityInformation​/fields (GET)\nDocumentChecklistItems​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentChecklistLibrariesEntity.htm",
+    "title": "DocumentChecklistLibraries",
+    "details": {
+      "Entity Name": "DocumentChecklistLibrary",
+      "Entity Path": "/atservicesrest/v1.0/DocumentChecklistLibraries",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentChecklistLibraries\n(POST)\nDocumentChecklistLibraries​/entityInformation\n(GET)\nDocumentChecklistLibraries​/entityInformation​/fields\n(GET)\nDocumentChecklistLibraries​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentConfigurationItemAssociationsEntity.htm",
+    "title": "DocumentConfigurationItemAssociations",
+    "details": {
+      "Entity Name": "DocumentConfigurationItemAssociation",
+      "Entity Path": "/atservicesrest/v1.0/DocumentConfigurationItemAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentArticleAssociations/{id} (GET)\nDocumentArticleAssociations/query (GET, POST)\nDocumentArticleAssociations/query/count (GET, POST)\nDocumentArticleAssociations/entityInformation (GET)\nDocumentArticleAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentConfigurationItemCategoryAssociationsEntity.htm",
+    "title": "DocumentConfigurationItemCategoryAssociations",
+    "details": {
+      "Entity Name": "DocumentConfigurationItemCategoryAssociation",
+      "Entity Path": "/atservicesrest/v1.0/DocumentConfigurationItemCategoryAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentConfigurationItemCategoryAssociations/{id} (GET)\nDocumentConfigurationItemCategoryAssociations/query (GET, POST)\nDocumentConfigurationItemCategoryAssociations/query/count (GET, POST)\nDocumentConfigurationItemCategoryAssociations/entityInformation (GET)\nDocumentConfigurationItemCategoryAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentNotesEntity.htm",
+    "title": "DocumentNotes",
+    "details": {
+      "Entity Name": "DocumentNote",
+      "Entity Path": "/atservicesrest/v1.0/DocumentNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentNotes/{id} (GET)\nDocumentNotes/query (GET, POST)\nDocumentNotes/query/count (GET, POST)\nDocumentNotes/entityInformation (GET)\nDocumentNotes/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentTagAssociationsEntity.htm",
+    "title": "DocumentTagAssociations",
+    "details": {
+      "Entity Name": "DocumentTagAssociation",
+      "Entity Path": "/atservicesrest/v1.0/DocumentTagAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentTagAssociations/{id} (GET)\nDocumentTagAssociations/query (GET, POST)\nDocumentTagAssociations/query/count (GET, POST)\nDocumentTagAssociations/entityInformation (GET)\nDocumentTagAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentTicketAssociationsEntity.htm",
+    "title": "DocumentTicketAssociations",
+    "details": {
+      "Entity Name": "DocumentTicketAssociation",
+      "Entity Path": "/atservicesrest/v1.0/DocumentTicketAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentTicketAssociations/{id} (GET)\nDocumentTicketAssociations/query (GET, POST)\nDocumentTicketAssociations/query/count (GET, POST)\nDocumentTicketAssociations/entityInformation (GET)\nDocumentTicketAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentToArticleAssociationsEntity.htm",
+    "title": "DocumentToArticleAssociations",
+    "details": {
+      "Entity Name": "DocumentToArticleAssociation",
+      "Entity Path": "/atservicesrest/v1.0/DocumentArticleAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Documents",
+      "URLs": "DocumentArticleAssociations/{id} (GET)\nDocumentArticleAssociations/query (GET, POST)\nDocumentArticleAssociations/query/count (GET, POST)\nDocumentArticleAssociations/entityInformation (GET)\nDocumentArticleAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentsEntity.htm",
+    "title": "Documents",
+    "details": {
+      "Can Create": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Query": "[yes]",
+      "Can Update": "[yes]",
+      "Can Have UDFs": "false",
+      "Parent": "DocumentCategories",
+      "Children": "DocumentAttachments\nDocumentChecklistItems\nDocumentChecklistLibraries\nDocumentConfigurationItemAssociations\nDocumentConfigurationItemCategoryAssociations\nDocumentNotes\nDocumentPlainTextContent\nDocumentTagAssociations\nDocumentTicketAssociations\nDocumentToArticleAssociations\nDocumentToDocumentAssociations",
+      "Full path": "https://webservices[n].autotask.net/atservicesrest/v1.0/Documents",
+      "Entity URLs": "Documents/entityInformation (GET)\nDocuments/entityInformation/fields (GET)",
+      "Parent Entity URLs": "Documents/{id} (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DomainRegistrarsEntity.htm",
+    "title": "DomainRegistrars",
+    "details": {
+      "Entity Name": "DomainRegistrar",
+      "Entity Path": "/atservicesrest/v1.0/DomainRegistrars",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseItemAttachmentsEntity.htm",
+    "title": "ExpenseItemAttachment",
+    "details": {
+      "Entity Name": "ExpenseItemAttachment",
+      "Entity Path": "/atservicesrest/v1.0/ExpenseItemAttachment",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ExpenseItems",
+      "URLs": "ExpenseItemAttachments​/entityInformation (GET)\nExpenseItemAttachments​/entityInformation​/fields (GET)\nExpenseItemAttachments​/query (GET, POST)\nExpenseItemAttachments​/{id} (GET)\nExpenseItemAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseItemsEntity.htm",
+    "title": "ExpenseItems",
+    "details": {
+      "Entity Name": "ExpenseItems",
+      "Entity Path": "/atservicesrest/v1.0/ExpenseItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseReportAttachmentsEntity.htm",
+    "title": "ExpenseReportAttachments",
+    "details": {
+      "Entity Name": "ExpenseReportAttachment",
+      "Entity Path": "/atservicesrest/v1.0/ExpenseReportAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ExpenseReports",
+      "URLs": "ExpenseReportAttachments​/entityInformation (GET)\nExpenseReportAttachments​/entityInformation​/fields (GET)\nExpenseReportAttachments​/query (GET, POST)\nExpenseReportAttachments​/{id} (GET)\nExpenseReportAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseReportsEntity.htm",
+    "title": "ExpenseReports",
+    "details": {
+      "Entity Name": "ExpenseReports",
+      "Entity Path": "/atservicesrest/v1.0/ExpenseReports",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "ExpenseReportAttachments",
+      "URLs": "ExpenseReports​/query (GET, POST)\nExpenseReports​/{id} (GET)\nExpenseReports​/query​/count (GET, POST)\nExpenseReports (PUT, POST, PATCH)\nExpenseReports​/entityInformation (GET)\nExpenseReports​/entityInformation​/fields (GET)\nExpenseReports​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/HolidaySetsEntity.htm",
+    "title": "HolidaySets",
+    "details": {
+      "Entity Name": "HolidaySets",
+      "Entity Path": "/atservicesrest/v1.0/HolidaySets",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/HolidaysEntity.htm",
+    "title": "Holidays",
+    "details": {
+      "Entity Name": "HolidaySets",
+      "Entity Path": "/atservicesrest/v1.0/Holidays",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InternalLocationWithBusinessHoursEntity.htm",
+    "title": "InternalLocationWithBusinessHours",
+    "details": {
+      "Entity Name": "InternalLocationWithBusinessHours",
+      "Entity Path": "/atservicesrest/v1.0/InternalLocationWithBusinessHours",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InternalLocationsEntity.htm",
+    "title": "InternalLocations",
+    "details": {
+      "Entity Name": "InternalLocations",
+      "Entity Path": "/atservicesrest/v1.0/InternalLocations",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryItemSerialNumbersEntity.htm",
+    "title": "InventoryItemSerialNumbers",
+    "details": {
+      "Entity Name": "InventoryItemSerialNumbers",
+      "Entity Path": "/atservicesrest/v1.0/InventoryItemSerialNumbers",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryItemsEntity.htm",
+    "title": "InventoryItems",
+    "details": {
+      "Entity Name": "InventoryItems",
+      "Entity Path": "/atservicesrest/v1.0/InventoryItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "InventoryItemSerialNumbers",
+      "URLs": "InventoryItems​/query (GET, POST)\nInventoryItems​/{id} (GET)\nInventoryItems​/query​/count (GET, POST)\nInventoryItems (PUT, POST, PATCH)\nInventoryItems​/entityInformation (GET)\nInventoryItems​/entityInformation​/fields (GET)\nInventoryItems​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryLocationsEntity.htm",
+    "title": "InventoryLocations",
+    "details": {
+      "Entity Name": "InventoryLocations",
+      "Entity Path": "/atservicesrest/v1.0/InventoryLocations",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryProductsEntity.htm",
+    "title": "InventoryProducts",
+    "details": {
+      "Entity Name": "InventoryProducts",
+      "Entity Path": "/atservicesrest/v1.0/InventoryProducts",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "InventoryStockedItems, InventoryStockedItemsAdd, InventoryStockedItemsRemove, InventoryStockedItemsTransfer",
+      "URLs": "InventoryProducts (POST, PUT, PATCH)\nInventoryProducts{id} (GET, DELETE)\nInventoryProduct/squery (GET, POST)\nInventoryProducts/query/count (GET, POST)\nInventoryProducts/entityInformation (GET)\nInventoryProducts/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItems.htm",
+    "title": "InventoryStockedItems",
+    "details": {
+      "Entity Name": "InventoryStockedItems",
+      "Entity Path": "/atservicesrest/v1.0/inventoryStockedItems",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "InventoryProducts",
+      "Children": "None",
+      "URLs": "InventoryStockedItems/{id} (GET)\nInventoryStockedItems/query (GET, POST)\nInventoryStockedItems/query/count (GET, POST)\nInventoryStockedItems/entityInformation (GET)\nInventoryStockedItems/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsAdd.htm",
+    "title": "InventoryStockedItemsAdd",
+    "details": {
+      "Entity Name": "InventoryStockedItemsAdd",
+      "Entity Path": "/atservicesrest/v1.0/InventoryStockedItemsAdd",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "InventoryProducts",
+      "Children": "None",
+      "URLs": "InventoryStockedItemsAdd (POST)\nInventoryStockedItemsAdd/entityInformation (GET)\nInventoryStockedItemsAdd/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsRemove.htm",
+    "title": "InventoryStockedItemsRemove",
+    "details": {
+      "Entity Name": "InventoryStockedItemsRemove",
+      "Entity Path": "/atservicesrest/v1.0/InventoryStockedItemsRemove",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "InventoryProducts",
+      "Children": "None",
+      "URLs": "InventoryStockedItemsRemove (POST)\nInventoryStockedItemsRemove/entityInformation (GET)\nInventoryStockedItemsRemove/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsTransfer.htm",
+    "title": "InventoryStockedItemsTransfer",
+    "details": {
+      "Entity Name": "InventoryStockedItemsTransfer",
+      "Entity Path": "/atservicesrest/v1.0/InventoryStockedItemsTransfer",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "InventoryProducts",
+      "Children": "None",
+      "URLs": "InventoryStockedItemsTransfer (POST)\nInventoryStockedItemsTransfer/entityInformation (GET)\nInventoryStockedItemsTransfer/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryTransfersEntity.htm",
+    "title": "InventoryTransfers",
+    "details": {
+      "Entity Name": "InventoryTransfers",
+      "Entity Path": "/atservicesrest/v1.0/InventoryTransfers",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InvoiceTemplatesEntity.htm",
+    "title": "InvoiceTemplates",
+    "details": {
+      "Entity Name": "InvoiceTemplates",
+      "Entity Path": "/atservicesrest/v1.0/InvoiceTemplates",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InvoicesEntity.htm",
+    "title": "Invoices",
+    "details": {
+      "Entity Name": "Invoices",
+      "Entity Path": "/atservicesrest/v1.0/Invoices",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/KnowledgeBaseArticlesEntity.htm",
+    "title": "KnowledgeBaseArticles",
+    "details": {
+      "Entity Name": "KnowledgeBaseArticle",
+      "Entity Path": "/atservicesrest/v1.0/KnowledgeBaseArticle",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "KnowledgeBaseCategories",
+      "Children": "ArticlePlainTextContent, ArticleAttachments, ArticleTagAssociations, ArticleTicketAssociations, ArticleToArticleAssociations, ArticleToDocumentAssociations, ArticleConfigurationItemCategoryAssociations, ArticleNotes",
+      "URLs": "KnowledgeBaseArticles/{id} (GET)\nKnowledgeBaseArticles/query (GET, POST)\nKnowledgeBaseArticles/query/count (GET, POST)\nKnowledgeBaseArticles/entityInformation (GET)\nKnowledgeBaseArticles/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/KnowledgeBaseCategoriesEntity.htm",
+    "title": "KnowledgeBaseCategories",
+    "details": {
+      "Entity Name": "KnowledgeBaseCategory",
+      "Entity Path": "/atservicesrest/v1.0/KnowledgeBaseCategories",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "KnowledgeBaseArticles",
+      "URLs": "KnowledgeBaseCategories/{id} (GET, DELETE)\nKnowledgeBaseCategories/query (GET, POST)\nKnowledgeBaseCategories/query/count (GET, POST)\nKnowledgeBaseCategories/ (GET, POST, PUT, PATCH)\nKnowledgeBaseCategories/entityInformation (GET)\nKnowledgeBaseCategories/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ModulesEntity.htm",
+    "title": "Modules",
+    "details": {
+      "Entity Name": "Modules",
+      "Entity Path": "/atservicesrest/v1.0/Modules",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/NotificationHistoryEntity.htm",
+    "title": "NotificationHistory",
+    "details": {
+      "Entity Name": "NotificationHistory",
+      "Entity Path": "/atservicesrest/v1.0/NotificationHistory",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunitiesEntity.htm",
+    "title": "Opportunities",
+    "details": {
+      "Entity Name": "Opportunities",
+      "Entity Path": "/atservicesrest/v1.0/Opportunities",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]",
+      "Parent": "None",
+      "Children": "OpportunityAttachments",
+      "URLs": "Opportunities​/query (GET, POST)\nOpportunities​/{id} (GET)\nOpportunities​/query​/count (GET, POST)\nOpportunities (PUT, POST, PATCH)\nOpportunities​/entityInformation (GET)\nOpportunities​/entityInformation​/fields (GET)\nOpportunities​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunityAttachmentsEntity.htm",
+    "title": "OpportunityAttachments",
+    "details": {
+      "Entity Name": "OpportunityAttachments",
+      "Entity Path": "/atservicesrest/v1.0/OpportunityAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunityCategories.htm",
+    "title": "OpportunityCategories",
+    "details": {
+      "Entity Name": "OpportunityCategories",
+      "Entity Path": "/atservicesrest/v1.0/OpportunityAttachments",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevel1Entity.htm",
+    "title": "OrganizationalLevel1",
+    "details": {
+      "Entity Name": "OrganizationalLevel1",
+      "Entity Path": "/atservicesrest/v1.0/OrganizationalLevel1s",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevel2Entity.htm",
+    "title": "OrganizationalLevel2",
+    "details": {
+      "Entity Name": "OrganizationalLevel2",
+      "Entity Path": "/atservicesrest/v1.0/OrganizationalLevel2s",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevelAssociationsEntity.htm",
+    "title": "OrganizationalLevelAssociations",
+    "details": {
+      "Entity Name": "OrganizationalLevelAssociations",
+      "Entity Path": "/atservicesrest/v1.0/OrganizationalLevelAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizatonalResourcesEntity.htm",
+    "title": "OrganizatonalResources",
+    "details": {
+      "Entity Name": "OrganizatonalResources",
+      "Entity Path": "/atservicesrest/v1.0/OrganizatonalResources",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PaymentTermsEntity.htm",
+    "title": "PaymentTerms",
+    "details": {
+      "Entity Name": "paymentTerms",
+      "Entity Path": "/atservicesrest/v1.0/paymentTerms",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PhasesEntity.htm",
+    "title": "Phases",
+    "details": {
+      "Entity Name": "Phases",
+      "Entity Path": "/atservicesrest/v1.0/Phases",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListMaterialCodesEntity.htm",
+    "title": "PriceListMaterialCodes",
+    "details": {
+      "Entity Name": "PriceListMaterialCodes",
+      "Entity Path": "/atservicesrest/v1.0/PriceListMaterialCodes",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListProductTiersEntity.htm",
+    "title": "PriceListProductTiers",
+    "details": {
+      "Entity Name": "PriceListProductTiers",
+      "Entity Path": "/atservicesrest/v1.0/PriceListProductTiers",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListProductsEntity.htm",
+    "title": "PriceListProducts",
+    "details": {
+      "Entity Name": "PriceListProducts",
+      "Entity Path": "/atservicesrest/v1.0/PriceListProducts",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListRolesEntity.htm",
+    "title": "PriceListRoles",
+    "details": {
+      "Entity Name": "PriceListRoles",
+      "Entity Path": "/atservicesrest/v1.0/PriceListRoles",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListServiceBundlesEntity.htm",
+    "title": "PriceListServiceBundles",
+    "details": {
+      "Entity Name": "PriceListServiceBundles",
+      "Entity Path": "/atservicesrest/v1.0/PriceListServiceBundles",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListServicesEntity.htm",
+    "title": "PriceListServices",
+    "details": {
+      "Entity Name": "PriceListServices",
+      "Entity Path": "/atservicesrest/v1.0/PriceListServices",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListWorkTypeModifiersEntity.htm",
+    "title": "PriceListWorkTypeModifiers",
+    "details": {
+      "Entity Name": "PriceListWorkTypeModifiers",
+      "Entity Path": "/atservicesrest/v1.0/PriceListWorkTypeModifiers",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductNotesEntity.htm",
+    "title": "ProductNotes",
+    "details": {
+      "Entity Name": "ProductNotes",
+      "Entity Path": "/atservicesrest/v1.0/ProductNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductTiersEntity.htm",
+    "title": "ProductTiers",
+    "details": {
+      "Entity Name": "ProductTiers",
+      "Entity Path": "/atservicesrest/v1.0/ProductTiers",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductVendorsEntity.htm",
+    "title": "ProductVendors",
+    "details": {
+      "Entity Name": "ProductVendors",
+      "Entity Path": "/atservicesrest/v1.0/ProductVendors",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductsEntity.htm",
+    "title": "Products",
+    "details": {
+      "Entity Name": "Products",
+      "Entity Path": "/atservicesrest/v1.0/Products",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]",
+      "Parent": "None",
+      "Children": "ProductNotes ProductTiers, ProductVendors",
+      "URLs": "Products​/query (GET, POST)\nProducts​/{id} (GET)\nProducts​/query​/count (GET, POST)\nProducts (PUT, POST, PATCH)\nProducts​/entityInformation (GET)\nProducts​/entityInformation​/fields (GET)\nProducts​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectAttachmentsEntity.htm",
+    "title": "ProjectAttachments",
+    "details": {
+      "Entity Name": "ProjectAttachments",
+      "Entity Path": "/atservicesrest/v1.0/ProjectAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectChargesEntity.htm",
+    "title": "ProjectCharges",
+    "details": {
+      "Entity Name": "ProjectCharges",
+      "Entity Path": "/atservicesrest/v1.0/ProjectCharges",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions.",
+    "operation_conditions": {
+      "update": {
+        "documented_false_flag": "Billing"
+      },
+      "delete": {
+        "documented_false_flag": "Billing"
+      }
+    }
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectNoteAttachmentsEntity.htm",
+    "title": "ProjectNoteAttachments",
+    "details": {
+      "Entity Name": "ProjectNoteAttachment",
+      "Entity Path": "/atservicesrest/v1.0/ProjectNoteAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ProjectNotes",
+      "URLs": "ProjectNoteAttachments​/entityInformation (GET)\nProjectNoteAttachments​/entityInformation​/fields (GET)\nProjectNoteAttachments​/query (GET, POST)\nProjectNoteAttachments​/{id} (GET)\nProjectNoteAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectNotesEntity.htm",
+    "title": "ProjectNotes",
+    "details": {
+      "Entity Name": "ProjectNotes",
+      "Entity Path": "/atservicesrest/v1.0/ProjectNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectsEntity.htm",
+    "title": "Projects",
+    "details": {
+      "Entity Name": "Projects",
+      "Entity Path": "/atservicesrest/v1.0/Projects",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]",
+      "Parent": "None",
+      "Children": "ProjectAttachments, ProjectCharges, ProjectNotes, Tasks",
+      "URLs": "Projects​/query (GET, POST)\nProjects​/{id} (GET)\nProjects​/query​/count (GET, POST)\nProjects (PUT, POST, PATCH)\nProjects​/entityInformation (GET)\nProjects​/entityInformation​/fields (GET)\nProjects​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseApprovalsEntity.htm",
+    "title": "PurchaseApprovals",
+    "details": {
+      "Entity Name": "PurchaseApprovals",
+      "Entity Path": "/atservicesrest/v1.0/PurchaseApprovals",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrderItemReceivingEntity.htm",
+    "title": "PurchaseOrderItemReceiving",
+    "details": {
+      "Entity Name": "PurchaseOrderItemReceiving",
+      "Entity Path": "/atservicesrest/v1.0/PurchaseOrderItemReceiving",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrderItemsEntity.htm",
+    "title": "PurchaseOrderItems",
+    "details": {
+      "Entity Name": "PurchaseOrderItems",
+      "Entity Path": "/atservicesrest/v1.0/PurchaseOrderItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrdersEntity.htm",
+    "title": "PurchaseOrders",
+    "details": {
+      "Entity Name": "PurchaseOrders",
+      "Entity Path": "/atservicesrest/v1.0/PurchaseOrders",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "PurchaseOrderItems",
+      "URLs": "PurchaseOrders​/query (GET, POST)\nPurchaseOrders​/{id} (GET)\nPurchaseOrders​/query​/count (GET, POST)\nPurchaseOrders (PUT, POST, PATCH)\nPurchaseOrders​/entityInformation (GET)\nPurchaseOrders​/entityInformation​/fields (GET)\nPurchaseOrders​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteItemsEntity.htm",
+    "title": "QuoteItems",
+    "details": {
+      "Entity Name": "QuoteItem",
+      "Entity Path": "/atservicesrest/v1.0/QuoteItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteLocationsEntity.htm",
+    "title": "QuoteLocations",
+    "details": {
+      "Entity Name": "QuoteLocations",
+      "Entity Path": "/atservicesrest/v1.0/QuoteLocations",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteTemplatesEntity.htm",
+    "title": "QuoteTemplates",
+    "details": {
+      "Entity Name": "QuoteTemplates",
+      "Entity Path": "/atservicesrest/v1.0/QuoteTemplates",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuotesEntity.htm",
+    "title": "Quotes",
+    "details": {
+      "Entity Name": "Quotes",
+      "Entity Path": "/atservicesrest/v1.0/Quotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "QuoteItems",
+      "URLs": "Quotes​/query (GET, POST)\nQuotes​/{id} (GET)\nQuotes​/query​/count (GET, POST)\nQuotes (PUT, POST, PATCH)\nQuotes​/entityInformation (GET)\nQuotes​/entityInformation​/fields (GET)\nQuotes​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceAttachmentsEntity.htm",
+    "title": "ResourceAttachments",
+    "details": {
+      "Entity Name": "ResourceAttachment",
+      "Entity Path": "/atservicesrest/v1.0/ResourceAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Resources",
+      "URLs": "ResourceAttachments​/entityInformation (GET)\nResourceAttachments​/entityInformation​/fields (GET)\nResourceAttachments​/query (GET, POST)\nResourceAttachments​/{id} (GET)\nResourceAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceDailyAvailability.htm",
+    "title": "ResourceDailyAvailabilities",
+    "details": {
+      "Entity Name": "ResourceDailyAvailability",
+      "Entity Path": "/atservicesrest/v1.0/ResourceDailyAvailability",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "Resources",
+      "Children": "ResourceDailyAvailabilities",
+      "URLs": "ResourceDailyAvailabilities/{id} (GET)\nResourceDailyAvailabilities/query (GET, POST)\nResourceDailyAvailabilities/query/count (GET, POST)\nResourceDailyAvailabilities/entityInformation (GET)\nResourceDailyAvailabilities/entityInformation/fields (GET)\nResources/{resourceId}/DailyAvailabilities (GET)\nResources/{resourceId}/DailyAvailabilities/{id} (GET)\nResources/{resourceId}/DailyAvailabilities (PUT, PATCH)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRoleDepartmentsEntity.htm",
+    "title": "ResourceRoleDepartments",
+    "details": {
+      "Entity Name": "ResourceRoleDepartments",
+      "Entity Path": "/atservicesrest/v1.0/ResourceRoleDepartments",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRoleQueuesEntity.htm",
+    "title": "ResourceRoleQueues",
+    "details": {
+      "Entity Name": "ResourceRoleQueues",
+      "Entity Path": "/atservicesrest/v1.0/ResourceRoleQueues",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRolesEntity.htm",
+    "title": "ResourceRoles",
+    "details": {
+      "Entity Name": "ResourceRoles",
+      "Entity Path": "/atservicesrest/v1.0/ResourceRoles",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceServiceDeskRolesEntity.htm",
+    "title": "ResourceServiceDeskRoles",
+    "details": {
+      "Entity Name": "ResourceServiceDeskRoles",
+      "Entity Path": "/atservicesrest/v1.0/ResourceServiceDeskRoles",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceSkillsEntity.htm",
+    "title": "ResourceSkills",
+    "details": {
+      "Entity Name": "ResourceSkills",
+      "Entity Path": "/atservicesrest/v1.0/ResourceSkills",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffAdditionalEntity.htm",
+    "title": "ResourceTimeOffAdditional",
+    "details": {
+      "Entity Name": "TimeOffAdditional",
+      "Entity Path": "/atservicesrest/v1.0/TimeOffAdditional",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "Resources",
+      "Children": "none",
+      "URLs": "Resource/{resourceId}/TimeOffAdditional (GET, PUT, PATCH)\nResourceTimeOffAdditional/entityInformation (GET)\nResourceTimeOffAdditional/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffApproversEntity.htm",
+    "title": "ResourceTimeOffApprovers",
+    "details": {
+      "Can Create": "false",
+      "Can Delete": "false",
+      "Can Query": "[yes]",
+      "Can Update": "false",
+      "Can Have UDFs": "false",
+      "Parent": "Resources",
+      "Children": "None",
+      "Full path": "https://webservices[n].autotask.net/atservicesrest/v1.0/ResourceTimeOffApprovers",
+      "Entity URLs": "ResourceTimeOffApprovers/entityInformation (GET)\nResourceTimeOffApprovers/entityInformation/fields (GET)\nResourceTimeOffApprovers/{id} (GET)\nResourceTimeOffApprovers/query (GET, POST)\nResourceTimeOffApprovers/query/count (GET, POST)",
+      "Parent Entity URLs": "Resources/{parentId}/TimeOffApprovers (GET)\nResources/{parentId}/TimeOffApprovers/{id} (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffBalanceEntity.htm",
+    "title": "ResourceTimeOffBalances",
+    "details": {
+      "Entity Name": "ResourceTimeOffBalances",
+      "Entity Path": "/atservicesrest/v1.0/ResourceTimeOffBalances",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "Resources",
+      "Children": "none",
+      "URLs": "Resource/{resourceId}/TimeOffBalances (GET)\nResource/{resourceId}/TimeOffBalances/{year} (GET)\nResourceTimeOffBalances/entityInformation (GET)\nResourceTimeOffBalances/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourcesEntity.htm",
+    "title": "Resources",
+    "details": {
+      "Can Create": "false",
+      "Can Delete": "false",
+      "Can Query": "[yes]",
+      "Can Update": "[yes]",
+      "Can Have UDFs": "false",
+      "Supports webhooks": "[yes]",
+      "Parent": "None",
+      "Children": "ResourceAttachments\nResourceDailyAvailabilities\nResourceRoleDepartments\nResourceRoleQueues\nResourceRoles\nResourceServiceDeskRoles\nResourceSkills\nResourceTimeOffBalances\nResourceTimeOffAdditional\nResourceTimeOffApprovers",
+      "Full path": "https://webservices[n].autotask.net/atservicesrest/v1.0/Resources",
+      "Entity URLs": "Resources/entityInformation (GET)\nResources/entityInformation/fields (GET)",
+      "Parent Entity URLs": "Resources​/query (GET, POST)\nResources​/{id} (GET)\nResources​/query​/count (GET, POST)\nResources (PUT, PATCH)\nResources​/entityInformation (GET)\nResources​/entityInformation​/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/RolesEntity.htm",
+    "title": "Roles",
+    "details": {
+      "Entity Name": "Roles",
+      "Entity Path": "/atservicesrest/v1.0/Roles",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SalesOrderAttachmentsEntity.htm",
+    "title": "SalesOrderAttachments",
+    "details": {
+      "Entity Name": "SalesOrderAttachment",
+      "Entity Path": "/atservicesrest/v1.0/SalesOrderAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "SalesOrders",
+      "URLs": "SalesOrders​/query (GET, POST)\nSalesOrders​/{id} (GET)\nSalesOrders​/query​/count (GET, POST)\nSalesOrders (PUT, PATCH)\nSalesOrders​/entityInformation (GET)\nSalesOrders​/entityInformation​/fields (GET)\nSalesOrders​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SalesOrdersEntity.htm",
+    "title": "SalesOrders",
+    "details": {
+      "Entity Name": "SalesOrders",
+      "Entity Path": "/atservicesrest/v1.0/SalesOrders",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceBundleServicesEntity.htm",
+    "title": "ServiceBundleServices",
+    "details": {
+      "Entity Name": "ServiceBundleServices",
+      "Entity Path": "/atservicesrest/v1.0/ServiceBundleServices",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceBundlesEntity.htm",
+    "title": "ServiceBundles",
+    "details": {
+      "Entity Name": "ServiceBundles",
+      "Entity Path": "/atservicesrest/v1.0/ServiceBundles",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "[yes]"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTaskResourceEntity.htm",
+    "title": "ServiceCallTaskResources",
+    "details": {
+      "Entity Name": "ServiceCallTaskResource",
+      "Entity Path": "/atservicesrest/v1.0/ServiceCallTaskResources",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTasksEntity.htm",
+    "title": "ServiceCallTasks",
+    "details": {
+      "Entity Name": "ServiceCallTasks",
+      "Entity Path": "/atservicesrest/v1.0/ServiceCallTasks",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ServiceCalls",
+      "URLs": "ServiceCallTasks​/query (GET, POST)\nServiceCallTasks​/{id} (GET)\nServiceCallTasks​/query​/count (GET)\nServiceCallTasks​/entityInformation (GET)\nServiceCallTasks​/entityInformation​/fields (GET)\nServiceCallTasks​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTicketResourceEntity.htm",
+    "title": "ServiceCallTicketResources",
+    "details": {
+      "Entity Name": "ServiceCallTicketResources",
+      "Entity Path": "/atservicesrest/v1.0/ServiceCallTicketResources",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTicketsEntity.htm",
+    "title": "ServiceCallTickets",
+    "details": {
+      "Entity Name": "ServiceCallTickets",
+      "Entity Path": "/atservicesrest/v1.0/ServiceCallTickets",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "ServiceCalls",
+      "URLs": "ServiceCallTickets​/query (GET, POST)\nServiceCallTickets​/{id} (GET)\nServiceCallTickets​/query​/count (GET, POST)\nServiceCallTickets​/entityInformation (GET)\nServiceCallTickets​/entityInformation​/fields (GET)\nServiceCallTickets​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallsEntity.htm",
+    "title": "ServiceCalls",
+    "details": {
+      "Entity Name": "ServiceCalls",
+      "Entity Path": "/atservicesrest/v1.0/ServiceCalls",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "ServiceCallTasks, ServiceCallTickets",
+      "URLs": "ServiceCalls​/query (GET, POST)\nServiceCalls​/{id} (GET, DELETE)\nServiceCalls​/query​/count (GET, POST)\nServiceCalls (PUT, POST, PATCH)\nServiceCalls​/entityInformation (GET)\nServiceCalls​/entityInformation​/fields (GET)\nServiceCalls​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceLevelAgreementResultsEntity.htm",
+    "title": "ServiceLevelAgreementResults",
+    "details": {
+      "Entity Name": "ServiceLevelAgreementResults",
+      "Entity Path": "/atservicesrest/v1.0/ServiceLevelAgreementResults",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "ServiceLevelAgreements",
+      "URLs": "ServiceLevelAgreementResults​/query (GET, POST)\nServiceLevelAgreementResults​/{id} (GET)\nServiceLevelAgreementResults​/query​/count (GET, POST)\nServiceLevelAgreementResults​/entityInformation (GET)\nServiceLevelAgreementResults​/entityInformation​/fields (GET)\nServiceLevelAgreementResults​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServicesEntity.htm",
+    "title": "Services",
+    "details": {
+      "Entity Name": "Services",
+      "Entity Path": "/atservicesrest/v1.0/Services",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ShippingTypesEntity.htm",
+    "title": "ShippingTypes",
+    "details": {
+      "Entity Name": "ShippingTypes",
+      "Entity Path": "/atservicesrest/v1.0/ShippingTypes",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SkillsEntity.htm",
+    "title": "Skills",
+    "details": {
+      "Entity Name": "Skills",
+      "Entity Path": "/atservicesrest/v1.0/Skills",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SubscriptionPeriodsEntity.htm",
+    "title": "SubscriptionPeriods",
+    "details": {
+      "Entity Name": "SubscriptionPeriods",
+      "Entity Path": "/atservicesrest/v1.0/SubscriptionPeriods",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SubscriptionsEntity.htm",
+    "title": "Subscriptions",
+    "details": {
+      "Entity Name": "Subscriptions",
+      "Entity Path": "/atservicesrest/v1.0/Subscriptions",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "[yes]",
+      "Parent": "None",
+      "Children": "SubscriptionPeriods",
+      "URLs": "Subscriptions​/query (GET, POST)\nSubscriptions​/{id} (GET, DELETE)\nSubscriptions​/query​/count (GET, POST)\nSubscriptions (PUT, POST, PATCH)\nSubscriptions​/entityInformation (GET)\nSubscriptions​/entityInformation​/fields (GET)\nSubscriptions​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SurveyResultsEntity.htm",
+    "title": "SurveyResults",
+    "details": {
+      "Entity Name": "SurveyResults",
+      "Entity Path": "/atservicesrest/v1.0/SurveyResults",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SurveysEntity.htm",
+    "title": "Surveys",
+    "details": {
+      "Entity Name": "Surveys",
+      "Entity Path": "/atservicesrest/v1.0/Surveys",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagAliasesEntity.htm",
+    "title": "TagAliases",
+    "details": {
+      "Entity Name": "TagAlias",
+      "Entity Path": "/atservicesrest/v1.0/TagAliases",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Tags",
+      "Children": "None",
+      "URLs": "TagAliases/{id} (GET)\nTagAliases/query (GET, POST)\nTagAliases/query/count (GET, POST)\nTagAliases/entityInformation (GET)\nTagAliases/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagGroupsEntity.htm",
+    "title": "TagGroups",
+    "details": {
+      "Entity Name": "TagGroup",
+      "Entity Path": "/atservicesrest/v1.0/TagGroups",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagsEntity.htm",
+    "title": "Tags",
+    "details": {
+      "Entity Name": "Tag",
+      "Entity Path": "/atservicesrest/v1.0/Tags",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "TagAliases",
+      "URLs": "Tags/{id} (GET, DELETE)\nTags/query (GET, POST)\nTags/query/count (GET, POST)\nTags/ (POST, PUT, PATCH)\nTags/entityInformation (GET)\nTags/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskAttachmentsEntity.htm",
+    "title": "TaskAttachments",
+    "details": {
+      "Entity Name": "TaskAttachments",
+      "Entity Path": "/atservicesrest/v1.0/TaskAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskNoteAttachmentsEntity.htm",
+    "title": "TaskNoteAttachments",
+    "details": {
+      "Entity Name": "TaskNoteAttachment",
+      "Entity Path": "/atservicesrest/v1.0/TaskNoteAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "TaskNotes",
+      "URLs": "TaskNotes​/query (GET, POST)\nTaskNotes​/{id} (GET)\nTaskNotes​/query​/count (GET, POST)\nTaskNotes (PUT, POST, PATCH)\nTaskNotes​/entityInformation (GET)\nTaskNotes​/entityInformation​/fields (GET)\nTaskNotes​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskNotesEntity.htm",
+    "title": "TaskNotes",
+    "details": {
+      "Entity Name": "TaskNotes",
+      "Entity Path": "/atservicesrest/v1.0/TaskNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskPredecessorsEntity.htm",
+    "title": "TaskPredecessors",
+    "details": {
+      "Entity Name": "TaskPredecessors",
+      "Entity Path": "/atservicesrest/v1.0/TaskPredecessors",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions.",
+    "operation_conditions": {
+      "update": {
+        "editable_attribute": "lag days"
+      }
+    }
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskSecondaryResourcesEntity.htm",
+    "title": "TaskSecondaryResources",
+    "details": {
+      "Entity Name": "TaskSecondaryResources",
+      "Entity Path": "/atservicesrest/v1.0/TaskSecondaryResources",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TasksEntity.htm",
+    "title": "Tasks",
+    "details": {
+      "Entity Name": "Tasks",
+      "Entity Path": "/atservicesrest/v1.0/Tasks",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]",
+      "Parent": "Projects",
+      "Children": "ProjectNotes, Tasks, TaskAttachments, TaskPredecessors, TaskSecondaryResources",
+      "URLs": "Tasks​/query (GET, POST)\nTasks​/{id} (GET)\nTasks​/query​/count (GET, POST)\nTasks​/entityInformation (GET)\nTasks​/entityInformation​/fields (GET)\nTasks​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxCategoriesEntity.htm",
+    "title": "TaxCategories",
+    "details": {
+      "Entity Name": "TaxCategories",
+      "Entity Path": "/atservicesrest/v1.0/TaxCategories",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxRegionsEntity.htm",
+    "title": "TaxRegions",
+    "details": {
+      "Entity Name": "TaxRegions",
+      "Entity Path": "/atservicesrest/v1.0/TaxRegions",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxesEntity.htm",
+    "title": "Taxes",
+    "details": {
+      "Entity Name": "Taxes",
+      "Entity Path": "/atservicesrest/v1.0/Taxes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAdditionalConfigurationItemsEntity.htm",
+    "title": "TicketAdditionalConfigurationItems",
+    "details": {
+      "Entity Name": "TicketAdditionalConfigurationItems",
+      "Entity Path": "/atservicesrest/v1.0/TicketAdditionalConfigurationItems",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAdditionalContactsEntity.htm",
+    "title": "TicketAdditionalContacts",
+    "details": {
+      "Entity Name": "TicketAdditionalContacts",
+      "Entity Path": "/atservicesrest/v1.0/TicketAdditionalContacts",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAttachmentsEntity.htm",
+    "title": "TicketAttachments",
+    "details": {
+      "Entity Name": "TicketAttachments",
+      "Entity Path": "/atservicesrest/v1.0/TicketAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketCategoriesEntity.htm",
+    "title": "TicketCategories",
+    "details": {
+      "Entity Name": "TicketCategories",
+      "Entity Path": "/atservicesrest/v1.0/TicketCategories",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "TicketCategoryFieldDefaults",
+      "URLs": "TicketCategories​/query (GET, POST)\nTicketCategories​/{id} (GET)\nTicketCategories​/query​/count (GET, POST)\nTicketCategories (PUT, PATCH)\nTicketCategories​/entityInformation (GET)\nTicketCategories​/entityInformation​/fields (GET)\nTicketCategories​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketCategoryFieldDefaultsEntity.htm",
+    "title": "TicketCategoryFieldDefaults",
+    "details": {
+      "Entity Name": "TicketCategoryFieldDefaults",
+      "Entity Path": "/atservicesrest/v1.0/TicketCategoryFieldDefaults",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChangeRequestApprovalsEntity.htm",
+    "title": "TicketChangeRequestApprovals",
+    "details": {
+      "Entity Name": "TicketChangeRequestApprovals",
+      "Entity Path": "/atservicesrest/v1.0/TicketChangeRequestApprovals",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChargesEntity.htm",
+    "title": "TicketCharges",
+    "details": {
+      "Entity Name": "TicketCharges",
+      "Entity Path": "/atservicesrest/v1.0/TicketCharges",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions.",
+    "operation_conditions": {
+      "update": {
+        "documented_false_flag": "isBilled"
+      },
+      "delete": {
+        "documented_false_flag": "isBilled"
+      }
+    }
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChecklistItemsEntity.htm",
+    "title": "TicketChecklistItems",
+    "details": {
+      "Entity Name": "TicketChecklistItems",
+      "Entity Path": "/atservicesrest/v1.0/TicketChecklistItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChecklistLibrariesEntity.htm",
+    "title": "TicketChecklistLibraries",
+    "details": {
+      "Entity Name": "TicketChecklistLibraries",
+      "Entity Path": "/atservicesrest/v1.0/TicketChecklistLibraries",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketHistoryEntity.htm",
+    "title": "TicketHistory",
+    "details": {
+      "Entity Name": "TicketHistory",
+      "Entity Path": "/atservicesrest/v1.0/TicketHistory",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketNoteAttachmentsEntity.htm",
+    "title": "TicketNoteAttachments",
+    "details": {
+      "Entity Name": "TicketNoteAttachment",
+      "Entity Path": "/atservicesrest/v1.0/TicketNoteAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "TicketNotes",
+      "URLs": "TicketNoteAttachments​/entityInformation\n(GET)\n​TicketNoteAttachments​/entityInformation​/fields (GET)\nTicketNoteAttachments​/query (GET, POST)\nTicketNoteAttachments​/{id}\n(GET)\nTicketNoteAttachments​/query​/count\n(GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketNotesEntity.htm",
+    "title": "TicketNotes",
+    "details": {
+      "Entity Name": "TicketNotes",
+      "Entity Path": "/atservicesrest/v1.0/TicketNotes",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Supports webhooks": "[yes]"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketRmaCreditsEntity.htm",
+    "title": "TicketRmaCredits",
+    "details": {
+      "Entity Name": "TicketRmaCredits",
+      "Entity Path": "/atservicesrest/v1.0/TicketRmaCredits",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketSecondaryResourcesEntity.htm",
+    "title": "TicketSecondaryResources",
+    "details": {
+      "Entity Name": "TicketSecondaryResources",
+      "Entity Path": "/atservicesrest/v1.0/TicketSecondaryResources",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketTagAssociationsEntity.htm",
+    "title": "TicketTagAssociations",
+    "details": {
+      "Entity Name": "TicketTagAssociation",
+      "Entity Path": "/atservicesrest/v1.0/TicketTagAssociations",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "Tickets",
+      "URLs": "TicketTagAssociations/{id} (GET)\nTicketTagAssociations/query (GET, POST)\nTicketTagAssociations/query/count (GET, POST)\nTicketTagAssociations/entityInformation (GET)\nTicketTagAssociations/entityInformation/fields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketsEntity.htm",
+    "title": "Tickets",
+    "details": {
+      "Entity Name": "Tickets",
+      "Entity Path": "/atservicesrest/v1.0/Tickets",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "[yes]",
+      "Supports webhooks": "[yes]",
+      "Parent": "None",
+      "Children": "TicketAdditionalConfigurationItems, TicketAdditionalContacts, TicketAttachments, TicketChangeRequestApprovals, TicketCharges, TicketChecklistItems, TicketChecklistLibraries, TicketNotes, TicketRmaCredits, TicketSecondaryResources, TicketTagAssociations",
+      "URLs": "Tickets​/query (GET, POST)\nTickets​/{id} (GET)\nTickets​/query​/count (GET, POST)\nTickets (PUT, POST, PATCH)\nTickets​/entityInformation (GET)\nTickets​/entityInformation​/fields (GET)\nTickets​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeEntriesEntity.htm",
+    "title": "TimeEntries",
+    "details": {
+      "Entity Name": "TimeEntries",
+      "Entity Path": "/atservicesrest/v1.0/TimeEntries",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "None",
+      "Children": "TimeEntries",
+      "URLs": "TimeEntries​/query (GET, POST)\nTimeEntries​/{id} (GET, DELETE)\nTimeEntries​/query​/count (GET, POST)\nTimeEntries (PUT, POST, PATCH)\nTimeEntries​/entityInformation (GET)\nTimeEntries​/entityInformation​/fields (GET)\nTimeEntries​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeEntryAttachmentsEntity.htm",
+    "title": "TimeEntryAttachments",
+    "details": {
+      "Entity Name": "TimeEntryAttachment",
+      "Entity Path": "/atservicesrest/v1.0/TimeEntryAttachments",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": "",
+      "Parent": "TimeEntries",
+      "URLs": "TimeEntryAttachments​/entityInformation (GET)\nTimeEntryAttachments​/entityInformation​/fields (GET)\nTimeEntryAttachments​/query\n(GET, POST)\nTimeEntryAttachments​/{id}\n(GET)\nTimeEntryAttachments​/query​/count (GET, POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsApproveEntity.htm",
+    "title": "TimeOffRequestsApprove",
+    "details": {
+      "Can Create": "[yes]",
+      "Can Delete": "false",
+      "Can Query": "false",
+      "Can Update": "false",
+      "Can Have UDFs": "false",
+      "Parent": "TimeOffRequests",
+      "Children": "none",
+      "Full path": "https://webservices[n].autotask.net/atservicesrest/v1.0/TimeOffRequestsApprove",
+      "Entity URLs": "TimeOffRequestsApprove/entityInformation (GET)\nTimeOffRequestsApprove/entityInformation/fields (GET)",
+      "Parent Entity URLs": "TimeOffRequests/{id}/Approve (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsEntity.htm",
+    "title": "TimeOffRequests",
+    "details": {
+      "Can Create": "[yes]",
+      "Can Delete": "false",
+      "Can Query": "[yes]",
+      "Can Update": "[yes]",
+      "Can Have UDFs": "false",
+      "Parent": "Resources",
+      "Children": "TimeOffRequestsApprove\nTimeOffRequestsReject",
+      "Full path": "https://webservices[n].autotask.net/atservicesrest/v1.0/TimeOffRequests",
+      "Entity URLs": "TimeOffRequests/entityInformation (GET)\nTimeOffRequests/entityInformation/fields (GET)\nTimeOffRequests/{id} (GET)\nTimeOffRequests/query (GET, POST)\nTimeOffRequests/query/count (GET, POST)",
+      "Parent Entity URLs": "Resources/{parentId}/TimeOffRequests (GET)\nResources/{parentId}/TimeOffRequests/{id} (GET)\nResources/{parentId}/TimeOffRequest (PUT)\nResources/{parentId}/TimeOffRequests (PATCH)\nResources/{parentId}/TimeOffRequests (POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsRejectEntity.htm",
+    "title": "TimeOffRequestsReject",
+    "details": {
+      "Can Create": "[yes]",
+      "Can Delete": "false",
+      "Can Query": "false",
+      "Can Update": "false",
+      "Can Have UDFs": "false",
+      "Parent": "TimeOffRequests",
+      "Children": "none",
+      "Full path": "https://webservices[n].autotask.net/atservicesrest/v1.0/TimeOffRequestsReject",
+      "Entity URLs": "TimeOffRequestsReject/entityInformation (GET)\nTimeOffRequestsReject/entityInformation/fields (GET)",
+      "Parent Entity URLs": "TimeOffRequests/{id}/Reject (POST)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/UserDefinedFieldDefinitionsEntity.htm",
+    "title": "UserDefinedFieldDefinitions",
+    "details": {
+      "Entity Name": "UserDefinedFieldDefinitions",
+      "Entity Path": "/atservicesrest/v1.0/UserDefinedFieldDefinitions",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/UserDefinedFieldListItemsEntity.htm",
+    "title": "UserDefinedFieldListItems",
+    "details": {
+      "Entity Name": "UserDefinedFieldListItems",
+      "Entity Path": "/atservicesrest/v1.0/UserDefinedFieldListItems",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": "",
+      "Parent": "REST API: User-defined fields (UDFs)",
+      "URLs": "UserDefinedFieldListItems​/query (GET, POST)\nUserDefinedFieldListItems​/{id} (GET)\nUserDefinedFieldListItems​/query​/count (GET, POST)\nUserDefinedFieldListItems​/entityInformation (GET)\n​UserDefinedFieldListItems​/entityInformation​/fields (GET)\nUserDefinedFieldListItems​/entityInformation​/userDefinedFields (GET)"
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/VersionEntity.htm",
+    "title": "Version",
+    "details": {
+      "Entity Name": "Version",
+      "Entity Path": "/atservicesrest/v1.0/Version",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/WorkTypeModifiersEntity.htm",
+    "title": "WorkTypeModifiers",
+    "details": {
+      "Entity Name": "WorkTypeModifiers",
+      "Entity Path": "/atservicesrest/v1.0/WorkTypeModifiers",
+      "Can Create": "",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookExcludedResourcesEntity.htm",
+    "title": "<EntityName>WebhookExcludedResources (REST)",
+    "details": {
+      "Entity Name": "<EntityName>WebhookExcludedResources",
+      "Can Create": "[yes]",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookFieldsEntity.htm",
+    "title": "<EntityName>WebhookFields (REST API)",
+    "details": {
+      "Entity Name": "<EntityName>WebhookFields",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhooksEntity.htm",
+    "title": "<EntityName>Webhooks (REST API)",
+    "details": {
+      "Entity Name": "<EntityName>Webhook",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookUdfFieldsEntity.htm",
+    "title": "<EntityName>WebhookUdfFields (REST API)",
+    "details": {
+      "Entity Name": "<EntityName>WebhookUdfFields",
+      "Can Create": "[yes]",
+      "Can Update": "[yes]",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/WebhookEventErrorLogEntity.htm",
+    "title": "WebhookEventErrorLogs",
+    "details": {
+      "Entity Name": "WebhookEventErrorLog",
+      "Can Create": "",
+      "Can Update": "",
+      "Can Query": "[yes]",
+      "Can Delete": "[yes]",
+      "Can Have UDFs": ""
+    },
+    "evidence": "Factual API observations only; source URL required for field rules and conditions."
+  }
+]

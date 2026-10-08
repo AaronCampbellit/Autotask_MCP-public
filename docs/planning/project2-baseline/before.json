@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "measured_at": "2026-09-20T00:08:27.008Z",
+  "release": "0.1.0-completions.20260918.2",
+  "node": "v24.19.0",
+  "mode": "local_fixture_real_http",
+  "iterations": 5,
+  "limitations": [
+    "Cold means first request on a fresh fixture, not a fresh Node process.",
+    "Fixture adapter calls are not native HTTP attempts; other fixture ports are not counted.",
+    "No live provider, model-turn or actual ChatGPT/Codex measurements.",
+    "RMM context and report retrieval require dedicated configured fixture scenarios; not measured here.",
+    "Completeness assertions belong to scenario regression tests; latency alone does not establish correctness."
+  ],
+  "host_matrix": [
+    {
+      "host": "local direct HTTP harness",
+      "protocols": [
+        "2025-11-25",
+        "2026-07-28"
+      ],
+      "tested": [
+        "discovery",
+        "structured tool output"
+      ]
+    },
+    {
+      "host": "ChatGPT",
+      "status": "not_measured"
+    },
+    {
+      "host": "Codex",
+      "status": "not_measured"
+    }
+  ],
+  "results": [
+    {
+      "protocol": "2025-11-25",
+      "scenario": "discovery",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 468.5142410000001,
+        "request_bytes": 58,
+        "response_bytes": 537225,
+        "fixture_autotask_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 335.6576389999998,
+            "request_bytes": 58,
+            "response_bytes": 537225,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 386.187549,
+            "request_bytes": 58,
+            "response_bytes": 537225,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 335.07129099999975,
+            "request_bytes": 58,
+            "response_bytes": 537225,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 318.3244639999998,
+            "request_bytes": 58,
+            "response_bytes": 537225,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 346.80947600000036,
+            "request_bytes": 58,
+            "response_bytes": 537225,
+            "fixture_autotask_calls": 0
+          }
+        ],
+        "p50_ms": 335.6576389999998,
+        "p95_ms": 386.187549,
+        "p99_ms": 386.187549
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "ticket_context_exact_id",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 196.533993,
+        "request_bytes": 178,
+        "response_bytes": 37597,
+        "fixture_autotask_calls": 10
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 167.51116000000002,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 188.5329529999999,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 189.2056550000002,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 178.61729200000036,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 175.95092000000022,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10
+          }
+        ],
+        "p50_ms": 178.61729200000036,
+        "p95_ms": 189.2056550000002,
+        "p99_ms": 189.2056550000002
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "ticket_lookup_text",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 177.45731500000056,
+        "request_bytes": 111,
+        "response_bytes": 1387,
+        "fixture_autotask_calls": 1
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 178.15934000000016,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 156.05869399999938,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 146.25813000000016,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 155.42202499999985,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 165.6232629999995,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1
+          }
+        ],
+        "p50_ms": 156.05869399999938,
+        "p95_ms": 178.15934000000016,
+        "p99_ms": 178.15934000000016
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "current_user_workday",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 248.04848399999992,
+        "request_bytes": 140,
+        "response_bytes": 6031,
+        "fixture_autotask_calls": 5
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 196.12884399999984,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 270.95543799999996,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 199.68770700000005,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 194.2896609999998,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 197.417907,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5
+          }
+        ],
+        "p50_ms": 197.417907,
+        "p95_ms": 270.95543799999996,
+        "p99_ms": 270.95543799999996
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "discovery",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 404.392108,
+        "request_bytes": 249,
+        "response_bytes": 537378,
+        "fixture_autotask_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 344.7124269999995,
+            "request_bytes": 249,
+            "response_bytes": 537378,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 323.7623599999997,
+            "request_bytes": 249,
+            "response_bytes": 537378,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 309.86984699999994,
+            "request_bytes": 249,
+            "response_bytes": 537378,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 311.54576499999894,
+            "request_bytes": 249,
+            "response_bytes": 537378,
+            "fixture_autotask_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 320.14890899999955,
+            "request_bytes": 249,
+            "response_bytes": 537378,
+            "fixture_autotask_calls": 0
+          }
+        ],
+        "p50_ms": 320.14890899999955,
+        "p95_ms": 344.7124269999995,
+        "p99_ms": 344.7124269999995
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "ticket_context_exact_id",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 171.59083800000008,
+        "request_bytes": 370,
+        "response_bytes": 37717,
+        "fixture_autotask_calls": 10
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 167.6297880000002,
+            "request_bytes": 370,
+            "response_bytes": 37717,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 160.00313800000004,
+            "request_bytes": 370,
+            "response_bytes": 37717,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 166.83208399999967,
+            "request_bytes": 370,
+            "response_bytes": 37717,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 165.67837599999984,
+            "request_bytes": 370,
+            "response_bytes": 37717,
+            "fixture_autotask_calls": 10
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 163.93549200000052,
+            "request_bytes": 370,
+            "response_bytes": 37717,
+            "fixture_autotask_calls": 10
+          }
+        ],
+        "p50_ms": 165.67837599999984,
+        "p95_ms": 167.6297880000002,
+        "p99_ms": 167.6297880000002
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "ticket_lookup_text",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 157.7796559999988,
+        "request_bytes": 303,
+        "response_bytes": 1507,
+        "fixture_autotask_calls": 1
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 158.91793999999936,
+            "request_bytes": 303,
+            "response_bytes": 1507,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 159.69521200000054,
+            "request_bytes": 303,
+            "response_bytes": 1507,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 155.01012100000116,
+            "request_bytes": 303,
+            "response_bytes": 1507,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 157.75605799999903,
+            "request_bytes": 303,
+            "response_bytes": 1507,
+            "fixture_autotask_calls": 1
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 156.3339190000006,
+            "request_bytes": 303,
+            "response_bytes": 1507,
+            "fixture_autotask_calls": 1
+          }
+        ],
+        "p50_ms": 157.75605799999903,
+        "p95_ms": 159.69521200000054,
+        "p99_ms": 159.69521200000054
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "current_user_workday",
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 195.11781399999927,
+        "request_bytes": 332,
+        "response_bytes": 6151,
+        "fixture_autotask_calls": 5
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 200.5173739999991,
+            "request_bytes": 332,
+            "response_bytes": 6151,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 205.41978700000072,
+            "request_bytes": 332,
+            "response_bytes": 6151,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 213.88940900000125,
+            "request_bytes": 332,
+            "response_bytes": 6151,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 197.79256300000088,
+            "request_bytes": 332,
+            "response_bytes": 6151,
+            "fixture_autotask_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 199.723833,
+            "request_bytes": 332,
+            "response_bytes": 6151,
+            "fixture_autotask_calls": 5
+          }
+        ],
+        "p50_ms": 200.5173739999991,
+        "p95_ms": 213.88940900000125,
+        "p99_ms": 213.88940900000125
+      }
+    }
+  ]
+}

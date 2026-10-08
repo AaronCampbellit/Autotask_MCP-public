@@ -1,0 +1,15 @@
+node_modules
+node_modules/
+work/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+coverage/
+
+# Vendor research copies are intentionally excluded from public candidates.
+docs/planning/**/sources/
+docs/planning/thread-research-2026-09-10/llms.txt
+docs/planning/thread-research-2026-09-10/sitemap.xml
+**/__pycache__/
+**/*.pyc

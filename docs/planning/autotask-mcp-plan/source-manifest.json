@@ -1,0 +1,2102 @@
+[
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ActionTypesEntity.htm",
+    "title": "ActionTypes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:25.837503+00:00",
+    "bytes": 47721,
+    "sha256": "63cd0d62b4a92016d86b00ad2e091d59442756186af90f7dd441ef4213daab2e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AdditionalInvoiceFieldValuesEntity.htm",
+    "title": "AdditionalInvoiceFieldValues",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:25.839878+00:00",
+    "bytes": 46762,
+    "sha256": "af27c6f3e96cecf0c75406aaacb72405b11e2790f75ade131d7939ed6c93e023",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AppointmentsEntity.htm",
+    "title": "Appointments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:25.823903+00:00",
+    "bytes": 52525,
+    "sha256": "817b903e0fbc67b5e950054eac9d2e38d456844f9220db463f2e2464b7f7df1e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleAttachmentsEntity.htm",
+    "title": "ArticleAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:25.827422+00:00",
+    "bytes": 81536,
+    "sha256": "2f0c8a9ba746b05bc477ff900f93039c1281334634b89f9dd5a371ab7ae968de",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleConfigurationItemCategoryAssociationsEntity.htm",
+    "title": "ArticleConfigurationItemCategoryAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.079236+00:00",
+    "bytes": 56110,
+    "sha256": "07a1fc933db0bc45e7c597398ce410fc312fd9eb81935f1edb39ba7326cde3b4",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleNotesEntity.htm",
+    "title": "ArticleNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.108157+00:00",
+    "bytes": 67193,
+    "sha256": "0b1e57daafb59d2af242bd3463280385bf1603381e54778f1340b1cc7fa99e59",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticlePlainTextContentEntity.htm",
+    "title": "ArticlePlainTextContent",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.071505+00:00",
+    "bytes": 52266,
+    "sha256": "43a12216cfd09a21fb42caba87b250706bc04bf96498f0437726cd0311cb7c20",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleTagAssociationsEntity.htm",
+    "title": "ArticleTagAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.098425+00:00",
+    "bytes": 61151,
+    "sha256": "24cb5b8ae5bebe00f27950c6ae8cfac961d3d739490c76be31a303bace52eecd",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleTicketAssociationsEntity.htm",
+    "title": "ArticleTicketAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.330020+00:00",
+    "bytes": 56590,
+    "sha256": "b1f97291546719cf5ff05b3bde85f8053603e207e710187875f4a9667686b419",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleToArticleAssociationsEntity.htm",
+    "title": "ArticleToArticleAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.318022+00:00",
+    "bytes": 57238,
+    "sha256": "3fb509589b6110747006fc41d4956b8be476dbfc1277e4de3f96812498784e3e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleToDocumentAssociationsEntity.htm",
+    "title": "ArticleToDocumentAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.357007+00:00",
+    "bytes": 57807,
+    "sha256": "c5fe275cf3fc32325463cb7a2bdb0927125a01395becdebee8c7393dbd274f99",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AttachmentInfoEntity.htm",
+    "title": "AttachmentInfo (REST API)",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.433568+00:00",
+    "bytes": 121560,
+    "sha256": "6a44365fba6f42828cdb0b6755c28825e3991426144165029a6cd1b264cfc60a",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingCodesEntity.htm",
+    "title": "BillingCodes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.553078+00:00",
+    "bytes": 68748,
+    "sha256": "e3763e8f802ddae4565453a6833ebd8c38def0478319b85643c9b5a873936b33",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingItemApprovalLevelsEntity.htm",
+    "title": "BillingItemApprovalLevels",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.638469+00:00",
+    "bytes": 49916,
+    "sha256": "7999cbebc68bef5fc4c05297befc7bd05ac0072d2caa06abe4fb4e11c59c6305",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingItemsEntity.htm",
+    "title": "BillingItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.635643+00:00",
+    "bytes": 155517,
+    "sha256": "2b773634090e99a5a427f3a3d62d2719d6c446a81c1f4b709b9a12e04efb6735",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChangeOrderChargesEntity.htm",
+    "title": "ChangeOrderCharges",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.679029+00:00",
+    "bytes": 89037,
+    "sha256": "8e04288a2fd178c2a6e2f8cf06cf0aa8c033e27a19dc8d234dbfa4e3d5aa3a9e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChangeRequestLinksEntity.htm",
+    "title": "ChangeRequestLinks",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.665464+00:00",
+    "bytes": 48418,
+    "sha256": "f2a6e073c15b879a2f65a58f117c38f8bbcf38f7b060eabceb2ed9d7122cdd85",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChecklistLibrariesEntity.htm",
+    "title": "ChecklistLibraries",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.879807+00:00",
+    "bytes": 55680,
+    "sha256": "71382b955f9b3fa4b7e0b665f385665a777a9f8807d94c97ea90eb27735f760d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChecklistLibraryChecklistItemsEntity.htm",
+    "title": "ChecklistLibraryChecklistItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.789143+00:00",
+    "bytes": 50835,
+    "sha256": "2782c4d355a77bb155028f2363cb8ac01f2a4e8a6fee1e5d12af0cbb007510a0",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ClassificationIconsEntity.htm",
+    "title": "ClassificationIcons",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.890987+00:00",
+    "bytes": 49947,
+    "sha256": "aeeed310a9be549442367407b5dccd0d2cf1a455e64a386c0ac475707b6265a5",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ClientPortalUsersEntity.htm",
+    "title": "ClientPortalUsers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.933370+00:00",
+    "bytes": 58193,
+    "sha256": "20b106a36be2ba1c514446fef7d72489ecccb2fc50b4aa0a31c2cfdee6fca556",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ComanagedAssociationsEntity.htm",
+    "title": "ComanagedAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.903834+00:00",
+    "bytes": 49976,
+    "sha256": "10d36ff9ed46d8db5eba8ade41224cfe192b068aeebc5efd274ed6b88d0c38c1",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompaniesEntity.htm",
+    "title": "Companies",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:26.998930+00:00",
+    "bytes": 159138,
+    "sha256": "59d1f555c77be03cf1c7c94c83f1c334ecfc6cba51922baca61cdf5602aa9de2",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyAlertsEntity.htm",
+    "title": "CompanyAlerts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.087504+00:00",
+    "bytes": 51838,
+    "sha256": "93a4252ea5d16054940bfcc05ab084679b52199db2b745d2a900ffd3fdb447b9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyAttachmentsEntity.htm",
+    "title": "CompanyAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.147112+00:00",
+    "bytes": 71517,
+    "sha256": "2aecfc791232e9dedd0f98eb1091be91513bda6f8190fe2cebd313f7e5dd7938",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyCategoriesEntity.htm",
+    "title": "CompanyCategories",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.045532+00:00",
+    "bytes": 56429,
+    "sha256": "a7a2d330636bfc976ddb0d9eba9a903b2b99c33170888f8297ae6c08ed306f65",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyLocationsEntity.htm",
+    "title": "CompanyLocations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.252262+00:00",
+    "bytes": 69015,
+    "sha256": "446303942654b3152ecc846662104d8a1074940d6834ae17a91d45b29f6740f2",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyNoteAttachmentsEntity.htm",
+    "title": "CompanyNoteAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.159916+00:00",
+    "bytes": 83906,
+    "sha256": "10899a1b27335ae1b968dfc3194e6eea638d5b79cab21578db9a69958b0fd23a",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyNotesEntity.htm",
+    "title": "CompanyNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.355819+00:00",
+    "bytes": 61193,
+    "sha256": "a344c47d9157a0bd9fc7a5126e37e14f41f353578881b63aad381c2f3531eb07",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanySiteConfigurationsEntity.htm",
+    "title": "CompanySiteConfigurations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.297348+00:00",
+    "bytes": 49246,
+    "sha256": "b96cea2d7b43054a7bc0d1e3ee10c5ea1326df3449c10ccdbae80d8a8231704f",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyTeamsEntity.htm",
+    "title": "CompanyTeams",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.286077+00:00",
+    "bytes": 49395,
+    "sha256": "e0cf09e0c00389fa367e72a4fed6a15698a06f1ce4fdbea1cc559c21322ca307",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyToDosEntity.htm",
+    "title": "CompanyToDos",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.551331+00:00",
+    "bytes": 63287,
+    "sha256": "57b4d9b6fe3da1779101395d532fb7f36f4f8c3acb08b99ce83a62713fb7a075",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemAttachmentsEntity.htm",
+    "title": "ConfigurationItemAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.539466+00:00",
+    "bytes": 81648,
+    "sha256": "97550b7de4d70f53d88aa273202a0705b8c6662b98c9561b60efa0c2db6acecb",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemBillingProductAssociationsEntity.htm",
+    "title": "ConfigurationItemBillingProductAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.406269+00:00",
+    "bytes": 51972,
+    "sha256": "169d1c3fd92b335a94d66a45f860de0d6ab88eae1285c5d02f3668043eaad407",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemCategoriesEntity.htm",
+    "title": "ConfigurationItemCategories",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.660167+00:00",
+    "bytes": 60002,
+    "sha256": "694e66cc3807a6b5743679c3c24b1c335928a4d38cd3a51d130f55eb3162be89",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemCategoryUdfAssociationsEntity.htm",
+    "title": "ConfigurationItemCategoryUdfAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.713674+00:00",
+    "bytes": 48801,
+    "sha256": "1c9275f95dcaae82912c1acc8e383989ef7b8ac7ef5340e564a85b62559d6c51",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemDnsRecordsEntity.htm",
+    "title": "ConfigurationItemDnsRecords",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.685601+00:00",
+    "bytes": 55994,
+    "sha256": "814f104ee2649d1280efb50122c444b6c39c5ead9dfb1f77ff858503e93e2fd6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemNoteAttachmentsEntity.htm",
+    "title": "ConfigurationItemNoteAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.706540+00:00",
+    "bytes": 79478,
+    "sha256": "ebe16435aed6f6bade69ae8555372e1d2ede6936ec05e676d91d747e4a1d0814",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemNotesEntity.htm",
+    "title": "ConfigurationItemNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.905472+00:00",
+    "bytes": 58175,
+    "sha256": "3cfa60507d5244d5a45731e8a0f400c94ffaca2ccc209e606d362baa01a8b93e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemRelatedItemsEntity.htm",
+    "title": "ConfigurationItemRelatedItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.791514+00:00",
+    "bytes": 57121,
+    "sha256": "84037643db6ca1fe869b370adee0ce8f0327268b2c82ea3745e06e595bd1ec4c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemSslSubjectAlternativeNameEntity.htm",
+    "title": "ConfigurationItemSslSubjectAlternativeName",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.881725+00:00",
+    "bytes": 53221,
+    "sha256": "91696f77bba1b3fbf6da282539f7e1b1af3a3298a01791ce93b52c498afe54f6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemTypesEntity.htm",
+    "title": "ConfigurationItemTypes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.849926+00:00",
+    "bytes": 45488,
+    "sha256": "1281199c24dcd5ea3a45e8628fa3a913222fc7c39214c6835b2caa1de3f7111b",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemsEntity.htm",
+    "title": "ConfigurationItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.929564+00:00",
+    "bytes": 224871,
+    "sha256": "73f0a98f0012162718393f78c8f9a776d3487e75da1d631aadb98bf786dd7553",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactBillingProductAssociationsEntity.htm",
+    "title": "ContactBillingProductAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:27.960065+00:00",
+    "bytes": 51153,
+    "sha256": "ccabbe739d71f1ec3c9246ac776c96f0738e6e3450eeac83b595bcd79d56ecb0",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactGroupContactsEntity.htm",
+    "title": "ContactGroupContacts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.013445+00:00",
+    "bytes": 45611,
+    "sha256": "cca7058e7860ac8eeb62ee88be31d4d0fcc715217cf1cc41363c66aa511da585",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactGroupsEntity.htm",
+    "title": "ContactGroups",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.079101+00:00",
+    "bytes": 54760,
+    "sha256": "7ce372e8a667d1431d88162b8c81d191ce5cb0015aa5ff008a831dd69a7a4427",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactsEntity.htm",
+    "title": "Contacts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.005635+00:00",
+    "bytes": 114081,
+    "sha256": "0c473cefb71b3e060aa6a4aed94c9f1f1dec38b26b4c97ee555e4ee5939709e4",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBillingRulesEntity.htm",
+    "title": "ContractBillingRules",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.065757+00:00",
+    "bytes": 65365,
+    "sha256": "fe29469cbd2169bee2c6bcc38af0f33a66cbb679cba7160036b6895c2354d166",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBlockHourFactorsEntity.htm",
+    "title": "ContractBlockHourFactors",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.137495+00:00",
+    "bytes": 50646,
+    "sha256": "4f82a16926b3c1ff8870a785dc5069f2ee23547b92c988370bf8f12859d157f6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBlocksEntity.htm",
+    "title": "ContractBlocks",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.154778+00:00",
+    "bytes": 65065,
+    "sha256": "f2cc9ec96cda24b43690b33059a400120979eb15187c76068d9ae7b353b9fa52",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractChargesEntity.htm",
+    "title": "ContractCharges",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.317129+00:00",
+    "bytes": 87174,
+    "sha256": "178c433b99dbc797e504291f1a4a0943af5494e6f21714a41f0c1890939d0720",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionBillingCodesEntity.htm",
+    "title": "ContractExclusionBillingCodes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.223745+00:00",
+    "bytes": 46595,
+    "sha256": "1ca0e7947ce537ca7760a8747e15e4d41388ca38cb98ba1cf8717a9e9e76abb8",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionRolesEntity.htm",
+    "title": "ContractExclusionRoles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.254765+00:00",
+    "bytes": 47182,
+    "sha256": "ef06c2587831153fa8cdea08070658374654de94da84bcdf9273b66685f498b9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetExcludedRolesEntity.htm",
+    "title": "ContractExclusionSetExcludedRoles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.264694+00:00",
+    "bytes": 48656,
+    "sha256": "03275fa92897edfdfbd35c7956716afef600099e5e273de1380a308036681e20",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetExcludedWorkTypesEntity.htm",
+    "title": "ContractExclusionSetExcludedWorkTypes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.347915+00:00",
+    "bytes": 48588,
+    "sha256": "f37e2afbd1b0d6ec7b774e87764fbe00e8e5cde4f4cccfcc190af8a947e7510f",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetsEntity.htm",
+    "title": "ContractExclusionSets",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.417306+00:00",
+    "bytes": 53710,
+    "sha256": "54b006b335c3b72f4061d5b3f8ad142bb397b7dc72b6d0dbce4a465dd6d9304b",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractMilestonesEntity.htm",
+    "title": "ContractMilestones",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.392961+00:00",
+    "bytes": 58741,
+    "sha256": "0dc5d6272f2112378e272caef2495affc3879a49700e9441f11729933f653f36",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractNoteAttachmentsEntity.htm",
+    "title": "ContractNoteAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.435198+00:00",
+    "bytes": 79258,
+    "sha256": "bf6c4b4a93bb4986b203d5c063d68163c1a3251a187ddd0806320dee70dc9c54",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractNotesEntity.htm",
+    "title": "ContractNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.618252+00:00",
+    "bytes": 60712,
+    "sha256": "9d82b0c50bca524ce325b913091c258fc91802d937d2df5fc87bc1300e4c745d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRatesEntity.htm",
+    "title": "ContractRates",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.642759+00:00",
+    "bytes": 49882,
+    "sha256": "6b4104b59bfdc457c0f56c6690c76d38082f4ed97f9dd9a2b369353d94b4b43e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRetainersEntity.htm",
+    "title": "ContractRetainers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.537315+00:00",
+    "bytes": 65212,
+    "sha256": "d41b60b6c0e9311382c515af7fa8148d7006ee2f622e53414c79beeee5e46534",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRoleCostsEntity.htm",
+    "title": "ContractRoleCosts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.552630+00:00",
+    "bytes": 49454,
+    "sha256": "fdda43b06a91e3fe51e6f2f71fcbe307837b5a67be8c1b54c2ded573527f06d8",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceAdjustmentsEntity.htm",
+    "title": "ContractServiceAdjustments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.600779+00:00",
+    "bytes": 58141,
+    "sha256": "ca76c61fc099443248e7a021f905faeba671c8a49060e72c29b5adc4f96fc30c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundleAdjustmentsEntity.htm",
+    "title": "ContractServiceBundleAdjustments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.665131+00:00",
+    "bytes": 57453,
+    "sha256": "a52ee23ba7a0803689aad3ce3577b11199f914e9d460dd224a1b0d4753eb4d6d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundleUnitsEntity.htm",
+    "title": "ContractServiceBundleUnits",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.729968+00:00",
+    "bytes": 63320,
+    "sha256": "3d0ff9ed08dc8b967a566116f6a0718cbda0b44a3c8cdf966090d16f2c9628a1",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundlesEntity.htm",
+    "title": "ContractServiceBundles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.747182+00:00",
+    "bytes": 63398,
+    "sha256": "25f6ec4c3c9ec88760c8265faf49424097b2f6bfd33a672a038b87b7dae2c746",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceUnitsEntity.htm",
+    "title": "ContractServiceUnits",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.719142+00:00",
+    "bytes": 67318,
+    "sha256": "481d92d40ce5204aa59bac1686a6c85da070dc46fac7d43a9bbd934accd65b98",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServicesEntity.htm",
+    "title": "ContractServices",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.749364+00:00",
+    "bytes": 64523,
+    "sha256": "4140214b83dd8c4e042b0ee7508c7d515879df6b82d25d4beb737126f19b64fb",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractTicketPurchasesEntity.htm",
+    "title": "ContractTicketPurchases",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.867977+00:00",
+    "bytes": 62796,
+    "sha256": "c321a58d691d716a1cb24e5d6cd6ded99a8be761b068f7ec3e7c207e01b0cc20",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractsEntity.htm",
+    "title": "Contracts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.830460+00:00",
+    "bytes": 104180,
+    "sha256": "36838503948c5607c736f1aca38728c731f9a056a4dba6e2e46fca11ad252cf5",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CountriesEntity.htm",
+    "title": "Countries",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.809858+00:00",
+    "bytes": 55565,
+    "sha256": "c4a78a2a356f6a74d8c156f9b9d28119bdf3991d18a9fa75cf3ae56b2f561df5",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CurrenciesEntity.htm",
+    "title": "Currencies",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.865053+00:00",
+    "bytes": 60883,
+    "sha256": "24e4564112788a8a71385c9351378b6cec8e02bc6f8aedab4cd515da0c898b09",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTaskActivityLogsEntity.htm",
+    "title": "DeletedTaskActivityLogs",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.937547+00:00",
+    "bytes": 58995,
+    "sha256": "a35e16d8bb27ed9fd687ac53c2bb5e89b1cf47671a7409663e01d7e74d1ee432",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTicketActivityLogsEntity.htm",
+    "title": "DeletedTicketActivityLogs",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.946939+00:00",
+    "bytes": 59015,
+    "sha256": "d9fea65666efb0f20d3435a4463bb9af86fd23bf36c5a359eef43105afef5f76",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTicketLogsEntity.htm",
+    "title": "DeletedTicketLogs",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:28.989767+00:00",
+    "bytes": 50063,
+    "sha256": "f0760906cce3a776296de826ea763ff607d14a3d781845524b3eba0819490254",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DepartmentsEntity.htm",
+    "title": "Departments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.006547+00:00",
+    "bytes": 47478,
+    "sha256": "e02958658c75bea23de09cc9e36a33c09b327f3e46c6895ddf267d7dbe344c43",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentAttachmentsEntity.htm",
+    "title": "DocumentAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.063785+00:00",
+    "bytes": 76934,
+    "sha256": "134c8a67135fbe2de352410821f42a6653b8c3a90d9eb042a07cea1292266d59",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentCategoriesEntity.htm",
+    "title": "DocumentCategories",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.077824+00:00",
+    "bytes": 55244,
+    "sha256": "ff3c87008a65c8610d532118dea51ada3137a273f49b72b4479073c015609fcd",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentChecklistItemsEntity.htm",
+    "title": "DocumentChecklistItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.130540+00:00",
+    "bytes": 60308,
+    "sha256": "f2b9e27e762126485284b9832616daf00ab2de3b9892399061b6c151d4128c91",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentChecklistLibrariesEntity.htm",
+    "title": "DocumentChecklistLibraries",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.116699+00:00",
+    "bytes": 54034,
+    "sha256": "814873f3b9dcc5362b7c5ec8a5c19d8f98ab5806f66a6384b64176dda99e0944",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentConfigurationItemAssociationsEntity.htm",
+    "title": "DocumentConfigurationItemAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.182749+00:00",
+    "bytes": 54712,
+    "sha256": "aa1ac46797a3d71bee39345deed21fd250342bf26cb473affe0efbed8aa1dda7",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentConfigurationItemCategoryAssociationsEntity.htm",
+    "title": "DocumentConfigurationItemCategoryAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.190778+00:00",
+    "bytes": 54882,
+    "sha256": "e65478b5aa16fa1a883f6234fbb94dc4c2bf74e249fb9de755014acde798dedb",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentNotesEntity.htm",
+    "title": "DocumentNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.265963+00:00",
+    "bytes": 62941,
+    "sha256": "08cafdf3e72aa4175647fc0f5db692e5cdfc3996a8d422dad1f794b667c025f5",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentTagAssociationsEntity.htm",
+    "title": "DocumentTagAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.238903+00:00",
+    "bytes": 53564,
+    "sha256": "4dec1749d4a01e6b3b499d1a74119ed990b9c909fbab7e91c80de29ed40921e0",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentTicketAssociationsEntity.htm",
+    "title": "DocumentTicketAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.304523+00:00",
+    "bytes": 54926,
+    "sha256": "0ee408de0f4a5defce5b30d3f6f59e0bea6e6061b2ddb9994cd6caf1030583ef",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentToArticleAssociationsEntity.htm",
+    "title": "DocumentToArticleAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.333258+00:00",
+    "bytes": 55433,
+    "sha256": "f61aff85b7fb296a1f43735d6f9c63a20a725af22794dc2fed857b0dd680c67e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentsEntity.htm",
+    "title": "Documents",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.356077+00:00",
+    "bytes": 78276,
+    "sha256": "72ed14b628f1d62653999443992338dff4722f2c8c9d0a32c9ab48ce8ee681e6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DomainRegistrarsEntity.htm",
+    "title": "DomainRegistrars",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.371702+00:00",
+    "bytes": 46011,
+    "sha256": "4d12ed53d4d94e472df2dd6d6647e1db8f534fd0fb149b857a6fabf262bea47b",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseItemAttachmentsEntity.htm",
+    "title": "ExpenseItemAttachment",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.451867+00:00",
+    "bytes": 81375,
+    "sha256": "323d17a1373a03f63d62ec68da8708662a6eaeb57cf9a7bad5b8fb9a566075c1",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseItemsEntity.htm",
+    "title": "ExpenseItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.465318+00:00",
+    "bytes": 85180,
+    "sha256": "7ed19ed703795f438f5fba10844b40f2a618fbc09e2c9fd0983e0417eeb686b4",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseReportAttachmentsEntity.htm",
+    "title": "ExpenseReportAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.481662+00:00",
+    "bytes": 81059,
+    "sha256": "a90cece125df7a06f3384e88600dafd2494f3e4bd2d5e9ba67f025146618e07b",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseReportsEntity.htm",
+    "title": "ExpenseReports",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.494339+00:00",
+    "bytes": 78639,
+    "sha256": "23ce7a2d31874f5d13bf17521f561b35d541fb95507a8de73ba22eb4d1e407f7",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/HolidaySetsEntity.htm",
+    "title": "HolidaySets",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.552807+00:00",
+    "bytes": 45242,
+    "sha256": "d6b55ce4a0a818e46015c3539e7ed649af6137bbc125ba7208b326dcaf4b4a4e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/HolidaysEntity.htm",
+    "title": "Holidays",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.555342+00:00",
+    "bytes": 46737,
+    "sha256": "93d7e15be17601590586e58f7dc0db6c7be9cba3e7e2c795c12630ed29f3ac3c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InternalLocationWithBusinessHoursEntity.htm",
+    "title": "InternalLocationWithBusinessHours",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.605622+00:00",
+    "bytes": 98291,
+    "sha256": "1ca806f4e182266d30a7628445832d732c786d06b589561d5321903434b35469",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InternalLocationsEntity.htm",
+    "title": "InternalLocations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.616984+00:00",
+    "bytes": 58012,
+    "sha256": "b9eaa43d29d5ef412ec4c6cb27f6b43eb2d6017d14909c8766acc50dca2b2336",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryItemSerialNumbersEntity.htm",
+    "title": "InventoryItemSerialNumbers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.821398+00:00",
+    "bytes": 49625,
+    "sha256": "6efba8557d0d1361ae6f8ac68333cb70c85f616150571a6c12ad03cba7758859",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryItemsEntity.htm",
+    "title": "InventoryItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.666241+00:00",
+    "bytes": 69326,
+    "sha256": "ce5f7a80139b83108bda468e5b3573e4c37ed743932a9fe515a4c4486b53389f",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryLocationsEntity.htm",
+    "title": "InventoryLocations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.722099+00:00",
+    "bytes": 52601,
+    "sha256": "59fde0c33d84dcd621a29f743fb060670dcbebac5466288b7739f877da2efd3a",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryProductsEntity.htm",
+    "title": "InventoryProducts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.742749+00:00",
+    "bytes": 78745,
+    "sha256": "2f8dfc891601a35991c1e5b9357a49ca030ba9e2e6d1f3a45de074bb2e9f89ea",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItems.htm",
+    "title": "InventoryStockedItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.787349+00:00",
+    "bytes": 103122,
+    "sha256": "5214a65189a18df04d1764363fd589e348446c6df2e35ed3a304173c3d094a7d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsAdd.htm",
+    "title": "InventoryStockedItemsAdd",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.847626+00:00",
+    "bytes": 77803,
+    "sha256": "ef6f30ac0a9b0c9da864880761275179b95abb5e501fcf408d608b69650dcb58",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsRemove.htm",
+    "title": "InventoryStockedItemsRemove",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.907674+00:00",
+    "bytes": 69352,
+    "sha256": "735bc5af051df02248d27711495631fc47bf65f3e4ad43e7c3f2ce617340afd8",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsTransfer.htm",
+    "title": "InventoryStockedItemsTransfer",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.925917+00:00",
+    "bytes": 67302,
+    "sha256": "529014fc5fe8ce202ed11c34a5bfbf809b25bf0b36983b84b1d53ae0938e94e0",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryTransfersEntity.htm",
+    "title": "InventoryTransfers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.941167+00:00",
+    "bytes": 61446,
+    "sha256": "18096d9b6fccaa846333db82009bfc43fc27d0eac3b6f5a0fd10f79d09ac0473",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InvoiceTemplatesEntity.htm",
+    "title": "InvoiceTemplates",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.960389+00:00",
+    "bytes": 80746,
+    "sha256": "3b2fbbf98da39974769cb6df847ae39db1978a25fb6532184240e6f27c3703b1",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InvoicesEntity.htm",
+    "title": "Invoices",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:29.990572+00:00",
+    "bytes": 75960,
+    "sha256": "7d8fbeb79f07f5a579ba13660daf704cdb5bf25af681559b983df6e67d20fbe2",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/KnowledgeBaseArticlesEntity.htm",
+    "title": "KnowledgeBaseArticles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.052722+00:00",
+    "bytes": 72491,
+    "sha256": "dc62f07b4122fa71e99022e1770410a9698cce602ef130629e6720b9e805749d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/KnowledgeBaseCategoriesEntity.htm",
+    "title": "KnowledgeBaseCategories",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.106871+00:00",
+    "bytes": 56078,
+    "sha256": "093ec914ff2ca0c51566cdc5b52d4b2a788ebb0ec655ef49e66f0289e90345b8",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ModulesEntity.htm",
+    "title": "Modules",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.063678+00:00",
+    "bytes": 49935,
+    "sha256": "49fc60ddf2abef2de9b64c664c7c8b91578910fc99c25a83c89e56245871c051",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/NotificationHistoryEntity.htm",
+    "title": "NotificationHistory",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.119056+00:00",
+    "bytes": 66221,
+    "sha256": "73207c84848490129ea24150449a81481bc619f2286569573c0f814f64f57c45",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunitiesEntity.htm",
+    "title": "Opportunities",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.216092+00:00",
+    "bytes": 279475,
+    "sha256": "e7a2a7ad30145291df8068898021bebac13e98f99c15bd67b28476cce10579a9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunityAttachmentsEntity.htm",
+    "title": "OpportunityAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.171450+00:00",
+    "bytes": 62606,
+    "sha256": "b3d6bd0a8bd6326cf94391ae5d6a49c1f60fc9d13603442eb7ae9de707981603",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunityCategories.htm",
+    "title": "OpportunityCategories",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.225536+00:00",
+    "bytes": 49994,
+    "sha256": "16b1b79dea0ac7377ba88522bf4bdb58d6079e7eb781b670cee59f0e11727641",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevel1Entity.htm",
+    "title": "OrganizationalLevel1",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.232717+00:00",
+    "bytes": 47032,
+    "sha256": "d733c5a2e9ddcf8936ad497794c0e236748f3cf756283f0459dac4d3af2b7a5d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevel2Entity.htm",
+    "title": "OrganizationalLevel2",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.284927+00:00",
+    "bytes": 47118,
+    "sha256": "58a9ffccdec9c8a31c914d6c7f254a45cb36502825266d4a6dbfa7bca9182e4c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevelAssociationsEntity.htm",
+    "title": "OrganizationalLevelAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.349774+00:00",
+    "bytes": 51108,
+    "sha256": "700d9b851a682eed2f81f6c30983541b8ba0a17d8c08b621fca5307b09d56a28",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizatonalResourcesEntity.htm",
+    "title": "OrganizatonalResources",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.362057+00:00",
+    "bytes": 45834,
+    "sha256": "500cb616ba1018805925a443eb7f8af31877e32989f1e797b3477a99921c296d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PaymentTermsEntity.htm",
+    "title": "PaymentTerms",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.353698+00:00",
+    "bytes": 46568,
+    "sha256": "7a84c28f89d690a57715fc3850e7b683f5296faa14e363b7d22faf558013fd67",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PhasesEntity.htm",
+    "title": "Phases",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.351949+00:00",
+    "bytes": 58946,
+    "sha256": "d709486cd8018f8f2c4a3176d1449a50816cc4b429d12909d2171474ca997398",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListMaterialCodesEntity.htm",
+    "title": "PriceListMaterialCodes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.478330+00:00",
+    "bytes": 51647,
+    "sha256": "d3a615793e21f1158f26e9d288a02ec559abf4bfb32c21e4e89775d4fda21fc0",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListProductTiersEntity.htm",
+    "title": "PriceListProductTiers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.461780+00:00",
+    "bytes": 52847,
+    "sha256": "683e820743757d2229d8cd4bdc7564c89f3fe81238119b4b7f15e6298f199f96",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListProductsEntity.htm",
+    "title": "PriceListProducts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.487929+00:00",
+    "bytes": 51573,
+    "sha256": "7ec83549aa226eaf2f878219c5b012362da4ea3533bd0c382ca4b32493108fd4",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListRolesEntity.htm",
+    "title": "PriceListRoles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.475943+00:00",
+    "bytes": 51477,
+    "sha256": "027af4ff34ff2453fdb32ea1550ad0e4d4df68cacedee0ecd6a5eda222354349",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListServiceBundlesEntity.htm",
+    "title": "PriceListServiceBundles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.594082+00:00",
+    "bytes": 51743,
+    "sha256": "686d702fc07d2d3ac68980855c13af5633abaf27ea5ed23c58f635ebec340880",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListServicesEntity.htm",
+    "title": "PriceListServices",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.586674+00:00",
+    "bytes": 51656,
+    "sha256": "a46becc7e3e6b41473a13da012db2c7d5d7c693b845d5c503f2ef542c398c7d3",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListWorkTypeModifiersEntity.htm",
+    "title": "PriceListWorkTypeModifiers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.612829+00:00",
+    "bytes": 58214,
+    "sha256": "94d08937d93a221771a3cf6812bf3f295c682c2f7739264e37fb00a9e82d1aad",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductNotesEntity.htm",
+    "title": "ProductNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.615143+00:00",
+    "bytes": 56739,
+    "sha256": "6a7598351b8eaa2a3511c8b325349c7a395024d88ce576796f2862b6b990af46",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductTiersEntity.htm",
+    "title": "ProductTiers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.703417+00:00",
+    "bytes": 52430,
+    "sha256": "395ae73443ec0bc6181e0bac91ec91c0b64ae87ab88165c925566712de049e41",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductVendorsEntity.htm",
+    "title": "ProductVendors",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.663587+00:00",
+    "bytes": 55860,
+    "sha256": "ac5d25e20185c17ea9402f4e75771dba2cad6b02a724edfa05a0d7ef35fffca7",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductsEntity.htm",
+    "title": "Products",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.743298+00:00",
+    "bytes": 92665,
+    "sha256": "5a4f63d0eb2dcd7216690bb8383c2b678da2b782395d9a7e419e220760dec3f4",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectAttachmentsEntity.htm",
+    "title": "ProjectAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.724172+00:00",
+    "bytes": 65099,
+    "sha256": "b9c2f33ce8948ad8860c9112f1398373b69d4b6b5d31403d8eda3d62a277e096",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectChargesEntity.htm",
+    "title": "ProjectCharges",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.816625+00:00",
+    "bytes": 92578,
+    "sha256": "8ac0651c43f1b87ef021ffa73a6840071206f949bd76a17ae6a598ec41f3512a",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectNoteAttachmentsEntity.htm",
+    "title": "ProjectNoteAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.831686+00:00",
+    "bytes": 85687,
+    "sha256": "a51c1de16bd43c1daa1a0c0e8b7c90bb8d058b4b6b54ad26891dfcedb34332b9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectNotesEntity.htm",
+    "title": "ProjectNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.799809+00:00",
+    "bytes": 64486,
+    "sha256": "76bad46c43d0024c9d789dba0722980ffc8ddee4ddfd208e87e83eeb5e1d840c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectsEntity.htm",
+    "title": "Projects",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.868565+00:00",
+    "bytes": 106240,
+    "sha256": "85831570d4b207a0dea0d99e6398241f7e9c21f6d672a872c48cfb95ee716ed6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseApprovalsEntity.htm",
+    "title": "PurchaseApprovals",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.926546+00:00",
+    "bytes": 47131,
+    "sha256": "50055777ba37f1a5c63cbda4456b1a6d898e856a33ea6466224af5aa5b7056b6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrderItemReceivingEntity.htm",
+    "title": "PurchaseOrderItemReceiving",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.960672+00:00",
+    "bytes": 57515,
+    "sha256": "d17a1029d870e9d1d06c0183ebc29b3a45c2ad15840cea317ba72a9223b91aac",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrderItemsEntity.htm",
+    "title": "PurchaseOrderItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.943008+00:00",
+    "bytes": 67409,
+    "sha256": "63b0e54e739d8468ef5f0f18c31d08ac5390019ddcf0409d019fa2d4c68c8f07",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrdersEntity.htm",
+    "title": "PurchaseOrders",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:30.990852+00:00",
+    "bytes": 99784,
+    "sha256": "947b87f3aa52ce50428f42baf7b869e561a93ef950b29b6766ba0be1f314a8cf",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteItemsEntity.htm",
+    "title": "QuoteItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.081876+00:00",
+    "bytes": 89738,
+    "sha256": "52bdc4ff05320a0b2012372b1a758199c791eb681dc401e5d0429f8a090f8882",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteLocationsEntity.htm",
+    "title": "QuoteLocations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.053246+00:00",
+    "bytes": 46925,
+    "sha256": "db9270a63f14be4ba85a93aad0055255072a2e78f2ba47e67b2e3b36c52a2515",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteTemplatesEntity.htm",
+    "title": "QuoteTemplates",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.093033+00:00",
+    "bytes": 68252,
+    "sha256": "b29933473f90d44c7654311ce25f5619983958f53645901814c357116bd30080",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuotesEntity.htm",
+    "title": "Quotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.115746+00:00",
+    "bytes": 110429,
+    "sha256": "3f5b5bddc3f9677ec507ff78ea5480c2f13f07827b94da61180f0be809a19a58",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceAttachmentsEntity.htm",
+    "title": "ResourceAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.196102+00:00",
+    "bytes": 76891,
+    "sha256": "2c986e7effcdaa8fd2bcde798b128ab0b00c11f100720ee23f6ef6d67b6ce5b8",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceDailyAvailability.htm",
+    "title": "ResourceDailyAvailabilities",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.223782+00:00",
+    "bytes": 64699,
+    "sha256": "938c1e27f3f6ac3822fb34028d0e6ecd6b7770c089cff5daa73efc33a1284801",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRoleDepartmentsEntity.htm",
+    "title": "ResourceRoleDepartments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.214373+00:00",
+    "bytes": 52446,
+    "sha256": "b82477b5de6ac6d870db41fc42193dfd1b916af4e47c250eae0a9cabf2a3ddb8",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRoleQueuesEntity.htm",
+    "title": "ResourceRoleQueues",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.244447+00:00",
+    "bytes": 47247,
+    "sha256": "730d471b324c1c8b558a66b728a094e38756b0c9cd3cb1850821fcf536fbbf8f",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRolesEntity.htm",
+    "title": "ResourceRoles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.368086+00:00",
+    "bytes": 53322,
+    "sha256": "e4c121851e5ed44e076151597a909fe7ab6064d0a82efdcf523e27ccae4d071d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceServiceDeskRolesEntity.htm",
+    "title": "ResourceServiceDeskRoles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.337071+00:00",
+    "bytes": 48222,
+    "sha256": "3693081141ed747d9c71d63d3925a1a5d7bcae3d5842882247edf2827e721f95",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceSkillsEntity.htm",
+    "title": "ResourceSkills",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.339585+00:00",
+    "bytes": 48491,
+    "sha256": "2799e3af2a17a78ea9d14444b34e438c13821464e2ec6daa8bfd952a108b0ae9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffAdditionalEntity.htm",
+    "title": "ResourceTimeOffAdditional",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.366215+00:00",
+    "bytes": 76904,
+    "sha256": "ca02ab8d7ef0108fcb24f3f4c3af8753d02a76aca2a3a7114ffc40ff603156c0",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffApproversEntity.htm",
+    "title": "ResourceTimeOffApprovers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.514963+00:00",
+    "bytes": 49126,
+    "sha256": "e414173f4193eab976b1bcffbc8a8264ff1b358b91b6f2fc17ca5c7a7d8c70b3",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffBalanceEntity.htm",
+    "title": "ResourceTimeOffBalances",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.463239+00:00",
+    "bytes": 81210,
+    "sha256": "4ce61800bd46e9331093b843d0801b2b8ce5539e14ef8665d648d5f966933b83",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourcesEntity.htm",
+    "title": "Resources",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.443216+00:00",
+    "bytes": 102558,
+    "sha256": "5e71845020cf0f4e59a28838d037d8027e6a1cff8c04934cc94f3f24ed09ae11",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/RolesEntity.htm",
+    "title": "Roles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.478992+00:00",
+    "bytes": 53068,
+    "sha256": "116cc40d36c2c48710903086551d0bd0d4f5ebf2e9aa88287115acff27f3866b",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SalesOrderAttachmentsEntity.htm",
+    "title": "SalesOrderAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.560217+00:00",
+    "bytes": 76959,
+    "sha256": "4cabd12d9cb5d2c8bd0dd839c91672f012865caf0b249eea4f7bd83cb193de37",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SalesOrdersEntity.htm",
+    "title": "SalesOrders",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.588979+00:00",
+    "bytes": 71392,
+    "sha256": "db6a53696940cdaaa5cc9c204ba0593676941de7c7e6c0f74073185d17f4f791",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceBundleServicesEntity.htm",
+    "title": "ServiceBundleServices",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.611151+00:00",
+    "bytes": 47589,
+    "sha256": "f97302485abb42a98efef85596f50bbe1d0ff07ba1a28d8957edbc09969d32f3",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceBundlesEntity.htm",
+    "title": "ServiceBundles",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.655660+00:00",
+    "bytes": 69509,
+    "sha256": "0feb6b03613998dc7aad7ff84b235811e699a83d60af2db90a7dcee23bfd8610",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTaskResourceEntity.htm",
+    "title": "ServiceCallTaskResources",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.717985+00:00",
+    "bytes": 49093,
+    "sha256": "37c0d87e2790d1f9fc7a8ac71969455fcac2e61c9a75e0bad229a7f3e6e16653",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTasksEntity.htm",
+    "title": "ServiceCallTasks",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.733865+00:00",
+    "bytes": 53883,
+    "sha256": "ca0b5a6d0705bac64244c5a68fdbb956132d945eec8f621da852b54dc8dc1004",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTicketResourceEntity.htm",
+    "title": "ServiceCallTicketResources",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.731601+00:00",
+    "bytes": 49189,
+    "sha256": "59d0f7c64c160f393d8264e79dd3b7aab13b8bf6d6b8b4c2833d401437a07776",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTicketsEntity.htm",
+    "title": "ServiceCallTickets",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.776844+00:00",
+    "bytes": 59214,
+    "sha256": "2eba27d9b8181ad3fe7eb497e1d3046ac13090799d4a1a4f6c27b42d8e35c66c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallsEntity.htm",
+    "title": "ServiceCalls",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.826904+00:00",
+    "bytes": 72237,
+    "sha256": "0972c230998a887e8c78a5918bbb579b55bcdbc1992a56c0c8f09425ef9751e8",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceLevelAgreementResultsEntity.htm",
+    "title": "ServiceLevelAgreementResults",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.858887+00:00",
+    "bytes": 66165,
+    "sha256": "aa9f60129eaf7d6f6740b3b19bb9d23c68bfc05cf269bb278cc32db877af02a9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServicesEntity.htm",
+    "title": "Services",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.031504+00:00",
+    "bytes": 70086,
+    "sha256": "eaa05d6b8f04577660b5cdd088b99743647b3ecd85ad001b267209a59742d346",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ShippingTypesEntity.htm",
+    "title": "ShippingTypes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.894222+00:00",
+    "bytes": 45018,
+    "sha256": "3c8f948622b2f59d2277991f3d1c16aeb62bb3aba17dd7702f9a5423af65fb5c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SkillsEntity.htm",
+    "title": "Skills",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:31.949364+00:00",
+    "bytes": 47901,
+    "sha256": "4579bbef361da838e7a0309b1c1eb96a2708bb4b4e3887c2a8db1f546c3b0515",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SubscriptionPeriodsEntity.htm",
+    "title": "SubscriptionPeriods",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.013157+00:00",
+    "bytes": 51883,
+    "sha256": "f57f76d214244e519c4c3c751206a9aee1df64e56128eba428441ae3c660f46e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SubscriptionsEntity.htm",
+    "title": "Subscriptions",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.034008+00:00",
+    "bytes": 72663,
+    "sha256": "c78e3bf6441ea0830eaceda9ca9a1d281b70a2a4168f44e679d62eed51ed0eb1",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SurveyResultsEntity.htm",
+    "title": "SurveyResults",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.085022+00:00",
+    "bytes": 53998,
+    "sha256": "6862dcdee2af2bb3e3143225db1286334fe182f737514d8ce7de6d646b9ad1c9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SurveysEntity.htm",
+    "title": "Surveys",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.133589+00:00",
+    "bytes": 46034,
+    "sha256": "8233d4258e4e4513127242e5d4f67311d00c6a8aab1a22d1a73a14732c2e13af",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagAliasesEntity.htm",
+    "title": "TagAliases",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.167650+00:00",
+    "bytes": 54175,
+    "sha256": "e04e052a7a97370c48ccea30e9cc36e6ca830ea5fa914230add694c95fdf75d6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagGroupsEntity.htm",
+    "title": "TagGroups",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.121993+00:00",
+    "bytes": 53898,
+    "sha256": "a0361d93d9e3f8fdbd6373bedfeef97612e00818e1d32650a45e3a528a5f012e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagsEntity.htm",
+    "title": "Tags",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.211646+00:00",
+    "bytes": 65172,
+    "sha256": "b827773586c1b672e09e115cded8980a9bfc154ad26096a949a4642f5f337934",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskAttachmentsEntity.htm",
+    "title": "TaskAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.241766+00:00",
+    "bytes": 60275,
+    "sha256": "0615ca14ffa14af14460be45c36ae7b107254d93917257c9aef1a0f5067780fc",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskNoteAttachmentsEntity.htm",
+    "title": "TaskNoteAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.255767+00:00",
+    "bytes": 79225,
+    "sha256": "c2a399533805bd1d5d07d33a08802b0168bf179f5829a6fbbfc9d30661d6fac0",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskNotesEntity.htm",
+    "title": "TaskNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.366646+00:00",
+    "bytes": 63647,
+    "sha256": "6e1cb74df0e77773ca41391047aa01650d01711d80cab64e258d19a9653d3269",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskPredecessorsEntity.htm",
+    "title": "TaskPredecessors",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.358011+00:00",
+    "bytes": 49069,
+    "sha256": "816f226b34b5889fbbd24f876781d288dadbfb0e13838a1e50b1cab80716439a",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskSecondaryResourcesEntity.htm",
+    "title": "TaskSecondaryResources",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.373220+00:00",
+    "bytes": 48991,
+    "sha256": "690fb1d62246cce50fabc1649c4277e2998ca5eba02c47102e6aa8d6977d1805",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TasksEntity.htm",
+    "title": "Tasks",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.485517+00:00",
+    "bytes": 103905,
+    "sha256": "bb6ebe9c3886bda382cb3a5c48f5b4f9ac9c855d977b6b0d0145bca6e9752709",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxCategoriesEntity.htm",
+    "title": "TaxCategories",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.493705+00:00",
+    "bytes": 44796,
+    "sha256": "e04291216821a2ae972d7555d2c52c10c7def90bf4505389947036989de77ca9",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxRegionsEntity.htm",
+    "title": "TaxRegions",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.528603+00:00",
+    "bytes": 44591,
+    "sha256": "7be8e3f00b0263d6e973acea1bec1faf814586cc20b6b749986a66a07c2dd158",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxesEntity.htm",
+    "title": "Taxes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.519506+00:00",
+    "bytes": 49743,
+    "sha256": "893a0ff93a7621546ab180d5fd0270ddb331ab642a3e2704cf39f60d9b2e325f",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAdditionalConfigurationItemsEntity.htm",
+    "title": "TicketAdditionalConfigurationItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.596576+00:00",
+    "bytes": 47499,
+    "sha256": "69a53917460a0858adc5af1b4f0c44c41082af4c00af0cf9ea11c23751dde14d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAdditionalContactsEntity.htm",
+    "title": "TicketAdditionalContacts",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.607359+00:00",
+    "bytes": 47375,
+    "sha256": "7ce691da83566341d95466447e4cf341b328532ac180dfef0c6aca64ed5f63ac",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAttachmentsEntity.htm",
+    "title": "TicketAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.660392+00:00",
+    "bytes": 69880,
+    "sha256": "4dcc189ff2999921e02c5bc45ac1b7e8deb70ec5df287ab41ef381d1359eadaf",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketCategoriesEntity.htm",
+    "title": "TicketCategories",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.657678+00:00",
+    "bytes": 56769,
+    "sha256": "165defc41314ccf26391941613ed8e53ce7cead529a66f57c754528bb0e812e6",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketCategoryFieldDefaultsEntity.htm",
+    "title": "TicketCategoryFieldDefaults",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.705437+00:00",
+    "bytes": 64663,
+    "sha256": "a64d9249b14b4cc4cfd7bf97658e5c08b98e5c9c117dad437d6f6eab6a3a7e00",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChangeRequestApprovalsEntity.htm",
+    "title": "TicketChangeRequestApprovals",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.744703+00:00",
+    "bytes": 54211,
+    "sha256": "c3b9f8d3810fa165887075d456d51edd051663faebb97658679f9f384abc2d37",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChargesEntity.htm",
+    "title": "TicketCharges",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.732901+00:00",
+    "bytes": 89849,
+    "sha256": "635d112ce4d1f0217020dc1a50197dfe96b3f5241a91379d8580344146228a66",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChecklistItemsEntity.htm",
+    "title": "TicketChecklistItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.766522+00:00",
+    "bytes": 54157,
+    "sha256": "8205b6b3ce1d418ae3420e9c83f3275eeefc09c3874ef7e04135308e5d360d57",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChecklistLibrariesEntity.htm",
+    "title": "TicketChecklistLibraries",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.858838+00:00",
+    "bytes": 47857,
+    "sha256": "8a7d9fbb7f271ce92f68983db6c50970a33f85f82695a7979238fb1e47440b50",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketHistoryEntity.htm",
+    "title": "TicketHistory",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.867921+00:00",
+    "bytes": 51179,
+    "sha256": "de5c8333dc1ba54e3920c0a25bf1b85bea03380f182ed8dd9555dfc4780a3848",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketNoteAttachmentsEntity.htm",
+    "title": "TicketNoteAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.896015+00:00",
+    "bytes": 79234,
+    "sha256": "4fde0bd356848caf50afb6530e96cbd52eac5d149e1d4cc9641c1982ebd5d660",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketNotesEntity.htm",
+    "title": "TicketNotes",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.832486+00:00",
+    "bytes": 67265,
+    "sha256": "647b3e33380cf6bc01a4574c1974a36a6a3fa2d567cb21b85729f73bf0740f5d",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketRmaCreditsEntity.htm",
+    "title": "TicketRmaCredits",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.003399+00:00",
+    "bytes": 56491,
+    "sha256": "75daf69bf809ccc6f76a945b4e0d612d82a90b070fe9ff68436c8445ea7b6056",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketSecondaryResourcesEntity.htm",
+    "title": "TicketSecondaryResources",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:32.994921+00:00",
+    "bytes": 47571,
+    "sha256": "25fb44c09670d1a7ffffc262e9783ef26f4bb8563563d4858b49b4fe97b63005",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketTagAssociationsEntity.htm",
+    "title": "TicketTagAssociations",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.010260+00:00",
+    "bytes": 54316,
+    "sha256": "58b13345e2c64686ecb64eaa745016120cb821c048bda70879de8c64c17759bc",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketsEntity.htm",
+    "title": "Tickets",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.001906+00:00",
+    "bytes": 187665,
+    "sha256": "b04dda676d8ed645630c0f318843d36e17e2d28a14856b4cf140f3d346d77d90",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeEntriesEntity.htm",
+    "title": "TimeEntries",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.075019+00:00",
+    "bytes": 116332,
+    "sha256": "98c23586ba36fa5b34517e81dee413ef5ae0f5c4142ef78bf5b9070ab85eb409",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeEntryAttachmentsEntity.htm",
+    "title": "TimeEntryAttachments",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.152902+00:00",
+    "bytes": 83918,
+    "sha256": "8b8a82d249d36b45d657c76d38badebc26110d6031ff769536ec5bc9cb86510c",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsApproveEntity.htm",
+    "title": "TimeOffRequestsApprove",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.111937+00:00",
+    "bytes": 45358,
+    "sha256": "49894fc16a92b73ab3bd1bd6df2643908b3c89ecb625964f820d5a0662c23a5e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsEntity.htm",
+    "title": "TimeOffRequests",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.086708+00:00",
+    "bytes": 70323,
+    "sha256": "005caee45bf0f5bfa476a502c9e37d3a08924da7e6501a644e9cae1c1a5f5b16",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsRejectEntity.htm",
+    "title": "TimeOffRequestsReject",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.184052+00:00",
+    "bytes": 47057,
+    "sha256": "c228edd4566203a663d496ffe6a56aa5cdf498a062d2d9c66fa68428985b4b43",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/UserDefinedFieldDefinitionsEntity.htm",
+    "title": "UserDefinedFieldDefinitions",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.173183+00:00",
+    "bytes": 99672,
+    "sha256": "40a1554bb9efa8eca2037e6171ca36563b043a0bc6eea0a48c69f6272347596e",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/UserDefinedFieldListItemsEntity.htm",
+    "title": "UserDefinedFieldListItems",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.234517+00:00",
+    "bytes": 70243,
+    "sha256": "1864a0ac1e029d54f04349e9c4a861f179fd634c07bf4b39864e1eb0d55e9d0a",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/VersionEntity.htm",
+    "title": "Version",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.260585+00:00",
+    "bytes": 39897,
+    "sha256": "1fbd44e18bc965657cfc4cd09b6d7d699a07f982824fdc57c7305597b9c07190",
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/WorkTypeModifiersEntity.htm",
+    "title": "WorkTypeModifiers",
+    "evidence": "Extracted documentation; not runtime or tenant verified",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:44:33.283586+00:00",
+    "bytes": 49443,
+    "sha256": "6d76914b04edb2e64e8142134db5d4b0c87c9682e33226765fb105bab5f2da82",
+    "repository_copy": "Not retained; consult the source URL."
+  }
+]

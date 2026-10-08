@@ -1,0 +1,195 @@
+{
+  "status": "planned_not_run",
+  "cases": [
+    {
+      "id": "WF-01",
+      "scenario": "One authorized employee mapping and one authorized ticket match; request uses \u201cme\u201d and a ticket number",
+      "expected_outcome": "Correct mapped resource and ticket ID are resolved server-side. Return readable names with stable IDs; do not ask for a numeric ID or accept a caller-selected impersonation resource."
+    },
+    {
+      "id": "WF-02",
+      "scenario": "Supply the same ticket as a valid Autotask number, allowed native link and stable ID in separate runs",
+      "expected_outcome": "All representations resolve to the same authorized record. Wrong host, malformed URL or mismatched instance is rejected without arbitrary URL fetch or credential forwarding. A link does not confer access."
+    },
+    {
+      "id": "WF-03",
+      "scenario": "\u201cJohn at Acme\u201d has two authorized matches; another prohibited John also exists",
+      "expected_outcome": "Return one focused choice containing only permitted distinguishing facts. No mutation occurs and no hidden match/count is disclosed. Selecting one returned candidate still triggers fresh scope and relationship checks."
+    },
+    {
+      "id": "WF-04",
+      "scenario": "An otherwise unique company, contact, technician or queue match is prohibited, stale or belongs to the wrong parent",
+      "expected_outcome": "Deny or report a safe unresolved reference; never pick a different record merely to make the workflow succeed. Name search and direct-ID input enforce equivalent policy."
+    },
+    {
+      "id": "WF-05",
+      "scenario": "\u201cMy work today\u201d with a fixed clock, employee timezone, workspace timezone and a daylight-saving boundary",
+      "expected_outcome": "Use the configured employee timezone or the documented workspace fallback when no employee setting exists. Return the selected timezone and local date window with correct UTC bounds; no silent server-local-time interpretation."
+    },
+    {
+      "id": "WF-06",
+      "scenario": "Eligible role/work type can be uniquely selected by a versioned, reviewed Rarity rule",
+      "expected_outcome": "Choose the valid default without a clarification and return its value, source and rule version. A Thread-style hierarchy is used only if independently qualified for the relevant Autotask operation."
+    },
+    {
+      "id": "WF-07",
+      "scenario": "Suggested default is ineligible, missing or tied; explicit requested value conflicts with eligibility",
+      "expected_outcome": "Do not override explicit user intent or choose the first candidate. Return the exact missing/invalid input and permitted alternatives; dispatch no dependent mutation. Test metadata changing between selection and dispatch."
+    },
+    {
+      "id": "WF-08",
+      "scenario": "Request names work performed but supplies no duration, or asks for logging time without describing the work required by the schema",
+      "expected_outcome": "Ask only for genuinely missing business input or return the corresponding typed error. Do not infer duration from ticket age, appointment length or previous entries, and do not invent performed work, resolution or customer-facing prose."
+    },
+    {
+      "id": "WF-09",
+      "scenario": "Employee-required operation with missing, malformed, nonexistent, inactive, ambiguous, revoked or mismatched resource mapping",
+      "expected_outcome": "Reject before the requested business dispatch. No omitted impersonation header, default technician, integration-identity fallback or new approval path. Safe error explains how an authorized operator can correct the mapping."
+    },
+    {
+      "id": "WF-10",
+      "scenario": "Mapping or capability changes after workflow admission; identity validation is unavailable or upstream rejects impersonation",
+      "expected_outcome": "Stop the affected next step, queued item or retry under the original identity. Preserve completed effects and original mapping version. Do not transfer the workflow to the newly mapped employee or retry as a broader credential."
+    },
+    {
+      "id": "WF-11",
+      "scenario": "`ticket_context` with purpose `investigate`; notes, assets, related tickets and recent changes include both permitted and prohibited material",
+      "expected_outcome": "Return the relevant authorized evidence with source IDs/links, collection freshness and completeness. Include internal notes only when permitted; do not manufacture a causal explanation or expose excluded record counts."
+    },
+    {
+      "id": "WF-12",
+      "scenario": "`ticket_context` with purpose `continue_work`; past attempts, checklist items, multiple time pages and future scheduling exist",
+      "expected_outcome": "Distinguish attempted/completed/proposed work and outstanding items. Existing time comes from actual permitted entries, with an explicit date/scope basis for totals. Do not suggest logging a known existing entry again."
+    },
+    {
+      "id": "WF-13",
+      "scenario": "`ticket_context` with purpose `handoff` or `resolve`",
+      "expected_outcome": "Select the purpose-relevant ownership, blockers, requirements, existing resolution and time. Label absent or unavailable evidence. The read does not change owner/status or satisfy a requirement just by describing it."
+    },
+    {
+      "id": "WF-14",
+      "scenario": "Context collection exceeds a page/output budget; another child collection times out",
+      "expected_outcome": "Return per-collection completeness, usable continuation and a truthful partial result. A truncated presentation must not be labeled a complete history. Do not hide unavailable time or include it in a supposedly complete total."
+    },
+    {
+      "id": "WF-15",
+      "scenario": "Knowledge/similar-ticket matches include a plausible wrong fix and malicious instructions in source text",
+      "expected_outcome": "Return authorized source references and the stated relevance basis. Keep matches as evidence to assess, distinguish recommendations from executed actions, and perform no write or permission change because retrieved content requested one."
+    },
+    {
+      "id": "WF-16",
+      "scenario": "`ticket_document_work`: \u201cDocument the switch replacement internally and log 30 minutes\u201d with complete supplied work details and eligible defaults",
+      "expected_outcome": "Save exactly the requested internal documentation and 30 minutes for the mapped employee; verify both. Receipt names the note audience, saved IDs, duration/resource and selected defaults; ticket status remains unchanged; extra assignment/status arguments are rejected or routed by the client to the appropriate separate workflow."
+    },
+    {
+      "id": "WF-17",
+      "scenario": "`ticket_document_work` omits audience with no unambiguous employee instruction determining it, or has a missing tenant-required field or invalid duration",
+      "expected_outcome": "Resolve the missing input before any write. Do not silently publish externally, round time without the reviewed rule, or save a note while a known-invalid time step remains unvalidated."
+    },
+    {
+      "id": "WF-18",
+      "scenario": "`ticket_document_work` experiences first-step failure, second-step failure, accepted-but-response-lost or mismatched readback",
+      "expected_outcome": "Follow the declared dependency order. Definitive first-step failure blocks dependent steps; later failure reports exact saved and unsaved effects. Unknown outcome triggers reconciliation before repetition; no fabricated success, rollback or duplicate note/time."
+    },
+    {
+      "id": "WF-19",
+      "scenario": "`ticket_handoff`: \u201cAssign this to Jamie with these handoff notes,\u201d one eligible authorized Jamie",
+      "expected_outcome": "Validate target eligibility and all supplied inputs before writes, persist the requested handoff details, then perform the defined ownership change. Verify each effect and show the intended next owner, note audience and any scheduling effects."
+    },
+    {
+      "id": "WF-20",
+      "scenario": "`ticket_handoff` target is ambiguous, lacks queue eligibility or belongs outside authorized scope",
+      "expected_outcome": "No handoff mutation. Return a focused permitted choice or actionable eligibility error with only authorized alternatives. Do not reassign to another Jamie, alter the queue or schedule an appointment without requested intent."
+    },
+    {
+      "id": "WF-21",
+      "scenario": "Handoff note is saved but ownership update fails or owner changes concurrently",
+      "expected_outcome": "Report the saved note and failed/conflicted ownership step separately. Resume cannot recreate the note or overwrite a changed owner without satisfying the original preconditions; no claim that the ticket has been handed off until verified."
+    },
+    {
+      "id": "WF-22",
+      "scenario": "`ticket_resolve`: supplied resolution, 20 requested minutes and a valid completion status with all requirements satisfied",
+      "expected_outcome": "Validate all known prerequisites, persist the requested resolution and time in the declared order, and close only after required prior effects are established. Verify final state and return exact records, time and status."
+    },
+    {
+      "id": "WF-23",
+      "scenario": "Resolution request has an outstanding completion requirement, missing resolution text, invalid final status or forbidden time correction",
+      "expected_outcome": "Reject the known-invalid workflow before starting mutations. Return the unmet requirement safely; do not invent a resolution, bypass posted/billed restrictions or choose a different terminal state to force completion."
+    },
+    {
+      "id": "WF-24",
+      "scenario": "Resolution save fails, time outcome is unknown, or closing fails after prior effects succeed",
+      "expected_outcome": "No closure after a failed or unknown required prerequisite. If only closure fails, report the saved resolution/time and remaining status action. Recovery reconciles uncertainty and never logs the same time again."
+    },
+    {
+      "id": "WF-25",
+      "scenario": "`my_workday`: assigned tickets, scheduled work, due tasks and logged time span dates and pages",
+      "expected_outcome": "Return the employee's authorized local-day view with source links and separate collection completeness. Distinguish scheduled, due and recorded time; overlapping records must not be counted twice or presented as work already completed."
+    },
+    {
+      "id": "WF-26",
+      "scenario": "`my_workday` has a failed scheduling source, no data in one collection, or a caller requests another technician",
+      "expected_outcome": "Distinguish empty from unavailable. An authorized delegate needs the relevant capability/scope; ordinary \u201cme\u201d remains the signed-in employee. No hidden team or financial information leaks through totals or summaries."
+    },
+    {
+      "id": "WF-27",
+      "scenario": "`ticket_prepare_visit`: one authorized Acme appointment with contact/site, assets and relevant history",
+      "expected_outcome": "Return the correct appointment/site/contact, timezone, asset identifiers and relevant history with source links. Identify missing access/contact information without inventing it. The tool schedules, notifies or changes nothing."
+    },
+    {
+      "id": "WF-28",
+      "scenario": "Visit request matches multiple appointments/sites, a canceled appointment or a prohibited contact/asset",
+      "expected_outcome": "Ask only the needed appointment/site choice or report the current canceled/unavailable state. Parent scope applies to every related object. Never substitute a similarly named site or return secrets from protected fields."
+    },
+    {
+      "id": "WF-29",
+      "scenario": "Caller has ordinary ticket/time capability but not financial access; repeat with finance-entitled caller",
+      "expected_outcome": "Ordinary permitted work succeeds without disclosing protected rates, costs or margins. Explicit financial mutations require financial and domain permissions. Apply restrictions to filters, sorting, candidate explanations, totals, caches, receipts and errors as well as record fields."
+    },
+    {
+      "id": "WF-30",
+      "scenario": "Same bulk/destructive/billing action is permitted for one actor and forbidden for another",
+      "expected_outcome": "Permitted valid request enters execution without an MCP approval step; denied request has no approval escalation route. Mixed-permission workflow/target sets fail preflight as defined, and every later step is reauthorized. Client confirmations are recorded separately."
+    },
+    {
+      "id": "WF-31",
+      "scenario": "Repeat a mutation with the same request key and payload; then reuse the key with changed target, content, duration or actor",
+      "expected_outcome": "Repeated identical requests return/reconcile the original operation outcome without duplicate effects. Changed canonical payload or actor conflicts. Stable child-step keys remain bound to the parent operation and intended effect."
+    },
+    {
+      "id": "WF-32",
+      "scenario": "`at_operation_resume` targets a successful note plus definitively failed time step; a separate fixture has verified note/time plus an unknown status outcome",
+      "expected_outcome": "Preserve original immutable payload, actor and mapping. Only definitively failed or undispatched work can resume with fresh permissions/preconditions; reconcile unknown effects first. Do not silently edit payload, repeat completed steps or treat resume as unconditional retry."
+    },
+    {
+      "id": "WF-33",
+      "scenario": "Receipt follows verified, partial, accepted-unverified, failed and unknown outcomes",
+      "expected_outcome": "Plain text and structured status agree. Identify completed effects/IDs, selected defaults, actual resource, audience, status, verification and next safe action as applicable. No all-or-nothing success statement, invisible incomplete step or invented native attribution."
+    },
+    {
+      "id": "WF-34",
+      "scenario": "Tool selection and playbook retrieval for triage, documentation, handoff, resolution and time review",
+      "expected_outcome": "Descriptions let the client choose the appropriate named workflow, required inputs and related alternative. `at_playbook_list`/`at_playbook_get` return the intended version and role-appropriate guidance; no optional prompt/resource feature is required for core behavior."
+    },
+    {
+      "id": "WF-35",
+      "scenario": "Same core prompt suite through supported Codex, ChatGPT, Claude and, where included in release scope, Claude Code configurations",
+      "expected_outcome": "Correct tool choice, identity, audience, time and outcome semantics survive each client. Capture actual versions, transport/auth setup and settings. Client-specific UX can differ; security and persisted business outcomes cannot."
+    },
+    {
+      "id": "WF-36",
+      "scenario": "Another technician receives only the workflow receipt and linked permitted context",
+      "expected_outcome": "That technician can identify what changed, for whom, what remains and the next owner/action. Reviewer must distinguish an attempted fix from a confirmed resolution and internal documentation from customer-visible communication."
+    },
+    {
+      "id": "WF-37",
+      "scenario": "Realistic denied fields, secret canaries, malicious notes and another actor's cached result appear during resolution/context/error handling",
+      "expected_outcome": "No credential/protected-field/cross-actor disclosure in tool output, logs, traces, telemetry or support exports. Fresh authorization applies to candidate tokens, continuations, resources and record links when dereferenced through the service."
+    },
+    {
+      "id": "WF-38",
+      "scenario": "Twenty active simulated staff mix context reads, documentation writes, handoffs, resolutions and day/visit views",
+      "expected_outcome": "Respect the configured shared API budget and per-operation limits while measuring fairness, queueing, useful completions and latency. Faults and overload are explicit; no successful duplicate mutation or identity mix-up under concurrency."
+    }
+  ]
+}

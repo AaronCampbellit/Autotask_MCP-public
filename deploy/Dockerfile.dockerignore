@@ -1,0 +1,14 @@
+.git
+.github
+node_modules
+work
+docs
+.env
+.env.*
+*.log
+*.zip
+**/__pycache__
+**/*.pyc
+# Only the instructions belong in the image context, not operator tenant evidence.
+deploy/metadata/*
+!deploy/metadata/README.md

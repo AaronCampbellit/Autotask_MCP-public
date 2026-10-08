@@ -1,0 +1,10 @@
+import { z } from 'zod';
+// File content is transported unchanged, never interpreted or executed here.
+export const mimeSchema = z.string().max(200).regex(/^[A-Za-z0-9!#$&^_.+-]+\/[A-Za-z0-9!#$&^_.+-]+$/);
+export const filenameSchema = z.string().min(1).max(200).refine(v=>!/[\x00-\x1f\x7f/\\:"<>|?*]/.test(v)&&!(/^[. ]|[. ]$/.test(v))&&!/^(?:CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])(?:\.|$)/i.test(v),'Use the original simple filename without paths or control characters.');
+const types:Record<string,string>={txt:'text/plain',log:'text/plain',csv:'text/csv',tsv:'text/tab-separated-values',json:'application/json',xml:'application/xml',html:'text/html',htm:'text/html',md:'text/markdown',yaml:'application/yaml',yml:'application/yaml',pdf:'application/pdf',png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg',gif:'image/gif',webp:'image/webp',svg:'image/svg+xml',bmp:'image/bmp',tif:'image/tiff',tiff:'image/tiff',ico:'image/vnd.microsoft.icon',doc:'application/msword',docx:'application/vnd.openxmlformats-officedocument.wordprocessingml.document',xls:'application/vnd.ms-excel',xlsx:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',xlsm:'application/vnd.ms-excel.sheet.macroEnabled.12',ppt:'application/vnd.ms-powerpoint',pptx:'application/vnd.openxmlformats-officedocument.presentationml.presentation',rtf:'application/rtf',odt:'application/vnd.oasis.opendocument.text',ods:'application/vnd.oasis.opendocument.spreadsheet',odp:'application/vnd.oasis.opendocument.presentation',zip:'application/zip','7z':'application/x-7z-compressed',gz:'application/gzip',tar:'application/x-tar',rar:'application/vnd.rar',eml:'message/rfc822',msg:'application/vnd.ms-outlook',mp3:'audio/mpeg',wav:'audio/wav',mp4:'video/mp4',mov:'video/quicktime'};
+export function fileMime(filename:string,hint?:string):string {
+ const extension=filename.includes('.')?filename.split('.').at(-1)!.toLowerCase():'';
+ // Prefer the original extension for known types, including CSV mislabelled text/plain by clients.
+ return (Object.hasOwn(types,extension) ? types[extension] : undefined) ?? (hint && mimeSchema.safeParse(hint).success ? hint : 'application/octet-stream');
+}

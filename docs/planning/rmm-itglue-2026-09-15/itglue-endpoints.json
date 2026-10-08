@@ -1,0 +1,2771 @@
+[
+  {
+    "resource": "User Metrics",
+    "method": "GET",
+    "path": "/user_metrics",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1accounts_user_metrics_daily__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Users",
+    "method": "GET",
+    "path": "/users",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1accounts_users__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Users",
+    "method": "GET",
+    "path": "/users/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1accounts_users__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Users",
+    "method": "PATCH",
+    "path": "/users/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1accounts_users__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Users",
+    "method": "PATCH",
+    "path": "/users",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1accounts_users__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Attachments",
+    "method": "GET",
+    "path": "/:resource_type/:resource_id/relationships/attachments",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1attachments__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Attachments",
+    "method": "GET",
+    "path": "/:resource_type/:resource_id/relationships/attachments/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1attachments__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Attachments",
+    "method": "POST",
+    "path": "/:resource_type/:resource_id/relationships/attachments",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1attachments__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Attachments",
+    "method": "PATCH",
+    "path": "/:resource_type/:resource_id/relationships/attachments/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1attachments__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Attachments",
+    "method": "DELETE",
+    "path": "/:resource_type/:resource_id/relationships/attachments",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1attachments__bulk_destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "GET",
+    "path": "/checklists",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/checklists"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/checklists",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/checklists"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "GET",
+    "path": "/checklists/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/checklists/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/checklists/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/checklists/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "PATCH",
+    "path": "/checklists/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/checklists/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/checklists/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/checklists/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "PATCH",
+    "path": "/checklists",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__bulk_update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/checklists"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/checklists",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__bulk_update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/checklists"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "DELETE",
+    "path": "/checklists",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/organizations/:organization_id/relationships/checklists"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Checklists",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/checklists",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1checklists__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/checklists"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "GET",
+    "path": "/configurations/:configuration_id/relationships/configuration_interfaces",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "GET",
+    "path": "/configuration_interfaces/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/configurations/:configuration_id/relationships/configuration_interfaces/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "GET",
+    "path": "/configurations/:configuration_id/relationships/configuration_interfaces/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/configuration_interfaces/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "POST",
+    "path": "/configuration_interfaces",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/configurations/:configuration_id/relationships/configuration_interfaces"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "POST",
+    "path": "/configurations/:configuration_id/relationships/configuration_interfaces",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/configuration_interfaces"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "PATCH",
+    "path": "/configuration_interfaces/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/configurations/:configuration_id/relationships/configuration_interfaces/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "PATCH",
+    "path": "/configurations/:configuration_id/relationships/configuration_interfaces/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/configuration_interfaces/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "PATCH",
+    "path": "/configuration_interfaces",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Interfaces",
+    "method": "DELETE",
+    "path": "/configurations/:configuration_id/relationships/configuration_interfaces/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_interfaces__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Statuses",
+    "method": "GET",
+    "path": "/configuration_statuses",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_statuses__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Statuses",
+    "method": "GET",
+    "path": "/configuration_statuses/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_statuses__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Statuses",
+    "method": "POST",
+    "path": "/configuration_statuses",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_statuses__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Statuses",
+    "method": "PATCH",
+    "path": "/configuration_statuses/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_statuses__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Types",
+    "method": "GET",
+    "path": "/configuration_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_types__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Types",
+    "method": "GET",
+    "path": "/configuration_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_types__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Types",
+    "method": "POST",
+    "path": "/configuration_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_types__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Types",
+    "method": "PATCH",
+    "path": "/configuration_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_types__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configuration Types",
+    "method": "DELETE",
+    "path": "/configuration_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configuration_types__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "GET",
+    "path": "/configurations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/configurations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/configurations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/configurations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "GET",
+    "path": "/configurations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/configurations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/configurations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/configurations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "POST",
+    "path": "/configurations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/organizations/:organization_id/relationships/configurations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/configurations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/configurations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "PATCH",
+    "path": "/configurations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/configurations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/configurations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/configurations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "PATCH",
+    "path": "/configurations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "DELETE",
+    "path": "/configurations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/organizations/:organization_id/relationships/configurations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Configurations",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/configurations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1configurations__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/configurations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contact Types",
+    "method": "GET",
+    "path": "/contact_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contact_types__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contact Types",
+    "method": "GET",
+    "path": "/contact_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contact_types__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contact Types",
+    "method": "POST",
+    "path": "/contact_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contact_types__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contact Types",
+    "method": "PATCH",
+    "path": "/contact_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contact_types__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contact Types",
+    "method": "DELETE",
+    "path": "/contact_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contact_types__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "GET",
+    "path": "/contacts",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/contacts"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/contacts",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/contacts"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "GET",
+    "path": "/contacts/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/contacts/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/contacts/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/contacts/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "POST",
+    "path": "/contacts",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/organizations/:organization_id/relationships/contacts"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/contacts",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/contacts"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "PATCH",
+    "path": "/contacts/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/contacts/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/contacts/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/contacts/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "PATCH",
+    "path": "/contacts",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "DELETE",
+    "path": "/contacts",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/organizations/:organization_id/relationships/contacts"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Contacts",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/contacts",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1contacts__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/contacts"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Countries",
+    "method": "GET",
+    "path": "/countries",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1countries__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Countries",
+    "method": "GET",
+    "path": "/countries/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1countries__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Related Items",
+    "method": "POST",
+    "path": "/:resource_type/:resource_id/relationships/related_items",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1related_items__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Related Items",
+    "method": "PATCH",
+    "path": "/:resource_type/:resource_id/relationships/related_items/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1related_items__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Related Items",
+    "method": "DELETE",
+    "path": "/:resource_type/:resource_id/relationships/related_items",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1related_items__bulk_destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Images",
+    "method": "GET",
+    "path": "/document_images/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentimages__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Images",
+    "method": "POST",
+    "path": "/document_images",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentimages__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Images",
+    "method": "DELETE",
+    "path": "/document_images/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentimages__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Sections",
+    "method": "GET",
+    "path": "/documents/:document_id/relationships/sections",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentsections__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Sections",
+    "method": "GET",
+    "path": "/documents/:document_id/relationships/sections/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentsections__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Sections",
+    "method": "POST",
+    "path": "/documents/:document_id/relationships/sections",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentsections__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Sections",
+    "method": "PATCH",
+    "path": "/documents/:document_id/relationships/sections/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentsections__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Sections",
+    "method": "DELETE",
+    "path": "/documents/:document_id/relationships/sections/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documentsections__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Folders",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/document_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1document_folders__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Folders",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/document_folders/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1document_folders__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Folders",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/document_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1document_folders__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Folders",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/document_folders/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1document_folders__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Folders",
+    "method": "PATCH",
+    "path": "/document_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1document_folders__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Document Folders",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/document_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1document_folders__bulk_destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/documents",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "GET",
+    "path": "/documents/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/documents/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/documents/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/documents/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "POST",
+    "path": "/documents",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/organizations/:organization_id/relationships/documents"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/documents",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/documents"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "PATCH",
+    "path": "/documents/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/documents/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/documents/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/documents/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "PATCH",
+    "path": "/documents",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "PATCH",
+    "path": "/documents/:id/publish",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__publish",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/documents/:id/publish"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/documents/:id/publish",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__publish",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/documents/:id/publish"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "DELETE",
+    "path": "/documents",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/organizations/:organization_id/relationships/documents"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Documents",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/documents",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1documents__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/documents"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Domains",
+    "method": "GET",
+    "path": "/domains",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1domains__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/domains"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Domains",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/domains",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1domains__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/domains"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Expirations",
+    "method": "GET",
+    "path": "/expirations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1expirations__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/expirations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Expirations",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/expirations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1expirations__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/expirations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Expirations",
+    "method": "GET",
+    "path": "/expirations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1expirations__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/expirations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Expirations",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/expirations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1expirations__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/expirations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Exports",
+    "method": "GET",
+    "path": "/exports",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1exports__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Exports",
+    "method": "GET",
+    "path": "/exports/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1exports__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Exports",
+    "method": "POST",
+    "path": "/exports",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1exports__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Exports",
+    "method": "DELETE",
+    "path": "/exports/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1exports__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "GET",
+    "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "GET",
+    "path": "/flexible_asset_fields/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "GET",
+    "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/flexible_asset_fields/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "POST",
+    "path": "/flexible_asset_fields",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "POST",
+    "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/flexible_asset_fields"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "PATCH",
+    "path": "/flexible_asset_fields/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "PATCH",
+    "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/flexible_asset_fields/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "PATCH",
+    "path": "/flexible_asset_fields",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "DELETE",
+    "path": "/flexible_asset_fields/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Fields",
+    "method": "DELETE",
+    "path": "/flexible_asset_types/:flexible_asset_type_id/relationships/flexible_asset_fields/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_fields__destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/flexible_asset_fields/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Types",
+    "method": "GET",
+    "path": "/flexible_asset_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_types__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Types",
+    "method": "GET",
+    "path": "/flexible_asset_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_types__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Types",
+    "method": "POST",
+    "path": "/flexible_asset_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_types__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Types",
+    "method": "PATCH",
+    "path": "/flexible_asset_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_types__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Asset Types",
+    "method": "DELETE",
+    "path": "/flexible_asset_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_asset_types__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "GET",
+    "path": "/flexible_assets",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "GET",
+    "path": "/flexible_assets/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "POST",
+    "path": "/flexible_assets",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/organizations/:organization_id/relationships/flexible_assets"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/flexible_assets",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/flexible_assets"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "PATCH",
+    "path": "/flexible_assets/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "PATCH",
+    "path": "/flexible_assets",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "DELETE",
+    "path": "/flexible_assets/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Flexible Assets",
+    "method": "DELETE",
+    "path": "/flexible_assets",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1flexible_assets__bulk_destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Groups",
+    "method": "GET",
+    "path": "/groups",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1groups__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Groups",
+    "method": "GET",
+    "path": "/groups/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1groups__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Groups",
+    "method": "POST",
+    "path": "/groups",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1groups__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Groups",
+    "method": "DELETE",
+    "path": "/groups/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1groups__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Groups",
+    "method": "PATCH",
+    "path": "/groups/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1groups__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Groups",
+    "method": "PATCH",
+    "path": "/groups",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1groups__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "GET",
+    "path": "/locations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/locations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/locations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/locations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "GET",
+    "path": "/locations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/locations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/locations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/locations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "POST",
+    "path": "/locations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/organizations/:organization_id/relationships/locations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/locations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/locations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "PATCH",
+    "path": "/locations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/locations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/locations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/locations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "PATCH",
+    "path": "/locations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "DELETE",
+    "path": "/locations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/organizations/:organization_id/relationships/locations/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Locations",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/locations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1locations__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/locations"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Logs",
+    "method": "GET",
+    "path": "/logs",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1logs__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Manufacturers",
+    "method": "GET",
+    "path": "/manufacturers",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1manufacturers__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Manufacturers",
+    "method": "GET",
+    "path": "/manufacturers/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1manufacturers__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Manufacturers",
+    "method": "POST",
+    "path": "/manufacturers",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1manufacturers__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Manufacturers",
+    "method": "PATCH",
+    "path": "/manufacturers/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1manufacturers__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "GET",
+    "path": "/models",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/manufacturers/:manufacturer_id/relationships/models"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "GET",
+    "path": "/manufacturers/:manufacturer_id/relationships/models",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/models"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "GET",
+    "path": "/models/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/manufacturers/:manufacturer_id/relationships/models/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "GET",
+    "path": "/manufacturers/:manufacturer_id/relationships/models/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/models/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "POST",
+    "path": "/models",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/manufacturers/:manufacturer_id/relationships/models"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "POST",
+    "path": "/manufacturers/:manufacturer_id/relationships/models",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/models"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "PATCH",
+    "path": "/models/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/manufacturers/:manufacturer_id/relationships/models/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "PATCH",
+    "path": "/manufacturers/:manufacturer_id/relationships/models/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/models/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Models",
+    "method": "PATCH",
+    "path": "/models",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1models__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Operating Systems",
+    "method": "GET",
+    "path": "/operating_systems",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1operating_systems__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Operating Systems",
+    "method": "GET",
+    "path": "/operating_systems/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1operating_systems__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Statuses",
+    "method": "GET",
+    "path": "/organization_statuses",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_statuses__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Statuses",
+    "method": "GET",
+    "path": "/organization_statuses/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_statuses__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Statuses",
+    "method": "POST",
+    "path": "/organization_statuses",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_statuses__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Statuses",
+    "method": "PATCH",
+    "path": "/organization_statuses/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_statuses__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Statuses",
+    "method": "DELETE",
+    "path": "/organization_statuses/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_statuses__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Types",
+    "method": "GET",
+    "path": "/organization_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_types__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Types",
+    "method": "GET",
+    "path": "/organization_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_types__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Types",
+    "method": "POST",
+    "path": "/organization_types",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_types__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Types",
+    "method": "PATCH",
+    "path": "/organization_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_types__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organization Types",
+    "method": "DELETE",
+    "path": "/organization_types/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organization_types__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organizations",
+    "method": "GET",
+    "path": "/organizations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organizations__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organizations",
+    "method": "GET",
+    "path": "/organizations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organizations__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organizations",
+    "method": "POST",
+    "path": "/organizations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organizations__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organizations",
+    "method": "PATCH",
+    "path": "/organizations/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organizations__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organizations",
+    "method": "PATCH",
+    "path": "/organizations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organizations__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Organizations",
+    "method": "DELETE",
+    "path": "/organizations",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1organizations__bulk_destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Categories",
+    "method": "GET",
+    "path": "/password_categories",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_categories__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Categories",
+    "method": "GET",
+    "path": "/password_categories/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_categories__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Categories",
+    "method": "POST",
+    "path": "/password_categories",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_categories__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Categories",
+    "method": "PATCH",
+    "path": "/password_categories/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_categories__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Folders",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/password_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_folders__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Folders",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/password_folders/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_folders__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Folders",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/password_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_folders__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Folders",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/password_folders/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_folders__update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Folders",
+    "method": "PATCH",
+    "path": "/password_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_folders__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Password Folders",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/password_folders",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1password_folders__bulk_destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "GET",
+    "path": "/passwords",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/passwords"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/passwords",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/passwords"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "GET",
+    "path": "/passwords/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/passwords/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "GET",
+    "path": "/organizations/:organization_id/relationships/passwords/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/passwords/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "POST",
+    "path": "/passwords",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/organizations/:organization_id/relationships/passwords"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "POST",
+    "path": "/organizations/:organization_id/relationships/passwords",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__create",
+    "documented_aliases": [
+      {
+        "method": "POST",
+        "path": "/passwords"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "PATCH",
+    "path": "/passwords/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/organizations/:organization_id/relationships/passwords/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "PATCH",
+    "path": "/organizations/:organization_id/relationships/passwords/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__update",
+    "documented_aliases": [
+      {
+        "method": "PATCH",
+        "path": "/passwords/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "PATCH",
+    "path": "/passwords",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "DELETE",
+    "path": "/passwords",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/organizations/:organization_id/relationships/passwords/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "DELETE",
+    "path": "/organizations/:organization_id/relationships/passwords/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__bulk_destroy",
+    "documented_aliases": [
+      {
+        "method": "DELETE",
+        "path": "/passwords"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Passwords",
+    "method": "DELETE",
+    "path": "/passwords/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1passwords__destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Platforms",
+    "method": "GET",
+    "path": "/platforms",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1platforms__index",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Platforms",
+    "method": "GET",
+    "path": "/platforms/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1platforms__show",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Regions",
+    "method": "GET",
+    "path": "/regions",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1regions__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/countries/:country_id/relationships/regions"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Regions",
+    "method": "GET",
+    "path": "/countries/:country_id/relationships/regions",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1regions__index",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/regions"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Regions",
+    "method": "GET",
+    "path": "/regions/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1regions__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/countries/:country_id/relationships/regions/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Regions",
+    "method": "GET",
+    "path": "/countries/:country_id/relationships/regions/:id",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1regions__show",
+    "documented_aliases": [
+      {
+        "method": "GET",
+        "path": "/regions/:id"
+      }
+    ],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Resource Accesses",
+    "method": "POST",
+    "path": "/:resource_type/:resource_id/relationships/resource_accesses",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1resource_accesses__create",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Resource Accesses",
+    "method": "PATCH",
+    "path": "/:resource_type/:resource_id/relationships/resource_accesses",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1resource_accesses__bulk_update",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  },
+  {
+    "resource": "Resource Accesses",
+    "method": "DELETE",
+    "path": "/:resource_type/:resource_id/relationships/resource_accesses",
+    "anchor": null,
+    "source_url": "https://api.itglue.com/developer/",
+    "implementation_status": "not_implemented_by_this_plan",
+    "documentation_group": "page__apiv1resource_accesses__bulk_destroy",
+    "documented_aliases": [],
+    "schema_status": "Consult source_url for parameters, field conditions and examples; no copied prose retained."
+  }
+]

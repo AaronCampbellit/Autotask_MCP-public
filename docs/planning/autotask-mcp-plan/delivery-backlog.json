@@ -1,0 +1,218 @@
+[
+  {
+    "id": "WP-01",
+    "deliverable": "Resolve product decisions, role templates, test environment and sizing assumptions",
+    "dependencies": "User decisions",
+    "exit_evidence": "Published decisions with owners; unresolved release gates explicit"
+  },
+  {
+    "id": "WP-02",
+    "deliverable": "Review all entity-operation routes, metadata and conditional rules; resolve index discrepancies",
+    "dependencies": "Captured reference",
+    "exit_evidence": "Registry entries plus supported/unsupported/unknown ledger"
+  },
+  {
+    "id": "WP-03",
+    "deliverable": "Choose supported runtime/SDK/auth library; minimal protocol compatibility spike",
+    "dependencies": "WP-01",
+    "exit_evidence": "Supported revision matrix; no beta dependency assumed necessary"
+  },
+  {
+    "id": "WP-04",
+    "deliverable": "Entra direct-client interoperability; broker fallback decision if needed",
+    "dependencies": "WP-03",
+    "exit_evidence": "Actual Codex/ChatGPT/Claude OAuth flows and callbacks proven"
+  },
+  {
+    "id": "WP-05",
+    "deliverable": "Portable repo, build, CI, containers, migrations and dependency policy",
+    "dependencies": "WP-03",
+    "exit_evidence": "Reproducible dev/test build and empty deployment readiness"
+  },
+  {
+    "id": "WP-06",
+    "deliverable": "PostgreSQL identity, policy, journal, jobs, artifacts and audit schema",
+    "dependencies": "WP-05",
+    "exit_evidence": "Migration/rollback/restore tests; keys and indexes enforce invariants"
+  },
+  {
+    "id": "WP-07",
+    "deliverable": "Secure Entra-to-resource mapping, required impersonation validation, role bindings, session checks and revocation",
+    "dependencies": "WP-04, WP-06",
+    "exit_evidence": "AUTH-01\u201308; invalid identity blocks dispatch and never falls back"
+  },
+  {
+    "id": "WP-08",
+    "deliverable": "Capability, record and field policy engine; policy simulator",
+    "dependencies": "WP-02, WP-07",
+    "exit_evidence": "POL cases including child routes, counts, wrappers and exports"
+  },
+  {
+    "id": "WP-09",
+    "deliverable": "Autotask HTTP/zone client, required impersonation headers, deadlines, error taxonomy and credential isolation",
+    "dependencies": "WP-02, WP-05",
+    "exit_evidence": "API errors, destination validation and no identity fallback on retries/pagination"
+  },
+  {
+    "id": "WP-10",
+    "deliverable": "Metadata/picklist/UDF registry compiler and drift detection",
+    "dependencies": "WP-02, WP-09",
+    "exit_evidence": "Versioned schemas and reviewed drift behavior"
+  },
+  {
+    "id": "WP-11",
+    "deliverable": "Root/child query engine, cursors and complete read envelopes",
+    "dependencies": "WP-08, WP-09, WP-10",
+    "exit_evidence": "Pagination/completeness and scope tests"
+  },
+  {
+    "id": "WP-12",
+    "deliverable": "Mutation service, operation journal, idempotency and readback",
+    "dependencies": "WP-06, WP-08, WP-09, WP-10",
+    "exit_evidence": "WRITE cases, no PATCH-to-PUT fallback"
+  },
+  {
+    "id": "WP-13",
+    "deliverable": "Direct execution permission matrix and dispatch enforcement across routine, bulk, destructive and billing actions",
+    "dependencies": "WP-07, WP-08, WP-12",
+    "exit_evidence": "EXEC cases; allowed actions execute directly and forbidden actions cannot escalate"
+  },
+  {
+    "id": "WP-14",
+    "deliverable": "Mandatory named technician catalog, supporting discovery/invocation and result contracts",
+    "dependencies": "WP-03, WP-08, WP-11, WP-12",
+    "exit_evidence": "BENCH-02/03; all mandatory named tools exposed for entitled users, no wrapper bypass"
+  },
+  {
+    "id": "WP-15",
+    "deliverable": "Durable worker, jobs, checkpoints, cancellation and capacity controls",
+    "dependencies": "WP-06, WP-12, WP-13",
+    "exit_evidence": "JOB and crash/recovery cases"
+  },
+  {
+    "id": "WP-16",
+    "deliverable": "Mandatory ticket search/context/update/note workflows first; remaining history/checklist pack follows",
+    "dependencies": "WP-11, WP-12, WP-14, WP-17 time-read slice for context",
+    "exit_evidence": "DOM-TICKET; BENCH-03/04 with authorized internal notes and actual time entries"
+  },
+  {
+    "id": "WP-17",
+    "deliverable": "Mandatory ticket time logging and existing-entry search first; task/internal time and expense pack follows",
+    "dependencies": "WP-11, WP-12, WP-14",
+    "exit_evidence": "DOM-TIME; BENCH-03/05 with readback and duplicate recovery"
+  },
+  {
+    "id": "WP-18",
+    "deliverable": "CRM and protected site/contact data pack",
+    "dependencies": "WP-11, WP-12, WP-14",
+    "exit_evidence": "DOM-CRM and field access checks"
+  },
+  {
+    "id": "WP-19",
+    "deliverable": "Mandatory schedule search and ticket service-call creation first; remaining availability/time-off pack follows",
+    "dependencies": "WP-11, WP-12, WP-14",
+    "exit_evidence": "DOM-SCHEDULE; BENCH-03 with attribution and partial association recovery"
+  },
+  {
+    "id": "WP-20",
+    "deliverable": "Projects/phases/tasks/dependencies pack",
+    "dependencies": "WP-11, WP-12, WP-14, WP-17",
+    "exit_evidence": "DOM-PROJECT and complete cross-entity context"
+  },
+  {
+    "id": "WP-21",
+    "deliverable": "Contracts, recurring adjustments, billing and invoice pack",
+    "dependencies": "WP-11, WP-12, WP-13, WP-14",
+    "exit_evidence": "DOM-FIN and financial write permissions/read visibility"
+  },
+  {
+    "id": "WP-22",
+    "deliverable": "Assets/subscriptions/reference catalogs pack",
+    "dependencies": "WP-11, WP-12, WP-14",
+    "exit_evidence": "DOM-ASSET and DOM-REFERENCE; unresolved endpoints gated"
+  },
+  {
+    "id": "WP-23",
+    "deliverable": "Sales/quotes/procurement/inventory pack",
+    "dependencies": "WP-11, WP-12, WP-13, WP-14",
+    "exit_evidence": "DOM-SALES and DOM-INVENTORY"
+  },
+  {
+    "id": "WP-24",
+    "deliverable": "Knowledge/articles/documents/UDF/platform administration pack",
+    "dependencies": "WP-11, WP-12, WP-13, WP-14",
+    "exit_evidence": "DOM-KNOWLEDGE and DOM-ADMIN"
+  },
+  {
+    "id": "WP-25",
+    "deliverable": "Shared file upload/download/scanning/artifact service",
+    "dependencies": "WP-06, WP-08, WP-09",
+    "exit_evidence": "FILE cases across domain parent types"
+  },
+  {
+    "id": "WP-26",
+    "deliverable": "Webhook receiver, owned subscriptions, dedupe, gaps and reconciliation",
+    "dependencies": "WP-06, WP-09, WP-15",
+    "exit_evidence": "SYNC cases and authentic signature validation"
+  },
+  {
+    "id": "WP-27",
+    "deliverable": "Report definitions, joins, streaming exports and completeness accounting",
+    "dependencies": "WP-11, WP-15, WP-25, domain packs",
+    "exit_evidence": "Reconciled outputs with currency/timezone/source scope"
+  },
+  {
+    "id": "WP-28",
+    "deliverable": "Initial focused console; later detailed capability/reporting/sync surfaces",
+    "dependencies": "Initial: WP-07, WP-08, WP-13, WP-15, applicable WP-29; later: WP-10, WP-26, WP-27",
+    "exit_evidence": "Initial BENCH-06 and accessibility; later full operator acceptance"
+  },
+  {
+    "id": "WP-29",
+    "deliverable": "Security/observability/retention/support bundles and incident controls",
+    "dependencies": "WP-05 onward",
+    "exit_evidence": "SEC/OPS cases, no sensitive logs, incident exercise"
+  },
+  {
+    "id": "WP-30",
+    "deliverable": "Technician release qualification, then full-product qualification and documentation",
+    "dependencies": "Technician: shipped foundation, mandatory workflow slices, focused WP-28, applicable WP-29; full product: all applicable packages",
+    "exit_evidence": "Technician BENCH-01\u201306 plus Gates A\u2013D; full product adds Gate E"
+  },
+  {
+    "id": "WP-31",
+    "deliverable": "Shared scoped business-reference resolver, eligibility and reviewed default policy/provenance",
+    "dependencies": "WP-07\u201311",
+    "exit_evidence": "WF-01\u201310; no forced numeric-ID plumbing, identity fallback or fabricated defaults"
+  },
+  {
+    "id": "WP-32",
+    "deliverable": "Purpose-specific ticket context, workday/visit evidence packs and readable enrichment",
+    "dependencies": "WP-11, WP-16\u201319, WP-31; task/asset/knowledge read slices as exposed",
+    "exit_evidence": "WF-11\u201315,25\u201328; scoped evidence and explicit completeness"
+  },
+  {
+    "id": "WP-33",
+    "deliverable": "ticket_document_work and shared fixed-step workflow recovery/receipts",
+    "dependencies": "WP-12\u201317, WP-31",
+    "exit_evidence": "WF-16\u201318,31\u201333; verified note/time, deterministic partial recovery"
+  },
+  {
+    "id": "WP-34",
+    "deliverable": "ticket_handoff and ticket_resolve with eligibility/completion invariants",
+    "dependencies": "WP-16,17,19, WP-31\u201333",
+    "exit_evidence": "WF-19\u201324,29,30,32; no closure on failed prerequisites"
+  },
+  {
+    "id": "WP-35",
+    "deliverable": "Tool descriptions/errors and portable Rarity playbook distribution",
+    "dependencies": "WP-14, WP-31\u201334",
+    "exit_evidence": "WF-34,37; five versioned guidance playbooks with list/get fallbacks"
+  },
+  {
+    "id": "WP-36",
+    "deliverable": "Technician scenario fixtures, fault/client evaluations and usability evidence",
+    "dependencies": "WP-31\u201335; applicable WP-29",
+    "exit_evidence": "WF-01\u201338; hard correctness gates plus measured client usability"
+  }
+]

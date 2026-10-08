@@ -1,0 +1,2213 @@
+{
+  "content": {
+    "schemaVersion": 1,
+    "source": "fixture",
+    "tenantId": "11111111-1111-4111-8111-111111111111",
+    "policyVersion": "fixture-v1",
+    "capturedAt": "2026-09-10T12:00:00.000Z",
+    "expiresAt": "2026-09-11T12:00:00.000Z",
+    "inventoryDigest": "04944ffa4e05bdfa48d0724e5f45292f9df8ccdaceedaa171f1302d4a9e2913c",
+    "sources": [
+      {
+        "id": "fixture-metadata",
+        "kind": "fixture",
+        "reference": "fixture:metadata-v1",
+        "sha256": "96bd8b7a0172fe8da0bda17032c88b7f35f2c11b09c8b743fa37e01171319d4f",
+        "capturedAt": "2026-09-10T12:00:00.000Z"
+      }
+    ],
+    "entities": [
+      {
+        "entity": "Companies",
+        "runtimeName": "Companies",
+        "complete": false,
+        "fields": [
+          {
+            "name": "companyName",
+            "dataType": "string",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      },
+      {
+        "entity": "Resources",
+        "runtimeName": "Resources",
+        "complete": false,
+        "fields": [
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "isActive",
+            "dataType": "boolean",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      },
+      {
+        "entity": "ServiceCalls",
+        "runtimeName": "ServiceCalls",
+        "complete": false,
+        "fields": [
+          {
+            "name": "companyID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "creatorResourceID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": "Resources"
+          },
+          {
+            "name": "description",
+            "dataType": "string",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 32000
+          },
+          {
+            "name": "endDateTime",
+            "dataType": "datetime",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "impersonatorCreatorResourceID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": "Resources"
+          },
+          {
+            "name": "startDateTime",
+            "dataType": "datetime",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "status",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 801,
+                "label": "Scheduled",
+                "active": true,
+                "default": true
+              }
+            ]
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      },
+      {
+        "entity": "ServiceCallTicketResources",
+        "runtimeName": "ServiceCallTicketResources",
+        "complete": false,
+        "fields": [
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "resourceID",
+            "dataType": "integer",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": "Resources"
+          },
+          {
+            "name": "serviceCallTicketID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      },
+      {
+        "entity": "ServiceCallTickets",
+        "runtimeName": "ServiceCallTickets",
+        "complete": false,
+        "fields": [
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "serviceCallID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "ticketID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      },
+      {
+        "entity": "TicketNotes",
+        "runtimeName": "TicketNotes",
+        "complete": false,
+        "fields": [
+          {
+            "name": "creatorResourceID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": "Resources"
+          },
+          {
+            "name": "description",
+            "dataType": "string",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 32000
+          },
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "impersonatorCreatorResourceID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": "Resources"
+          },
+          {
+            "name": "noteType",
+            "dataType": "integer",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 11,
+                "label": "Work note",
+                "active": true,
+                "default": true
+              }
+            ]
+          },
+          {
+            "name": "publish",
+            "dataType": "integer",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 701,
+                "label": "Internal",
+                "active": true,
+                "default": false
+              },
+              {
+                "value": 702,
+                "label": "Customer visible",
+                "active": true,
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "title",
+            "dataType": "string",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 250
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      },
+      {
+        "entity": "Tickets",
+        "runtimeName": "Tickets",
+        "complete": false,
+        "fields": [
+          {
+            "name": "assignedResourceID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": "Resources"
+          },
+          {
+            "name": "assignedResourceRoleID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "description",
+            "dataType": "string",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 32000
+          },
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "priority",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 701,
+                "label": "Normal",
+                "active": true,
+                "default": false
+              },
+              {
+                "value": 702,
+                "label": "High",
+                "active": true,
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "queueID",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 501,
+                "label": "Service Desk",
+                "active": true,
+                "default": false
+              },
+              {
+                "value": 502,
+                "label": "Escalations",
+                "active": true,
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "resolution",
+            "dataType": "string",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 32000
+          },
+          {
+            "name": "status",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 1,
+                "label": "Open",
+                "active": true,
+                "default": false
+              },
+              {
+                "value": 2,
+                "label": "In Progress",
+                "active": true,
+                "default": false
+              },
+              {
+                "value": 5,
+                "label": "Complete",
+                "active": true,
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "ticketCategory",
+            "dataType": "integer",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 601,
+                "label": "Standard Support",
+                "active": true,
+                "default": false
+              }
+            ]
+          },
+          {
+            "name": "title",
+            "dataType": "string",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 255
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      },
+      {
+        "entity": "TimeEntries",
+        "runtimeName": "TimeEntries",
+        "complete": false,
+        "fields": [
+          {
+            "name": "billingCodeID",
+            "dataType": "integer",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 301,
+                "label": "Remote support",
+                "active": true,
+                "default": true
+              }
+            ]
+          },
+          {
+            "name": "dateWorked",
+            "dataType": "datetime",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "hoursWorked",
+            "dataType": "double",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "id",
+            "dataType": "long",
+            "required": false,
+            "readOnly": true,
+            "queryable": true,
+            "referenceEntity": null
+          },
+          {
+            "name": "internalNotes",
+            "dataType": "string",
+            "required": false,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 32000
+          },
+          {
+            "name": "resourceID",
+            "dataType": "integer",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": "Resources"
+          },
+          {
+            "name": "roleID",
+            "dataType": "integer",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "picklist": [
+              {
+                "value": 201,
+                "label": "Technician",
+                "active": true,
+                "default": true
+              }
+            ]
+          },
+          {
+            "name": "summaryNotes",
+            "dataType": "string",
+            "required": true,
+            "readOnly": false,
+            "queryable": true,
+            "referenceEntity": null,
+            "maxLength": 32000
+          }
+        ],
+        "userDefinedFields": [],
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      }
+    ],
+    "bindings": [
+      {
+        "id": "ticket-work-1001",
+        "kind": "ticket-work",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "ticketId": 1001,
+        "companyId": 10,
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "id"
+            ]
+          },
+          {
+            "entity": "TicketNotes",
+            "fields": [
+              "id",
+              "title",
+              "description",
+              "noteType",
+              "publish",
+              "creatorResourceID",
+              "impersonatorCreatorResourceID"
+            ]
+          },
+          {
+            "entity": "TimeEntries",
+            "fields": [
+              "id",
+              "resourceID",
+              "roleID",
+              "billingCodeID",
+              "hoursWorked",
+              "dateWorked",
+              "summaryNotes",
+              "internalNotes"
+            ]
+          }
+        ],
+        "value": {
+          "version": "fixture-work-v1",
+          "source": "fixture",
+          "ticketId": 1001,
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "defaultRuleVersion": "fixture-defaults-v1",
+          "note": {
+            "titleRequired": true,
+            "attributionField": "creatorResourceID",
+            "types": [
+              {
+                "id": 11,
+                "label": "Work note",
+                "active": true
+              }
+            ],
+            "audiences": [
+              {
+                "audience": "internal",
+                "publish": 701,
+                "label": "Internal",
+                "active": true
+              },
+              {
+                "audience": "customer",
+                "publish": 702,
+                "label": "Customer visible",
+                "active": true
+              }
+            ],
+            "defaultTypeId": 11
+          },
+          "time": {
+            "eligible": true,
+            "roles": [
+              {
+                "id": 201,
+                "label": "Technician",
+                "active": true
+              }
+            ],
+            "workTypes": [
+              {
+                "id": 301,
+                "label": "Remote support",
+                "active": true
+              }
+            ],
+            "defaultRoleId": 201,
+            "defaultWorkTypeId": 301
+          }
+        }
+      },
+      {
+        "id": "technician-1001",
+        "kind": "technician",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "ticketId": 1001,
+        "companyId": 10,
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "id",
+              "title",
+              "description",
+              "assignedResourceID",
+              "assignedResourceRoleID",
+              "queueID",
+              "status",
+              "ticketCategory",
+              "priority",
+              "resolution"
+            ]
+          },
+          {
+            "entity": "Resources",
+            "fields": [
+              "id",
+              "isActive"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-technician-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "ticketId": 1001,
+          "companyId": 10,
+          "options": {
+            "resource": [
+              {
+                "id": 101,
+                "label": "Example Technician",
+                "active": true,
+                "companyIds": [
+                  10
+                ],
+                "queueIds": [
+                  501
+                ],
+                "categoryIds": [
+                  601
+                ]
+              },
+              {
+                "id": 103,
+                "label": "Example Colleague",
+                "active": true,
+                "companyIds": [
+                  10
+                ],
+                "queueIds": [
+                  501,
+                  502
+                ],
+                "categoryIds": [
+                  601
+                ]
+              }
+            ],
+            "queue": [
+              {
+                "id": 501,
+                "label": "Service Desk",
+                "active": true,
+                "companyIds": [
+                  10
+                ]
+              },
+              {
+                "id": 502,
+                "label": "Escalations",
+                "active": true,
+                "companyIds": [
+                  10
+                ]
+              }
+            ],
+            "status": [
+              {
+                "id": 1,
+                "label": "Open",
+                "active": true,
+                "companyIds": [
+                  10
+                ],
+                "completed": false
+              },
+              {
+                "id": 2,
+                "label": "In Progress",
+                "active": true,
+                "companyIds": [
+                  10
+                ],
+                "completed": false
+              },
+              {
+                "id": 5,
+                "label": "Complete",
+                "active": true,
+                "companyIds": [
+                  10
+                ],
+                "completed": true
+              }
+            ],
+            "category": [
+              {
+                "id": 601,
+                "label": "Standard Support",
+                "active": true,
+                "companyIds": [
+                  10
+                ]
+              }
+            ],
+            "priority": [
+              {
+                "id": 701,
+                "label": "Normal",
+                "active": true,
+                "companyIds": [
+                  10
+                ]
+              },
+              {
+                "id": 702,
+                "label": "High",
+                "active": true,
+                "companyIds": [
+                  10
+                ]
+              }
+            ]
+          },
+          "assignments": [
+            {
+              "resourceId": 101,
+              "queueId": 501,
+              "roleId": 201,
+              "categoryIds": [
+                601
+              ]
+            },
+            {
+              "resourceId": 103,
+              "queueId": 501,
+              "roleId": 201,
+              "categoryIds": [
+                601
+              ]
+            },
+            {
+              "resourceId": 103,
+              "queueId": 502,
+              "roleId": 201,
+              "categoryIds": [
+                601
+              ]
+            }
+          ],
+          "categoryRules": [
+            {
+              "categoryId": 601,
+              "queueRequired": "always",
+              "completionRequiredFields": [
+                "resolution"
+              ],
+              "requiredCollections": [
+                "checklist"
+              ],
+              "requireImportantChecklistComplete": true
+            }
+          ],
+          "statusTransitions": [
+            {
+              "fromId": 1,
+              "toId": 2,
+              "categoryId": 601
+            },
+            {
+              "fromId": 1,
+              "toId": 5,
+              "categoryId": 601
+            },
+            {
+              "fromId": 2,
+              "toId": 5,
+              "categoryId": 601
+            },
+            {
+              "fromId": 5,
+              "toId": 2,
+              "categoryId": 601
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-company-0",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "company",
+        "context": {},
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Companies",
+            "fields": [
+              "id",
+              "companyName"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "company",
+          "complete": true,
+          "items": [
+            {
+              "id": 10,
+              "label": "Example Engineering",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-company-1",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "company",
+        "context": {
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Companies",
+            "fields": [
+              "id",
+              "companyName"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "company",
+          "complete": true,
+          "items": [
+            {
+              "id": 10,
+              "label": "Example Engineering",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-company-2",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "company",
+        "context": {
+          "ticketId": 1001,
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Companies",
+            "fields": [
+              "id",
+              "companyName"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "company",
+          "complete": true,
+          "items": [
+            {
+              "id": 10,
+              "label": "Example Engineering",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-resource-0",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "resource",
+        "context": {},
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Resources",
+            "fields": [
+              "id",
+              "isActive"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "resource",
+          "complete": true,
+          "items": [
+            {
+              "id": 101,
+              "label": "Example Technician",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "queueIds": [
+                501
+              ],
+              "categoryIds": [
+                601
+              ]
+            },
+            {
+              "id": 103,
+              "label": "Example Colleague",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "queueIds": [
+                501,
+                502
+              ],
+              "categoryIds": [
+                601
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-resource-1",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "resource",
+        "context": {
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Resources",
+            "fields": [
+              "id",
+              "isActive"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "resource",
+          "complete": true,
+          "items": [
+            {
+              "id": 101,
+              "label": "Example Technician",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "queueIds": [
+                501
+              ],
+              "categoryIds": [
+                601
+              ]
+            },
+            {
+              "id": 103,
+              "label": "Example Colleague",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "queueIds": [
+                501,
+                502
+              ],
+              "categoryIds": [
+                601
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-resource-2",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "resource",
+        "context": {
+          "ticketId": 1001,
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Resources",
+            "fields": [
+              "id",
+              "isActive"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "resource",
+          "complete": true,
+          "items": [
+            {
+              "id": 101,
+              "label": "Example Technician",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "queueIds": [
+                501
+              ],
+              "categoryIds": [
+                601
+              ]
+            },
+            {
+              "id": 103,
+              "label": "Example Colleague",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "queueIds": [
+                501,
+                502
+              ],
+              "categoryIds": [
+                601
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-queue-0",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "queue",
+        "context": {},
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "queueID"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "queue",
+          "complete": true,
+          "items": [
+            {
+              "id": 501,
+              "label": "Service Desk",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            },
+            {
+              "id": 502,
+              "label": "Escalations",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-queue-1",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "queue",
+        "context": {
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "queueID"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "queue",
+          "complete": true,
+          "items": [
+            {
+              "id": 501,
+              "label": "Service Desk",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            },
+            {
+              "id": 502,
+              "label": "Escalations",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-queue-2",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "queue",
+        "context": {
+          "ticketId": 1001,
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "queueID"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "queue",
+          "complete": true,
+          "items": [
+            {
+              "id": 501,
+              "label": "Service Desk",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            },
+            {
+              "id": 502,
+              "label": "Escalations",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-status-0",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "status",
+        "context": {},
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "status"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "status",
+          "complete": true,
+          "items": [
+            {
+              "id": 1,
+              "label": "Open",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": false
+            },
+            {
+              "id": 2,
+              "label": "In Progress",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": false
+            },
+            {
+              "id": 5,
+              "label": "Complete",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-status-1",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "status",
+        "context": {
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "status"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "status",
+          "complete": true,
+          "items": [
+            {
+              "id": 1,
+              "label": "Open",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": false
+            },
+            {
+              "id": 2,
+              "label": "In Progress",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": false
+            },
+            {
+              "id": 5,
+              "label": "Complete",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-status-2",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "status",
+        "context": {
+          "ticketId": 1001,
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "status"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "status",
+          "complete": true,
+          "items": [
+            {
+              "id": 1,
+              "label": "Open",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": false
+            },
+            {
+              "id": 2,
+              "label": "In Progress",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": false
+            },
+            {
+              "id": 5,
+              "label": "Complete",
+              "active": true,
+              "companyIds": [
+                10
+              ],
+              "completed": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-category-0",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "category",
+        "context": {},
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "ticketCategory"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "category",
+          "complete": true,
+          "items": [
+            {
+              "id": 601,
+              "label": "Standard Support",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-category-1",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "category",
+        "context": {
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "ticketCategory"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "category",
+          "complete": true,
+          "items": [
+            {
+              "id": 601,
+              "label": "Standard Support",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-category-2",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "category",
+        "context": {
+          "ticketId": 1001,
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "ticketCategory"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "category",
+          "complete": true,
+          "items": [
+            {
+              "id": 601,
+              "label": "Standard Support",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-priority-0",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "priority",
+        "context": {},
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "priority"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "priority",
+          "complete": true,
+          "items": [
+            {
+              "id": 701,
+              "label": "Normal",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            },
+            {
+              "id": 702,
+              "label": "High",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-priority-1",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "priority",
+        "context": {
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "priority"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "priority",
+          "complete": true,
+          "items": [
+            {
+              "id": 701,
+              "label": "Normal",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            },
+            {
+              "id": 702,
+              "label": "High",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "catalog-priority-2",
+        "kind": "catalog",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "referenceKind": "priority",
+        "context": {
+          "ticketId": 1001,
+          "companyId": 10
+        },
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "priority"
+            ]
+          }
+        ],
+        "value": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "source": "fixture",
+          "version": "fixture-metadata-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "kind": "priority",
+          "complete": true,
+          "items": [
+            {
+              "id": 701,
+              "label": "Normal",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            },
+            {
+              "id": 702,
+              "label": "High",
+              "active": true,
+              "companyIds": [
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "scheduling-1001",
+        "kind": "scheduling",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "ticketId": 1001,
+        "companyId": 10,
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "ServiceCalls",
+            "fields": [
+              "id",
+              "companyID",
+              "startDateTime",
+              "endDateTime",
+              "status",
+              "description",
+              "creatorResourceID",
+              "impersonatorCreatorResourceID"
+            ]
+          },
+          {
+            "entity": "ServiceCallTickets",
+            "fields": [
+              "id",
+              "serviceCallID",
+              "ticketID"
+            ]
+          },
+          {
+            "entity": "ServiceCallTicketResources",
+            "fields": [
+              "id",
+              "serviceCallTicketID",
+              "resourceID"
+            ]
+          }
+        ],
+        "value": {
+          "version": "fixture-scheduling-v1",
+          "source": "fixture",
+          "ticketId": 1001,
+          "companyId": 10,
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1",
+          "validUntil": "2026-09-11T12:00:00.000Z",
+          "ticketResourceIds": [
+            101
+          ],
+          "statuses": [
+            {
+              "id": 801,
+              "label": "Scheduled",
+              "active": true,
+              "bookable": true
+            }
+          ],
+          "defaultStatusId": 801,
+          "allowOverlap": false,
+          "attributionField": "creatorResourceID"
+        }
+      },
+      {
+        "id": "resources",
+        "kind": "resources",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "validUntil": "2026-09-11T12:00:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Resources",
+            "fields": [
+              "id",
+              "isActive"
+            ]
+          }
+        ],
+        "value": [
+          {
+            "id": 101,
+            "label": "Example Technician",
+            "active": true,
+            "companyIds": [
+              10
+            ]
+          },
+          {
+            "id": 103,
+            "label": "Example Colleague",
+            "active": true,
+            "companyIds": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "id": "time-eligibility-1001",
+        "kind": "time-eligibility",
+        "actor": {
+          "tenantId": "11111111-1111-4111-8111-111111111111",
+          "objectId": "00000000-0000-4000-8000-000000000001",
+          "resourceId": 101,
+          "mappingVersion": 1,
+          "policyVersion": "fixture-v1"
+        },
+        "companyIds": [
+          10
+        ],
+        "ticketId": 1001,
+        "companyId": 10,
+        "workDate": "2026-09-10",
+        "validUntil": "2026-09-10T12:05:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ],
+        "requires": [
+          {
+            "entity": "Tickets",
+            "fields": [
+              "id"
+            ]
+          },
+          {
+            "entity": "Resources",
+            "fields": [
+              "id",
+              "isActive"
+            ]
+          },
+          {
+            "entity": "TimeEntries",
+            "fields": [
+              "resourceID",
+              "roleID",
+              "billingCodeID",
+              "hoursWorked",
+              "dateWorked",
+              "summaryNotes",
+              "internalNotes"
+            ]
+          }
+        ],
+        "value": {
+          "workDate": "2026-09-10",
+          "checkedAt": "2026-09-10T12:00:00.000Z",
+          "validUntil": "2026-09-10T12:05:00.000Z",
+          "timezone": "America/Chicago",
+          "period": {
+            "id": 1,
+            "startsOn": "2026-09-10",
+            "endsOn": "2026-09-10",
+            "status": "open"
+          },
+          "resourceActive": true,
+          "ticketAllowsTime": true,
+          "contractAllowsTime": true,
+          "dateContainerVerified": true,
+          "assignments": [
+            {
+              "roleId": 201,
+              "workTypeId": 301,
+              "roleEffective": true,
+              "workTypeEffective": true,
+              "remainingHours": 8
+            }
+          ]
+        }
+      }
+    ],
+    "resourceVerifications": [
+      {
+        "tenantId": "11111111-1111-4111-8111-111111111111",
+        "resourceId": 101,
+        "active": true,
+        "verifiedAt": "2026-09-10T12:00:00.000Z",
+        "expiresAt": "2026-09-10T12:05:00.000Z",
+        "sourceIds": [
+          "fixture-metadata"
+        ]
+      }
+    ]
+  },
+  "qualifications": [],
+  "metadataDigest": "c15804365eb61bb55547b8c29d7cedd0c70cdf637be7b053226a8640b5f2f238",
+  "version": "metadata-v1-c15804365eb61bb55547b8c2",
+  "digest": "c689e36317eb827267e5d4b4529a68a6e157e1a0bd123e2190c0bea503aaf2e5"
+}

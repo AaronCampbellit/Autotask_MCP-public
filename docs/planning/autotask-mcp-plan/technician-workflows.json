@@ -1,0 +1,240 @@
+{
+  "contract_version": "1.0.0",
+  "status": "planned_not_implemented",
+  "definition_type": "descriptive_registry_not_executable_input",
+  "source": "17-TECHNICIAN-WORKFLOW-CONTRACT.md",
+  "foundation_named_tools": [
+    "ticket_search",
+    "ticket_context",
+    "ticket_update",
+    "ticket_note_add",
+    "time_log_ticket",
+    "time_entry_search",
+    "schedule_search",
+    "service_call_create"
+  ],
+  "required_additional_workflows": [
+    {
+      "name": "ticket_document_work",
+      "effect": "write",
+      "requires": [
+        "tickets.write",
+        "time.self or time.team"
+      ],
+      "inputs": [
+        "ticket",
+        "note.text",
+        "note.audience",
+        "time.amount_or_interval",
+        "time.date",
+        "time.summary_or_internal_notes",
+        "request_key"
+      ],
+      "steps": [
+        {
+          "id": "note",
+          "action": "save_and_verify_note",
+          "after": []
+        },
+        {
+          "id": "time",
+          "action": "save_and_verify_time",
+          "after": [
+            "note"
+          ]
+        }
+      ],
+      "changes_ticket_status": false
+    },
+    {
+      "name": "ticket_handoff",
+      "effect": "write",
+      "requires": [
+        "tickets.write",
+        "eligible_target_assignment"
+      ],
+      "inputs": [
+        "ticket",
+        "target_employee",
+        "note.text",
+        "note.audience",
+        "request_key"
+      ],
+      "steps": [
+        {
+          "id": "handoff_note",
+          "action": "save_and_verify_note",
+          "after": []
+        },
+        {
+          "id": "ownership",
+          "action": "update_and_verify_ownership",
+          "after": [
+            "handoff_note"
+          ]
+        }
+      ],
+      "optional_inputs": [
+        "explicit_queue_change"
+      ]
+    },
+    {
+      "name": "ticket_resolve",
+      "effect": "write",
+      "requires": [
+        "tickets.write",
+        "time.self or time.team when time requested"
+      ],
+      "inputs": [
+        "ticket",
+        "resolution.text",
+        "resolution.audience",
+        "completion_intent",
+        "request_key"
+      ],
+      "steps": [
+        {
+          "id": "resolution",
+          "action": "save_and_verify_resolution",
+          "after": []
+        },
+        {
+          "id": "time",
+          "action": "save_and_verify_requested_time",
+          "after": [
+            "resolution"
+          ],
+          "included_only_if": "time_requested"
+        },
+        {
+          "id": "completion_check",
+          "action": "reread_and_validate_completion",
+          "after": [
+            "resolution",
+            "time"
+          ],
+          "dependency_rule": "all included prerequisites verified"
+        },
+        {
+          "id": "close",
+          "action": "set_and_verify_completion_status",
+          "after": [
+            "completion_check"
+          ]
+        }
+      ],
+      "optional_inputs": [
+        "explicit_time"
+      ]
+    },
+    {
+      "name": "my_workday",
+      "effect": "read",
+      "requires": [
+        "operational.read",
+        "schedule and time and task read scopes"
+      ],
+      "inputs": [
+        "resource default self",
+        "date",
+        "timezone"
+      ],
+      "steps": [
+        {
+          "id": "assigned_tickets",
+          "action": "gather_assigned_tickets",
+          "after": []
+        },
+        {
+          "id": "scheduled_work",
+          "action": "gather_scheduled_work",
+          "after": []
+        },
+        {
+          "id": "due_tasks",
+          "action": "gather_due_tasks",
+          "after": []
+        },
+        {
+          "id": "recorded_time",
+          "action": "gather_recorded_time",
+          "after": []
+        }
+      ],
+      "partial_results": "per_section"
+    },
+    {
+      "name": "ticket_prepare_visit",
+      "effect": "read",
+      "requires": [
+        "operational.read",
+        "contact site asset and schedule read scopes"
+      ],
+      "inputs": [
+        "ticket_or_appointment",
+        "qualifiers_when_ambiguous"
+      ],
+      "steps": [
+        {
+          "id": "visit",
+          "action": "resolve_unique_visit",
+          "after": []
+        },
+        {
+          "id": "contacts_site",
+          "action": "gather_contacts_site",
+          "after": [
+            "visit"
+          ]
+        },
+        {
+          "id": "assets",
+          "action": "gather_assets",
+          "after": [
+            "visit"
+          ]
+        },
+        {
+          "id": "history",
+          "action": "gather_history",
+          "after": [
+            "visit"
+          ]
+        },
+        {
+          "id": "appointment",
+          "action": "gather_appointment",
+          "after": [
+            "visit"
+          ]
+        }
+      ],
+      "partial_results": "per_section"
+    }
+  ],
+  "ticket_context_purposes": [
+    "investigate",
+    "continue_work",
+    "handoff",
+    "resolve",
+    "custom"
+  ],
+  "supporting_tools": [
+    "at_operation_status",
+    "at_operation_resume",
+    "at_playbook_list",
+    "at_playbook_get"
+  ],
+  "invariants": [
+    "permission_allow_or_deny_no_mcp_approval",
+    "required_employee_identity_fail_closed",
+    "preflight_all_requested_steps_before_first_mutation",
+    "recheck_at_each_dispatch",
+    "no_fabricated_time_work_or_customer_text",
+    "unknown_write_outcome_blocks_dependent_steps",
+    "resume_original_payload_and_mapping_only",
+    "no_automatic_compensating_deletes",
+    "no_arbitrary_step_chain_input"
+  ],
+  "qualification": "Every step requires operation-specific registry, identity, permission and tenant evidence."
+}

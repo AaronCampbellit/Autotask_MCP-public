@@ -1,0 +1,154 @@
+[
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookExcludedResourcesEntity.htm",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:00.3508695Z",
+    "sha256": "FC420769CE4CEE1495FB94BA3A505E2B5AAB163FE34391879078B99450A32C38",
+    "bytes": 46328,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookFieldsEntity.htm",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:00.5883626Z",
+    "sha256": "0AC1DEE8739060ECB42E18339BBA503238EFCD7C792573119A072F13C78346C1",
+    "bytes": 493306,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhooksEntity.htm",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:00.723969Z",
+    "sha256": "A3073277AED308F61EA0E248571615ED1D4C3B17262D97204030A29D0D76A46F",
+    "bytes": 88047,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookUdfFieldsEntity.htm",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:00.8511569Z",
+    "sha256": "41D9C1C4E0E9A3051AEC591B66EA520C0A97D7F82A681310B29EEBD4A26D720B",
+    "bytes": 63952,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/WebhookEventErrorLogEntity.htm",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:00.9916925Z",
+    "sha256": "CBC2148EA1A35036C4313FFE68DA5C450C12C7392D0B7FD6584B8949B79764A5",
+    "bytes": 51504,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:01.342487Z",
+    "sha256": "761F1CD04BFDC4F2C16A362502725EA684341CB7AD99607DF927017713AF19FC",
+    "bytes": 31525,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/versioning.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:01.5597253Z",
+    "sha256": "28C417B3C38345AE8350B9BE20ED1B53FCEC564B65C13C25D96AB9CFE7E44E9F",
+    "bytes": 11518,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/deprecated.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:01.8258569Z",
+    "sha256": "E8658E6A9AFB1C8731DFCAA41D128494776989D0177C9E25A493C6D71468E7D6",
+    "bytes": 5204,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:02.0634214Z",
+    "sha256": "E0AC8453A0E75D47A746FC1DC19BBEB7BDD288ED0742FD888ED58A66667F06A1",
+    "bytes": 28680,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/resources.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:02.275425Z",
+    "sha256": "AE4500B744B95D1F6D5BDDC3875250920A9BF154C4D09BDF4E40375917FFB8A5",
+    "bytes": 13544,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/prompts.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:02.6186736Z",
+    "sha256": "A73AFD2CAA6C737EBA1508C87E41FFA8A8348D01F4942F416FFE52174A89070E",
+    "bytes": 10037,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:02.8438767Z",
+    "sha256": "1FC340C24CDBACEE58C9A568F551B4245B12848534CA7D891CB41281D563D862",
+    "bytes": 25886,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:03.0582798Z",
+    "sha256": "09BE49A064940EF288B47F8DF09E95E6E3DC087C3F94E466ACD60EC66DFF25C3",
+    "bytes": 24314,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://learn.chatgpt.com/docs/extend/mcp.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:03.2470459Z",
+    "sha256": "41F531ED9200F16CDA4519D632E42589C40F50671BD370CE45CF8F1EBF67FA2D",
+    "bytes": 20179,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://developers.openai.com/api/docs/guides/developer-mode.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:03.3982892Z",
+    "sha256": "44F262F4B52405E968D21242264E4C5A53BBD28106F31D4A2B80435E0A019A45",
+    "bytes": 6144,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://developers.openai.com/plugins/build/auth.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:03.6650063Z",
+    "sha256": "8AC6A2420C13E0EE8CA9DFC86EA058D06D61CE902127003E3DED848A944506D7",
+    "bytes": 26838,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://code.claude.com/docs/en/mcp.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:04.5923495Z",
+    "sha256": "6EB0EC76DDCB57CD8A138B2F3BEF5020F186262AB9C2FE620ADFA51FCCE13603",
+    "bytes": 113035,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://claude.com/docs/connectors/building/authentication.md",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T20:47:04.9553004Z",
+    "sha256": "13F97F2905F03CE58323E8EFD1568A7DBFA57BFA872AA35C7D10CB547B79D58A",
+    "bytes": 17286,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/SecretKeyPayloadVerification.htm",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T21:07:56.4457562Z",
+    "sha256": "65F8A38119C73E0D0E96F096827516E526523F2CCF86022E5423AAE5BCA14531",
+    "bytes": 28752,
+    "repository_copy": "Not retained; consult the source URL."
+  }
+]

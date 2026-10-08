@@ -1,0 +1,662 @@
+[
+  {
+    "Title": "Automate Approvals with Magic Agents",
+    "URL": "https://docs.getthread.com/ai-agents/approvals.md",
+    "RetrievedUTC": "2026-09-10T20:12:50.9436066Z",
+    "Status": 200,
+    "Bytes": 3454,
+    "SHA256": "EA0EA1E5FC9D035839DF92E7A1CFBF8F5639C9A6C07C215A5D695F372737FABE",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Set Up Email Support for Magic Agents and Inbox",
+    "URL": "https://docs.getthread.com/ai-agents/setting-up-email-support-for-magic-agents.md",
+    "RetrievedUTC": "2026-09-10T20:12:51.3225115Z",
+    "Status": 200,
+    "Bytes": 6608,
+    "SHA256": "4B2C12DE68E4CF16D44E56F026079FAF6C4114721FD136DAF7A8830C4C29F2A1",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Super Magic Usage Dashboard",
+    "URL": "https://docs.getthread.com/analytics/super-magic-usage-dashboard.md",
+    "RetrievedUTC": "2026-09-10T20:12:51.6807874Z",
+    "Status": 200,
+    "Bytes": 7812,
+    "SHA256": "18FD94A7630B6D15B38FA0D02D11F5912E384CD14D40C3F9FE8CA2052E10A275",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Common questions",
+    "URL": "https://docs.getthread.com/get-started/common-questions.md",
+    "RetrievedUTC": "2026-09-10T20:12:52.0592734Z",
+    "Status": 200,
+    "Bytes": 5423,
+    "SHA256": "AFCE23DFC4FE62C9177417BB7F083EE7848F3D6088948031CB777488A437ECE2",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Configure Status Mapping in Thread",
+    "URL": "https://docs.getthread.com/get-started/status-mapping-in-thread.md",
+    "RetrievedUTC": "2026-09-10T20:12:52.6107446Z",
+    "Status": 200,
+    "Bytes": 6537,
+    "SHA256": "64397CF8FC7742E719AFF9370E03362B2E9DB7BF8F8DC91E47E3923F16A43C4A",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Webhooks & APIs: How Thread Talks to Your PSA",
+    "URL": "https://docs.getthread.com/get-started/webhooks-apis-how-thread-talks-to-your-psa.md",
+    "RetrievedUTC": "2026-09-10T20:12:52.9860421Z",
+    "Status": 200,
+    "Bytes": 4488,
+    "SHA256": "2452CC8B0C7B44BF1F181288252C835FB2A482D62F3E4FE05F926D6077ABCBAF",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Configure Autotask UDFs for Thread Approvals",
+    "URL": "https://docs.getthread.com/inbox/autotask-approval-configuration.md",
+    "RetrievedUTC": "2026-09-10T20:12:53.4464406Z",
+    "Status": 200,
+    "Bytes": 5761,
+    "SHA256": "087D0C01CA60DE1704DFB741D995229455AF6CFB484FC703F5365D82CA2BB3C1",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Default Work Role and Type Logic in Time Entries",
+    "URL": "https://docs.getthread.com/inbox/default-work-role-type-logic.md",
+    "RetrievedUTC": "2026-09-10T20:12:53.7926113Z",
+    "Status": 200,
+    "Bytes": 2981,
+    "SHA256": "8092EED55E22525B58F088E21F934C1DA16870D649F908306FA278A866197DD6",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Set Up Single Sign-On (SSO) with Microsoft 365",
+    "URL": "https://docs.getthread.com/inbox/how-to-setup-single-sign-on-sso.md",
+    "RetrievedUTC": "2026-09-10T20:12:54.749628Z",
+    "Status": 200,
+    "Bytes": 3711,
+    "SHA256": "4F264875796921CE08BEBE2092F10228778D3509BAF4BE2870FD05EF1DA408AA",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Managing Members in Thread Admin",
+    "URL": "https://docs.getthread.com/inbox/members-management.md",
+    "RetrievedUTC": "2026-09-10T20:12:55.3296082Z",
+    "Status": 200,
+    "Bytes": 5614,
+    "SHA256": "CA5489AF97AA78004FAAA0E998403D52981F98CD6B4609298FB7D340103AD086",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Plans and Licenses: AI and Chat License Management",
+    "URL": "https://docs.getthread.com/inbox/plans-licenses.md",
+    "RetrievedUTC": "2026-09-10T20:12:56.3128419Z",
+    "Status": 200,
+    "Bytes": 3647,
+    "SHA256": "A35CCF74BCB88F0348AC35C3FF47BCF97901E46F721D1FCEB9C9515C702D4704",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Restrict a member's access to specific clients",
+    "URL": "https://docs.getthread.com/inbox/restrict-member-access-to-specific-clients.md",
+    "RetrievedUTC": "2026-09-10T20:12:56.7292418Z",
+    "Status": 200,
+    "Bytes": 5394,
+    "SHA256": "3212B20A7CDE2F2DBA61B2E9D8F97FC294BDCCFFAA60240B81C22B1B0450D167",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Status Automations: Auto-Update Thread Statuses",
+    "URL": "https://docs.getthread.com/inbox/status-automations.md",
+    "RetrievedUTC": "2026-09-10T20:12:57.3482304Z",
+    "Status": 200,
+    "Bytes": 5766,
+    "SHA256": "8B69ABADDEA887467E59D36365DD6AA58E5C91F8B6397F3E067FDDDF4EEEF278",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Team Admin Role: Scoped Admin Permissions",
+    "URL": "https://docs.getthread.com/inbox/team-admin-role.md",
+    "RetrievedUTC": "2026-09-10T20:12:57.7840722Z",
+    "Status": 200,
+    "Bytes": 7973,
+    "SHA256": "103D51EC91BFE83709F21076C812ED9963EFD2B368FAC78B52A87E0A703BEA9C",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Track your time with TimePad",
+    "URL": "https://docs.getthread.com/inbox/track-your-time-with-timepad.md",
+    "RetrievedUTC": "2026-09-10T20:12:58.1740488Z",
+    "Status": 200,
+    "Bytes": 5953,
+    "SHA256": "25273859101D51A3AB4E628236548607295D02949E8F5413565175B9788F47C9",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Schedule ticket work in Planner",
+    "URL": "https://docs.getthread.com/inbox/using-planner.md",
+    "RetrievedUTC": "2026-09-10T20:12:58.6127675Z",
+    "Status": 200,
+    "Bytes": 14280,
+    "SHA256": "18896D13E5A7EA0EB945ECE465F4DF11BAE2B19FC1116D4CDA29CA1ED5B0AFD1",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Workspace Defaults: Time Zone and TimePad Settings",
+    "URL": "https://docs.getthread.com/inbox/workspace.md",
+    "RetrievedUTC": "2026-09-10T20:12:59.0199362Z",
+    "Status": 200,
+    "Bytes": 2204,
+    "SHA256": "50C1A4E3D05D3E21BF27C79BFD4B95B26CD799DA035E1E38B0516E47EA5292FE",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Set Up the Autotask PSA Ticketing Integration",
+    "URL": "https://docs.getthread.com/integrations/creating-a-autotask-api-user.md",
+    "RetrievedUTC": "2026-09-10T20:12:59.3863491Z",
+    "Status": 200,
+    "Bytes": 15690,
+    "SHA256": "0199A3408839DE5D0F579B93F84334BDD7E3E9F8F1F32D5818992B78D7BF29BA",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Enable Thread Chat & TimePad Insights in Autotask",
+    "URL": "https://docs.getthread.com/integrations/how-to-enable-chat-and-timepad-insights-in-autotask.md",
+    "RetrievedUTC": "2026-09-10T20:12:59.716516Z",
+    "Status": 200,
+    "Bytes": 5233,
+    "SHA256": "5807FEC9599004A55BBE55E6781C7B730ED300813CAA7FA29E2EBC2045DE6786",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Sync Thread Members with Your PSA Automatically",
+    "URL": "https://docs.getthread.com/integrations/keep-members-in-sync-with-psa-toggle.md",
+    "RetrievedUTC": "2026-09-10T20:13:00.1459019Z",
+    "Status": 200,
+    "Bytes": 4477,
+    "SHA256": "0CC30A376D2CDBE1EBF3FC79C01AED6BF7D4258ABD71E69D1EDBF6E2950FFD79",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Manage PSA Board Visibility and Exclusions in Thread",
+    "URL": "https://docs.getthread.com/integrations/managing-board-visibility-in-thread-board-exclusion.md",
+    "RetrievedUTC": "2026-09-10T20:13:00.5872191Z",
+    "Status": 200,
+    "Bytes": 5415,
+    "SHA256": "6253892F17DFA915916AB3B69ABFAAD3F85BD4E76D3988893ECA9D29235580D0",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Set Up an Autotask Email Workflow for Thread Chats",
+    "URL": "https://docs.getthread.com/integrations/setting-up-an-email-communication-workflow-in-autotask.md",
+    "RetrievedUTC": "2026-09-10T20:13:01.02898Z",
+    "Status": 200,
+    "Bytes": 10547,
+    "SHA256": "C735ECC52CDEE0AA804FE5398D0CDD4105B5D1C0A948A7FE64E8C6E6AF3B1E4C",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Turn off Autotask time entry summary note notifications",
+    "URL": "https://docs.getthread.com/integrations/turn-off-autotask-time-entry-summary-note-notifications.md",
+    "RetrievedUTC": "2026-09-10T20:13:01.4026308Z",
+    "Status": 200,
+    "Bytes": 3452,
+    "SHA256": "325EA054AE64622C81E0C26E92B199B17DEAD099D340783820A31D0FEA457209",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Claude on AWS Bedrock",
+    "URL": "https://docs.getthread.com/security-billing/claude-on-aws-bedrock.md",
+    "RetrievedUTC": "2026-09-10T20:13:01.7658573Z",
+    "Status": 200,
+    "Bytes": 12928,
+    "SHA256": "337FF7E240C394662D2116388B6EE964F1FED6A060DDCC7293AAC0E89D38DD21",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Data & Encryption",
+    "URL": "https://docs.getthread.com/security-billing/data-encryption.md",
+    "RetrievedUTC": "2026-09-10T20:13:02.7226879Z",
+    "Status": 200,
+    "Bytes": 3136,
+    "SHA256": "62D2D1F2B32E6E7463AAD0547B043436FC3E694A5C93A4B35BB169DBA7C48233",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Thread Sub-Processors List",
+    "URL": "https://docs.getthread.com/security-billing/list-of-sub-processors.md",
+    "RetrievedUTC": "2026-09-10T20:13:03.1626375Z",
+    "Status": 200,
+    "Bytes": 6905,
+    "SHA256": "E5342348F6271154D5EEEED8964102710F2639533689E25C0F440D4AB4044AC8",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Magic AI Privacy & Security Overview",
+    "URL": "https://docs.getthread.com/security-billing/magic-ai-privacy-security.md",
+    "RetrievedUTC": "2026-09-10T20:13:03.5786017Z",
+    "Status": 200,
+    "Bytes": 8298,
+    "SHA256": "E5F215DD4AC2DECA2C2A4FCEE4AF52082C3F41A5815EF6370220155A872E92C3",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Thread's SOC 2 and compliance status",
+    "URL": "https://docs.getthread.com/security-billing/soc-2-and-compliance-status.md",
+    "RetrievedUTC": "2026-09-10T20:13:03.96905Z",
+    "Status": 200,
+    "Bytes": 4630,
+    "SHA256": "18BD01A048542520D38E1036DF7C4512709045EE208552552760684D1063832A",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Thread IP Addresses and Domains to Allowlist",
+    "URL": "https://docs.getthread.com/security-billing/what-if-my-organization-has-ip-restrictions.md",
+    "RetrievedUTC": "2026-09-10T20:13:04.8777711Z",
+    "Status": 200,
+    "Bytes": 1806,
+    "SHA256": "8C60E21166E367FD4A9DDDA55767ED19D4188ECCC7FF4EE194DF9DA807B595B1",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Add External Tools to Super Magic with Connectors",
+    "URL": "https://docs.getthread.com/super-magic/add-external-tools-to-super-magic-with-connectors-super-mcp.md",
+    "RetrievedUTC": "2026-09-10T20:13:05.3767087Z",
+    "Status": 200,
+    "Bytes": 3879,
+    "SHA256": "132747AFA56F0063A9AF6D16BB809F4B14A4908A29675667797CEC52195D2C6E",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Build a Super Magic Agent",
+    "URL": "https://docs.getthread.com/super-magic/build-a-super-magic-agent.md",
+    "RetrievedUTC": "2026-09-10T20:13:05.8572764Z",
+    "Status": 200,
+    "Bytes": 14189,
+    "SHA256": "2A03B358CA8A4382470D84D4FF416FD9A432EF7336E1FA40462BEB5DB4AC151A",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use ConnectWise RMM with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/connect-connectwise-rmm.md",
+    "RetrievedUTC": "2026-09-10T20:13:06.3811569Z",
+    "Status": 200,
+    "Bytes": 7544,
+    "SHA256": "53B42AB289E6BF5E095AF7D35869BD3BD98677DC161F11180C9300B8924BAD04",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Connect Knowledge Sources to Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/connect-it-glue-hudu-time-zest-knowledge-sources-to-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:06.9986433Z",
+    "Status": 200,
+    "Bytes": 4083,
+    "SHA256": "7FEC967C51B3D1416FC8024AB9D705FAFBA82304CFEE3B057665FFE968073E57",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Connect NinjaOne to Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/connecting-ninja-one-to-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:07.9204045Z",
+    "Status": 200,
+    "Bytes": 9533,
+    "SHA256": "0E00ECD8BEFD770E67607ACEEBC8E0181C7E1A41595C8BDD46B8BC0CF9A7AF21",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Super Magic FAQ",
+    "URL": "https://docs.getthread.com/super-magic/faq.md",
+    "RetrievedUTC": "2026-09-10T20:13:08.3459659Z",
+    "Status": 200,
+    "Bytes": 4566,
+    "SHA256": "EB6E40BBF13B672EE1AFB58821EBF246DCB20C4B33C933FDF1716B125505A761",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Issue MCP automation keys for team members",
+    "URL": "https://docs.getthread.com/super-magic/issue-mcp-automation-keys-for-team-members.md",
+    "RetrievedUTC": "2026-09-10T20:13:08.7225037Z",
+    "Status": 200,
+    "Bytes": 7414,
+    "SHA256": "06C3477BA997C86D8807A858AD44BC3ED9181AC11B3E6ED1AFA7D34CD099DA77",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Meet Super Magic: Your AI Agent in Inbox",
+    "URL": "https://docs.getthread.com/super-magic/meet-super-magic-your-ai-assistant-in-the-inbox.md",
+    "RetrievedUTC": "2026-09-10T20:13:09.1219793Z",
+    "Status": 200,
+    "Bytes": 18977,
+    "SHA256": "CCC82146465343EECFCC821291AF3DB5974585CD1F9AECA86EC18FE2072FC45A",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Proactive Suggestions in Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/proactive-suggestions.md",
+    "RetrievedUTC": "2026-09-10T20:13:09.5132518Z",
+    "Status": 200,
+    "Bytes": 8190,
+    "SHA256": "188ACEA7C6A5EAA7C7269106F0B1410605B9214727C0DA13A7067A86A50A4C11",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Super Magic prompting 101",
+    "URL": "https://docs.getthread.com/super-magic/prompting-101.md",
+    "RetrievedUTC": "2026-09-10T20:13:12.5434796Z",
+    "Status": 200,
+    "Bytes": 8598,
+    "SHA256": "137C1C9B78B763A7AED03B49594F6291C92E44EBFE9DA980618AF408918A41B4",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Share Super Magic chats with teammates",
+    "URL": "https://docs.getthread.com/super-magic/share-super-magic-chats-with-teammates.md",
+    "RetrievedUTC": "2026-09-10T20:13:13.1054039Z",
+    "Status": 200,
+    "Bytes": 6368,
+    "SHA256": "5209DB13FE51C0210E48E25CB0E567C6890CF4840ADBE1583896FC76A625DF17",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Super Magic Admin Guide: Setup, Access & Safety",
+    "URL": "https://docs.getthread.com/super-magic/super-magic-admin-guide-setup-access-safety.md",
+    "RetrievedUTC": "2026-09-10T20:13:13.5231023Z",
+    "Status": 200,
+    "Bytes": 10239,
+    "SHA256": "880C2BA0D299A03CAE589207859D7D79DB799662D09AB4599A4023FA18893FD4",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Super Magic Tool Reference",
+    "URL": "https://docs.getthread.com/super-magic/super-magic-tool-reference.md",
+    "RetrievedUTC": "2026-09-10T20:13:13.635005Z",
+    "Status": 200,
+    "Bytes": 33204,
+    "SHA256": "F7E8720BC8FED8BD881C78C1EE266055B9B0C12303939C5B3C762A0AA07159B3",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Tag teammates in ticket notes with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/tag-teammates-in-ticket-notes-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:14.0280625Z",
+    "Status": 200,
+    "Bytes": 4821,
+    "SHA256": "25E2E325E48DD1705BA503AEDF4810E23B28954BEE3DDDD634C2955E834C52F3",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Thread MCP Server: Developer Guide",
+    "URL": "https://docs.getthread.com/super-magic/thread-mcp-server-developer-guide.md",
+    "RetrievedUTC": "2026-09-10T20:13:15.3050312Z",
+    "Status": 200,
+    "Bytes": 19930,
+    "SHA256": "C599F6195BF728BA8BF329B8F607E03B55E52DD8D8DCB725C5A7288D50A71EEB",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use Hudu with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-hudu-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:16.2326205Z",
+    "Status": 200,
+    "Bytes": 2746,
+    "SHA256": "E250C71ADB72DB7DA45FEA7CE50D203E16F801EF7CC72E753BBD6C15DCFC6CE2",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use ImmyBot with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-immybot-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:17.1705669Z",
+    "Status": 200,
+    "Bytes": 3687,
+    "SHA256": "913A18E35297ADDD5FB5499A23B67CD4828DC25FBD5ED19F0F4BE03224765B46",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use IT Glue with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-it-glue-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:17.8836468Z",
+    "Status": 200,
+    "Bytes": 4123,
+    "SHA256": "674E6891DF3C542C36CF69057112FD46E352639738A4F2723EA8DCEF561B19C3",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use Linear with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-linear-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:18.7306207Z",
+    "Status": 200,
+    "Bytes": 5640,
+    "SHA256": "38E4DC3686CB5CC738DDFB1570BA7E80E9C8A0D716890CEC8249FFADF724F7D5",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use Liongard with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-liongard-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:19.1532257Z",
+    "Status": 200,
+    "Bytes": 5070,
+    "SHA256": "B85A246341FD3F2C579F55C6A60C83EB9F07C599682485367DD826E513D207BF",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use Notion with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-notion-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:20.045923Z",
+    "Status": 200,
+    "Bytes": 4528,
+    "SHA256": "35A992D9ABF58C8489CC6FADAC9BEDF8546AA04A2D0751A4B7A14989EC339BE1",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use TimeZest with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-time-zest-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:20.8141612Z",
+    "Status": 200,
+    "Bytes": 3367,
+    "SHA256": "345A204D9C34F04E3C4283E8EEF09CEB1C4CD8B5D5FDF629A3386923675DEBCB",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Use Zapier with Super Magic",
+    "URL": "https://docs.getthread.com/super-magic/use-zapier-with-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:13:21.1946074Z",
+    "Status": 200,
+    "Bytes": 3685,
+    "SHA256": "4806FF56FDD5493F7722207F2453607950A78DD554DA54A4DBB7BE150007654E",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Configure Ticket Type Categorization in Autotask and Halo",
+    "URL": "https://docs.getthread.com/assistive-ai/configuring-ticket-type-categorization.md",
+    "RetrievedUTC": "2026-09-10T20:14:11.7093514Z",
+    "Status": 200,
+    "Bytes": 4122,
+    "SHA256": "EBC9D190435ABB238837093B6C885AD62B1BBD997989468EECF6D82A7FEE3B4C",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Configure Auto Categorization in Thread",
+    "URL": "https://docs.getthread.com/assistive-ai/getting-started-with-auto-categorization.md",
+    "RetrievedUTC": "2026-09-10T20:14:12.0817119Z",
+    "Status": 200,
+    "Bytes": 7908,
+    "SHA256": "DDD7175CE326B9C31EA3FF2281E517B58CA3F1F61C0A46D0E436B9F4BDBB3627",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Welcome to Thread",
+    "URL": "https://docs.getthread.com/index.md",
+    "RetrievedUTC": "2026-09-10T20:14:12.450655Z",
+    "Status": 200,
+    "Bytes": 5485,
+    "SHA256": "968D5511155829FDE6DA6F7E7848618F4464E70FBED908C8D1455F51F5393B5C",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Connect IT Glue Documentation to Super Magic",
+    "URL": "https://docs.getthread.com/integrations/it-glue-super-magic.md",
+    "RetrievedUTC": "2026-09-10T20:14:12.8916656Z",
+    "Status": 200,
+    "Bytes": 17622,
+    "SHA256": "1DB7C9F1A67829FBB4380D2A494842EB7432C35215B64C72047994E0BD1A8315",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Configure status mapping",
+    "URL": "https://docs.getthread.com/onboarding/configure-status-mapping.md",
+    "RetrievedUTC": "2026-09-10T20:14:13.7081151Z",
+    "Status": 200,
+    "Bytes": 7537,
+    "SHA256": "17CB2AEC325AD578DAFF38D03CE1790741305A92BB966723A964E631477626C7",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Thread MCP, the tool reference, and the API",
+    "URL": "https://docs.getthread.com/start-here/roles/automation-engineer/thread-mcp-and-api.md",
+    "RetrievedUTC": "2026-09-10T20:14:14.1263748Z",
+    "Status": 200,
+    "Bytes": 12144,
+    "SHA256": "B625E6EE4CDD228B6AB4B2ACC03E4DC729ED404EE251A9C6B007E63650B5A8C4",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "How Thread handles your data",
+    "URL": "https://docs.getthread.com/start-here/roles/security-compliance-owner/data-and-compliance.md",
+    "RetrievedUTC": "2026-09-10T20:14:14.5822686Z",
+    "Status": 200,
+    "Bytes": 12108,
+    "SHA256": "1530283DD0106139DFD020CB47B9FD17799CACFFE6981E889495F1ED2687CCA1",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Autotask Contract Categories",
+    "URL": "https://docs.getthread.com/skill-library/psa-specific/autotask-contract-categories.md",
+    "RetrievedUTC": "2026-09-10T20:15:10.9038660Z",
+    "Status": 200,
+    "Bytes": 4567,
+    "SHA256": "707932E352856537BF4F927BA1B8DCC2324AB0784F9501FDBCE7836CA2F851ED",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Autotask Contracts Blocks",
+    "URL": "https://docs.getthread.com/skill-library/psa-specific/autotask-contracts-blocks.md",
+    "RetrievedUTC": "2026-09-10T20:15:11.9172887Z",
+    "Status": 200,
+    "Bytes": 4745,
+    "SHA256": "06F54C2E24FA59AAF8E1BA4FD4EF06F4887C94E2DC78209C7BB365CBD632CA2D",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Autotask Merge Simulation",
+    "URL": "https://docs.getthread.com/skill-library/psa-specific/autotask-merge-simulation.md",
+    "RetrievedUTC": "2026-09-10T20:15:12.3619130Z",
+    "Status": 200,
+    "Bytes": 4602,
+    "SHA256": "6298AA830CEE55864CF8AA5A7668836C2D4027DE5F14F2B3A9C526EE0DBE9359",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Autotask Queue Management",
+    "URL": "https://docs.getthread.com/skill-library/psa-specific/autotask-queue-management.md",
+    "RetrievedUTC": "2026-09-10T20:15:12.9985056Z",
+    "Status": 200,
+    "Bytes": 4286,
+    "SHA256": "9469CECC4BD94F50B3134C49D93A78B8F6736B61427D52BD2896B886C7B0C7FA",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Autotask Service Call Scheduling",
+    "URL": "https://docs.getthread.com/skill-library/psa-specific/autotask-service-call-scheduling.md",
+    "RetrievedUTC": "2026-09-10T20:15:13.3653240Z",
+    "Status": 200,
+    "Bytes": 4343,
+    "SHA256": "6BD051E7AF6C0C896273D6C7C64F7764F1A574B82A9FF289320DFA6CEEC4DC9A",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Autotask SLA Workflow",
+    "URL": "https://docs.getthread.com/skill-library/psa-specific/autotask-sla-workflow.md",
+    "RetrievedUTC": "2026-09-10T20:15:14.0767021Z",
+    "Status": 200,
+    "Bytes": 4651,
+    "SHA256": "01E5F2CCAC82CEB4172848654BDBB4253EC819F268190CE867D899CEB5F5BA23",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "Title": "Autotask Ticket Categories",
+    "URL": "https://docs.getthread.com/skill-library/psa-specific/autotask-ticket-categories.md",
+    "RetrievedUTC": "2026-09-10T20:15:14.5316753Z",
+    "Status": 200,
+    "Bytes": 4485,
+    "SHA256": "B0729C24BB3AA72E118588ABD6E639C51B463D9441408C612FA22A18EF2B0FD3",
+    "Error": null,
+    "repository_copy": "Not retained; consult the source URL."
+  }
+]

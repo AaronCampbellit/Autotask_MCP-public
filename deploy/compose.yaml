@@ -1,0 +1,131 @@
+# Baseline Compose configuration. The LAN pilot adds local TLS and collector overrides.
+name: rarity-autotask-mcp
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE:-postgres:17-bookworm}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-autotask_mcp}
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_BOOTSTRAP_PASSWORD:?Provide the PostgreSQL bootstrap secret}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U postgres -d "$${POSTGRES_DB}"']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks: [database]
+    mem_limit: 1g
+    cpus: 1.0
+
+  migrate:
+    image: ${MCP_IMAGE:-rarity-autotask-mcp:local}
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    environment:
+      DATABASE_URL: ${MIGRATION_DATABASE_URL:?Provide the separate migration-role connection}
+    command: [node, work/build/apps/server/src/migrate.js]
+    healthcheck:
+      disable: true
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    networks: [database]
+
+  server:
+    image: ${MCP_IMAGE:-rarity-autotask-mcp:local}
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    init: true
+    environment:
+      AUTOTASK_CONFIG_DIRECTORY: /app/work/autotask-config
+      WORKSPACE_TIMEZONE: ${WORKSPACE_TIMEZONE:-}
+      RESOURCE_TIMEZONES: ${RESOURCE_TIMEZONES:-}
+      WORK_MANAGEMENT_ENABLED: ${WORK_MANAGEMENT_ENABLED:-false}
+      WORK_MANAGEMENT_WRITES_ENABLED: ${WORK_MANAGEMENT_WRITES_ENABLED:-false}
+      ATTACHMENT_INTERNAL_PUBLISH_LABEL: ${ATTACHMENT_INTERNAL_PUBLISH_LABEL:-}
+      ATTACHMENTS_ENABLED: ${ATTACHMENTS_ENABLED:-false}
+      ATTACHMENTS_WRITES_ENABLED: ${ATTACHMENTS_WRITES_ENABLED:-false}
+      BUSINESS_ENABLED: ${BUSINESS_ENABLED:-false}
+      BUSINESS_WRITES_ENABLED: ${BUSINESS_WRITES_ENABLED:-false}
+      AUTOTASK_WEBHOOK_BINDINGS: ${AUTOTASK_WEBHOOK_BINDINGS:-}
+      DIAGNOSTICS_ENABLED: ${DIAGNOSTICS_ENABLED:-true}
+      DIAGNOSTICS_KEYRING: ${DIAGNOSTICS_KEYRING:-}
+      DIAGNOSTICS_ENCRYPTION_KEY: ${DIAGNOSTICS_ENCRYPTION_KEY:-}
+      DIAGNOSTICS_SPOOL_DIRECTORY: /app/work/diagnostics
+      MCP_DISCOVERY_PROFILE: ${MCP_DISCOVERY_PROFILE:-full}
+      MCP_MRTR_ENABLED: ${MCP_MRTR_ENABLED:-false}
+      NODE_ENV: production
+      PORT: "3030"
+      PUBLIC_URL: ${PUBLIC_URL:?Provide the reviewed HTTPS origin}
+      DATABASE_URL: ${DATABASE_URL:?Provide the restricted runtime-role connection}
+      ENTRA_TENANT_ID: ${ENTRA_TENANT_ID:?Provide the tenant GUID}
+      ENTRA_AUDIENCE: ${ENTRA_AUDIENCE:?Provide the exact API audience}
+      ENTRA_SCOPE: ${ENTRA_SCOPE:-mcp.access}
+      AUTOTASK_BASE_URL: ${AUTOTASK_BASE_URL:-}
+      AUTOTASK_USERNAME: ${AUTOTASK_USERNAME:-}
+      AUTOTASK_SECRET: ${AUTOTASK_SECRET:-}
+      AUTOTASK_INTEGRATION_CODE: ${AUTOTASK_INTEGRATION_CODE:-}
+      CURSOR_SECRET: ${CURSOR_SECRET:?Provide a separate random cursor secret}
+      OPERATION_PAYLOAD_KEY: ${OPERATION_PAYLOAD_KEY:?Provide the 32-byte base64 workflow key}
+      ARTIFACT_ENCRYPTION_KEY: ${ARTIFACT_ENCRYPTION_KEY:?Provide a separate 32-byte base64 artifact key}
+      ADMIN_ENTRA_CLIENT_ID: ${ADMIN_ENTRA_CLIENT_ID:-}
+      ADMIN_ENTRA_CLIENT_SECRET: ${ADMIN_ENTRA_CLIENT_SECRET:-}
+      ADMIN_BOOTSTRAP_IDENTITIES: ${ADMIN_BOOTSTRAP_IDENTITIES:-}
+      METADATA_SNAPSHOT_PATH: ${METADATA_SNAPSHOT_PATH:-}
+      OPERATIONAL_WRITES_ENABLED: ${OPERATIONAL_WRITES_ENABLED:-false}
+      SALES_ENABLED: ${SALES_ENABLED:-false}
+      SALES_WRITES_ENABLED: ${SALES_WRITES_ENABLED:-false}
+      APPLICATION_SCOPED_READ_OPERATIONS: ${APPLICATION_SCOPED_READ_OPERATIONS:-}
+      ENABLED_AUTOTASK_OPERATIONS: ${ENABLED_AUTOTASK_OPERATIONS:-}
+      AUTOTASK_REQUESTS_PER_WINDOW: ${AUTOTASK_REQUESTS_PER_WINDOW:-}
+      AUTOTASK_BUDGET_WINDOW_MS: ${AUTOTASK_BUDGET_WINDOW_MS:-}
+      AUTOTASK_EXTERNAL_HEADROOM: ${AUTOTASK_EXTERNAL_HEADROOM:-}
+      AUTOTASK_THRESHOLD_MAX_AGE_MS: ${AUTOTASK_THRESHOLD_MAX_AGE_MS:-}
+      AUTOTASK_THRESHOLD_PATH: ${AUTOTASK_THRESHOLD_PATH:-}
+      AUTOTASK_BUDGET_MAX_WAIT_MS: ${AUTOTASK_BUDGET_MAX_WAIT_MS:-}
+      AUTOTASK_BUDGET_QUEUE_SIZE: ${AUTOTASK_BUDGET_QUEUE_SIZE:-}
+      AUTOTASK_TICKET_HOSTS: ${AUTOTASK_TICKET_HOSTS:-}
+      JOB_WORKER_ENABLED: ${JOB_WORKER_ENABLED:-true}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      # A separately managed local HTTPS reverse proxy owns public ingress.
+      - "127.0.0.1:${MCP_HOST_PORT:-3030}:3030"
+    volumes:
+      - diagnostic-data:/app/work/diagnostics
+      - artifact-data:/app/work/artifacts
+      - autotask-config:/app/work/autotask-config
+      # Put snapshot plus its relative evidence tree here. Mount is read-only.
+      - type: bind
+        source: ${MCP_METADATA_DIRECTORY:-./metadata}
+        target: /app/config/metadata
+        read_only: true
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    networks: [database, egress]
+    stop_grace_period: 45s
+    mem_limit: 1g
+    cpus: 2.0
+
+volumes:
+  postgres-data:
+  diagnostic-data:
+  artifact-data:
+  autotask-config:
+networks:
+  database:
+    internal: true
+  egress: {}

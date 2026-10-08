@@ -1,0 +1,31 @@
+# Exactly one collector; its persisted 100-request partition is reserved separately
+# from the server allowance. No ports, database access, or mutation routes.
+services:
+  collector:
+    image: ${MCP_IMAGE:-rarity-autotask-mcp:local}
+    command: [node, work/build/scripts/collect-live.js]
+    restart: unless-stopped
+    init: true
+    environment:
+      AUTOTASK_CONFIG_DIRECTORY: /app/work/autotask-config
+      AUTOTASK_USERNAME: ${AUTOTASK_USERNAME:-}
+      AUTOTASK_SECRET: ${AUTOTASK_SECRET:-}
+      AUTOTASK_INTEGRATION_CODE: ${AUTOTASK_INTEGRATION_CODE:-}
+    volumes:
+      - autotask-config:/app/work/autotask-config:ro
+      - type: bind
+        source: ${MCP_METADATA_DIRECTORY:?Provide metadata directory}
+        target: /app/config/metadata
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    networks: [egress]
+    mem_limit: 256m
+    cpus: 0.5
+    healthcheck:
+      test: [CMD, node, -e, "const f=require('fs');const s=JSON.parse(f.readFileSync('config/metadata/snapshot.json'));const t=JSON.parse(f.readFileSync('config/metadata/threshold.json'));const r=s.content.resourceVerifications;process.exit(r.length>=1&&r.every(v=>Date.parse(v.expiresAt)>Date.now())&&Date.parse(t.observation.expiresAt)>Date.now()&&Date.parse(s.content.expiresAt)>Date.now()?0:1)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 2

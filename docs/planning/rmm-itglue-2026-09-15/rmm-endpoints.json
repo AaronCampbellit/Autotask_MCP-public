@@ -1,0 +1,651 @@
+[
+  {
+    "method": "PUT",
+    "path": "/v2/site",
+    "operation_id": "create",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "PUT",
+    "path": "/v2/site/{siteUid}/variable",
+    "operation_id": "createSiteVariable",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "PUT",
+    "path": "/v2/device/{deviceUid}/site/{siteUid}",
+    "operation_id": "moveDevice",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "PUT",
+    "path": "/v2/device/{deviceUid}/quickjob",
+    "operation_id": "createQuickJob",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "PUT",
+    "path": "/v2/account/variable",
+    "operation_id": "createAccountVariable",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/user/resetApiKeys",
+    "operation_id": "resetApiKeys",
+    "tags": [
+      "/v2/user"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}",
+    "operation_id": "getSite",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/site/{siteUid}",
+    "operation_id": "update",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/site/{siteUid}/variable/{variableId}",
+    "operation_id": "updateSiteVariable",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "DELETE",
+    "path": "/v2/site/{siteUid}/variable/{variableId}",
+    "operation_id": "deleteSiteVariable",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/site/{siteUid}/settings/proxy",
+    "operation_id": "updateProxy",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "DELETE",
+    "path": "/v2/site/{siteUid}/settings/proxy",
+    "operation_id": "deleteProxy",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/device/{deviceUid}/warranty",
+    "operation_id": "setWarrantyData",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/device/{deviceUid}/udf",
+    "operation_id": "setUdfFields",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/alert/{alertUid}/unmute",
+    "operation_id": "unmuteAlert",
+    "tags": [
+      "/v2/alert"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/alert/{alertUid}/resolve",
+    "operation_id": "resolveAlert",
+    "tags": [
+      "/v2/alert"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/alert/{alertUid}/mute",
+    "operation_id": "muteAlert",
+    "tags": [
+      "/v2/alert"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "POST",
+    "path": "/v2/account/variable/{variableId}",
+    "operation_id": "updateAccountVariable",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "DELETE",
+    "path": "/v2/account/variable/{variableId}",
+    "operation_id": "deleteAccountVariable",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/system/status",
+    "operation_id": "getStatus",
+    "tags": [
+      "/v2/system"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/system/request_rate",
+    "operation_id": "get",
+    "tags": [
+      "/v2/system"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/system/pagination",
+    "operation_id": "getPaginationConfigurations",
+    "tags": [
+      "/v2/system"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/variables",
+    "operation_id": "getSiteVariables",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/settings",
+    "operation_id": "getSiteSettings",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/patches",
+    "operation_id": "getSitePatches",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/filters",
+    "operation_id": "getSiteDeviceFilters",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/devices",
+    "operation_id": "getSiteDevices",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/devices/network-interface",
+    "operation_id": "getSiteDevicesWithNetworkInterface",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/alerts/resolved",
+    "operation_id": "getSiteResolvedAlerts",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/site/{siteUid}/alerts/open",
+    "operation_id": "getSiteOpenAlerts",
+    "tags": [
+      "/v2/site"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/job/{jobUid}",
+    "operation_id": "get_1",
+    "tags": [
+      "/v2/job"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/job/{jobUid}/results/{deviceUid}",
+    "operation_id": "getJobResults",
+    "tags": [
+      "/v2/job"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/job/{jobUid}/results/{deviceUid}/stdout",
+    "operation_id": "getStdOut",
+    "tags": [
+      "/v2/job"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/job/{jobUid}/results/{deviceUid}/stderr",
+    "operation_id": "getStdErr",
+    "tags": [
+      "/v2/job"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/job/{jobUid}/components",
+    "operation_id": "getJobComponents",
+    "tags": [
+      "/v2/job"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/filter/default-filters",
+    "operation_id": "getDefaultsFilters",
+    "tags": [
+      "/v2/filter"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/filter/custom-filters",
+    "operation_id": "getCustomFilters",
+    "tags": [
+      "/v2/filter"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/device/{deviceUid}",
+    "operation_id": "getByUid",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/device/{deviceUid}/patches",
+    "operation_id": "getDevicePatches",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/device/{deviceUid}/alerts/resolved",
+    "operation_id": "getDeviceResolvedAlerts",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/device/{deviceUid}/alerts/open",
+    "operation_id": "getDeviceOpenAlerts",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/device/macAddress/{macAddress}",
+    "operation_id": "getByMacAddress",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/device/id/{deviceId}",
+    "operation_id": "getById",
+    "tags": [
+      "/v2/device"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/audit/printer/{deviceUid}",
+    "operation_id": "getPrinterAudit",
+    "tags": [
+      "/v2/audit"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/audit/esxihost/{deviceUid}",
+    "operation_id": "getEsxiHostAudit",
+    "tags": [
+      "/v2/audit"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/audit/device/{deviceUid}",
+    "operation_id": "getDeviceAudit",
+    "tags": [
+      "/v2/audit"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/audit/device/{deviceUid}/software",
+    "operation_id": "getDeviceAuditSoftware",
+    "tags": [
+      "/v2/audit"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/audit/device/macAddress/{macAddress}",
+    "operation_id": "getDeviceAuditByMacAddress",
+    "tags": [
+      "/v2/audit"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/alert/{alertUid}",
+    "operation_id": "getAlert",
+    "tags": [
+      "/v2/alert"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/activity-logs",
+    "operation_id": "getActivities",
+    "tags": [
+      "/v2/activity-logs"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account",
+    "operation_id": "getUserAccount",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/variables",
+    "operation_id": "getAccountVariables",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/users",
+    "operation_id": "getUsers",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/sites",
+    "operation_id": "getSites",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/dnet-site-mappings",
+    "operation_id": "getDnetSiteMappings",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/devices",
+    "operation_id": "getUserAccountDevices",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/components",
+    "operation_id": "getComponents",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/alerts/resolved",
+    "operation_id": "getUserAccountClosedAlerts",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  },
+  {
+    "method": "GET",
+    "path": "/v2/account/alerts/open",
+    "operation_id": "getUserAccountOpenAlerts",
+    "tags": [
+      "/v2/account"
+    ],
+    "source": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "implementation_status": "not_implemented_by_this_plan",
+    "schema_status": "Consult vendor source for schemas, field conditions and examples; no copied specification retained."
+  }
+]

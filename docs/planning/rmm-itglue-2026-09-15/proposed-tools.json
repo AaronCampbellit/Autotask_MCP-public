@@ -1,0 +1,782 @@
+[
+  {
+    "name": "rmm_site_search",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/account/sites"
+      }
+    ],
+    "purpose": "Resolve authorized sites using verified company mappings; apply name search locally only when explicitly labelled.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_site_get",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "site_uid"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/site/{siteUid}"
+      }
+    ],
+    "purpose": "Read projected site details; no proxy secrets.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_device_search",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "site_uid?",
+      "hostname?",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/site/{siteUid}/devices"
+      }
+    ],
+    "purpose": "Find scoped devices; never claim a hostname is a server-side filter without schema support.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_device_get",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "device_uid"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/device/{deviceUid}"
+      }
+    ],
+    "purpose": "Read identity, last-seen, last-audit and available status evidence.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_device_audit_get",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "device_uid",
+      "kind:device|printer|esxihost"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/audit/device/{deviceUid}"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/audit/printer/{deviceUid}"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/audit/esxihost/{deviceUid}"
+      }
+    ],
+    "purpose": "Retrieve the matching device-class audit with timestamps; reject mismatched class.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_software_search",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "device_uid",
+      "name?",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/audit/device/{deviceUid}/software"
+      }
+    ],
+    "purpose": "Read audited software; installed software does not prove use or cloud-consent activity.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_alert_search",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "site_uid?",
+      "device_uid?",
+      "state:open|resolved",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/site/{siteUid}/alerts/open"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/site/{siteUid}/alerts/resolved"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/device/{deviceUid}/alerts/open"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/device/{deviceUid}/alerts/resolved"
+      }
+    ],
+    "purpose": "Find alerts in exactly the requested scope/state.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_alert_get",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "alert_uid"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/alert/{alertUid}"
+      }
+    ],
+    "purpose": "Verify alert device/site before returning evidence.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_patch_search",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "site_uid?",
+      "device_uid?",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/site/{siteUid}/patches"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/device/{deviceUid}/patches"
+      }
+    ],
+    "purpose": "Read native patch records; no inferred patch approval or installation action.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_component_search",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "name?",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/account/components"
+      }
+    ],
+    "purpose": "Return locally approved catalog entries, not unrestricted executable components.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_job_get",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "job_uid",
+      "device_uid"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/job/{jobUid}"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/job/{jobUid}/results/{deviceUid}"
+      }
+    ],
+    "purpose": "Read a job with proven device scope; job completion is not business success.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_job_output_get",
+    "provider": "rmm",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "job_uid",
+      "device_uid",
+      "stream:stdout|stderr",
+      "offset",
+      "length"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/v2/job/{jobUid}/results/{deviceUid}/stdout"
+      },
+      {
+        "method": "GET",
+        "path": "/v2/job/{jobUid}/results/{deviceUid}/stderr"
+      }
+    ],
+    "purpose": "Return bounded, sanitized untrusted output after scope checks.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_quickjob_run",
+    "provider": "rmm",
+    "phase": "P3",
+    "arguments": [
+      "company",
+      "device_uid",
+      "component_uid",
+      "job_name",
+      "variables",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "PUT",
+        "path": "/v2/device/{deviceUid}/quickjob"
+      }
+    ],
+    "purpose": "Execute one reviewed existing component on one verified device; receipt stores native job UID.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_alert_resolve",
+    "provider": "rmm",
+    "phase": "P3",
+    "arguments": [
+      "company",
+      "alert_uid",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/v2/alert/{alertUid}/resolve"
+      }
+    ],
+    "purpose": "Explicit alert state change; does not prove remediation.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_alert_mute",
+    "provider": "rmm",
+    "phase": "P3",
+    "arguments": [
+      "company",
+      "alert_uid",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/v2/alert/{alertUid}/mute"
+      }
+    ],
+    "purpose": "Explicit alert state change; does not prove remediation.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_alert_unmute",
+    "provider": "rmm",
+    "phase": "P3",
+    "arguments": [
+      "company",
+      "alert_uid",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/v2/alert/{alertUid}/unmute"
+      }
+    ],
+    "purpose": "Explicit alert state change; does not prove remediation.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_device_udf_update",
+    "provider": "rmm",
+    "phase": "P3",
+    "arguments": [
+      "company",
+      "device_uid",
+      "fields",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/v2/device/{deviceUid}/udf"
+      }
+    ],
+    "purpose": "Change reviewed UDF fields only, preserving native semantics.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "rmm_device_warranty_update",
+    "provider": "rmm",
+    "phase": "P3",
+    "arguments": [
+      "company",
+      "device_uid",
+      "warranty",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/v2/device/{deviceUid}/warranty"
+      }
+    ],
+    "purpose": "Save supplied warranty facts using exact native request schema.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_organization_search",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "filters",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/organizations"
+      }
+    ],
+    "purpose": "Resolve organization scope; expose only documented filters and permitted fields.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_organization_get",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "id"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/organizations/:id"
+      }
+    ],
+    "purpose": "Validate parent organization and project included relationships before returning.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_configuration_search",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "filters",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/configurations"
+      }
+    ],
+    "purpose": "Resolve organization scope; expose only documented filters and permitted fields.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_configuration_get",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "id"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/configurations/:id"
+      }
+    ],
+    "purpose": "Validate parent organization and project included relationships before returning.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_contact_search",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "filters",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/contacts"
+      }
+    ],
+    "purpose": "Resolve organization scope; expose only documented filters and permitted fields.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_contact_get",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "id"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/contacts/:id"
+      }
+    ],
+    "purpose": "Validate parent organization and project included relationships before returning.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_flexible_asset_search",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "filters",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/flexible_assets"
+      }
+    ],
+    "purpose": "Resolve organization scope; expose only documented filters and permitted fields.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_flexible_asset_get",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "id"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/flexible_assets/:id"
+      }
+    ],
+    "purpose": "Validate parent organization and project included relationships before returning.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_document_search",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "folder_id?",
+      "all_folders",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/documents"
+      }
+    ],
+    "purpose": "Distinguish root-folder default from explicit all-folder retrieval.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_document_get",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "document_id"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/documents/:id"
+      },
+      {
+        "method": "GET",
+        "path": "/documents/:document_id/relationships/sections"
+      }
+    ],
+    "purpose": "Read document with sections as untrusted content; sanitize HTML.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_checklist_search",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "filters",
+      "page_size",
+      "cursor"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/organizations/:organization_id/relationships/checklists"
+      }
+    ],
+    "purpose": "Retrieve existing checklists; no undocumented task-completion endpoint.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_checklist_get",
+    "provider": "itglue",
+    "phase": "P1",
+    "arguments": [
+      "company",
+      "id"
+    ],
+    "native_routes": [
+      {
+        "method": "GET",
+        "path": "/checklists/:id"
+      }
+    ],
+    "purpose": "Read permitted task relationships and native checklist state.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_document_create",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "folder_id?",
+      "name",
+      "sections",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/documents"
+      },
+      {
+        "method": "POST",
+        "path": "/documents/:document_id/relationships/sections"
+      }
+    ],
+    "purpose": "Multi-step draft creation; publish only through a separately requested action.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_document_update",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "document_id",
+      "fields",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "PATCH",
+        "path": "/documents/:id"
+      }
+    ],
+    "purpose": "Preserve sections and formatting through exact reviewed fields.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_document_section_update",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "document_id",
+      "section_id",
+      "fields",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "PATCH",
+        "path": "/documents/:document_id/relationships/sections/:id"
+      }
+    ],
+    "purpose": "Validate section type and parent; do not overwrite unrelated sections.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_document_publish",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "document_id",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "PATCH",
+        "path": "/documents/:id/publish"
+      }
+    ],
+    "purpose": "Native document publishing is explicit; never infer public sharing.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_flexible_asset_create",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "id?",
+      "fields",
+      "expected?",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/flexible_assets"
+      }
+    ],
+    "purpose": "Check source-of-truth ownership and field/relationship schema before writes.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_flexible_asset_update",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "id?",
+      "fields",
+      "expected?",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "PATCH",
+        "path": "/flexible_assets/:id"
+      }
+    ],
+    "purpose": "Check source-of-truth ownership and field/relationship schema before writes.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_configuration_create",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "id?",
+      "fields",
+      "expected?",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "POST",
+        "path": "/configurations"
+      }
+    ],
+    "purpose": "Check source-of-truth ownership and field/relationship schema before writes.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_configuration_update",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "id?",
+      "fields",
+      "expected?",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "PATCH",
+        "path": "/configurations/:id"
+      }
+    ],
+    "purpose": "Check source-of-truth ownership and field/relationship schema before writes.",
+    "status": "proposed_not_registered"
+  },
+  {
+    "name": "itg_checklist_update",
+    "provider": "itglue",
+    "phase": "P2",
+    "arguments": [
+      "company",
+      "id",
+      "fields",
+      "expected",
+      "request_key"
+    ],
+    "native_routes": [
+      {
+        "method": "PATCH",
+        "path": "/checklists/:id"
+      }
+    ],
+    "purpose": "Only documented checklist attributes; no promise of creating or completing individual tasks.",
+    "status": "proposed_not_registered"
+  }
+]

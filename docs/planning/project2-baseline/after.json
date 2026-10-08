@@ -1,0 +1,2511 @@
+{
+  "schema_version": 1,
+  "measured_at": "2026-09-20T00:47:40.196Z",
+  "release": "0.2.0-integrations-diagnostics.20260920.1",
+  "node": "v24.19.0",
+  "mode": "local_fixture_real_http",
+  "iterations": 5,
+  "limitations": [
+    "Cold means first request on a fresh fixture, not a fresh Node process.",
+    "Fixture adapter calls are not native HTTP attempts; other fixture ports are not counted.",
+    "No live provider, model-turn or actual ChatGPT/Codex measurements.",
+    "Report creation/execution and RMM setup are excluded from timed retrieval; all provider ports are fixtures. RMM port calls are counted for its context scenario.",
+    "New RMM/report/write scenarios have no historical before baseline. Each note write uses a fresh request key; the adapter sequence records preflight, dispatch and readback.",
+    "Completeness assertions belong to scenario regression tests; latency alone does not establish correctness."
+  ],
+  "host_matrix": [
+    {
+      "host": "local direct HTTP harness",
+      "protocols": [
+        "2025-11-25",
+        "2026-07-28"
+      ],
+      "tested": [
+        "discovery",
+        "structured tool output"
+      ]
+    },
+    {
+      "host": "ChatGPT",
+      "status": "not_measured"
+    },
+    {
+      "host": "Codex",
+      "status": "not_measured"
+    }
+  ],
+  "results": [
+    {
+      "protocol": "2025-11-25",
+      "scenario": "discovery",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 357.00637800000004,
+        "request_bytes": 58,
+        "response_bytes": 494882,
+        "fixture_autotask_calls": 0,
+        "fixture_autotask_sequence": [],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 30.01596299999983,
+            "request_bytes": 58,
+            "response_bytes": 494882,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 21.824631999999838,
+            "request_bytes": 58,
+            "response_bytes": 494882,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 19.992512999999917,
+            "request_bytes": 58,
+            "response_bytes": 494882,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 20.226118000000042,
+            "request_bytes": 58,
+            "response_bytes": 494882,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 18.109140000000025,
+            "request_bytes": 58,
+            "response_bytes": 494882,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 20.226118000000042,
+        "p95_ms": 30.01596299999983,
+        "p99_ms": 30.01596299999983
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "ticket_context_exact_id",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 57.946866999999884,
+        "request_bytes": 178,
+        "response_bytes": 37597,
+        "fixture_autotask_calls": 10,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "query"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "query"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "query"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TimeEntries",
+            "kind": "query"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 23.00128799999993,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 18.492569999999887,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 17.403680000000122,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 16.389216000000033,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 13.599146000000019,
+            "request_bytes": 178,
+            "response_bytes": 37597,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 17.403680000000122,
+        "p95_ms": 23.00128799999993,
+        "p99_ms": 23.00128799999993
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "ticket_lookup_text",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 22.760557999999946,
+        "request_bytes": 111,
+        "response_bytes": 1387,
+        "fixture_autotask_calls": 1,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "query"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 10.260723000000098,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 7.122123999999985,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 7.800702999999885,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 7.358547000000044,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.763253999999961,
+            "request_bytes": 111,
+            "response_bytes": 1387,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 7.358547000000044,
+        "p95_ms": 10.260723000000098,
+        "p99_ms": 10.260723000000098
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "current_user_workday",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 103.73954000000003,
+        "request_bytes": 140,
+        "response_bytes": 6031,
+        "fixture_autotask_calls": 5,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 52.59615699999995,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 55.43331499999999,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 53.5488519999999,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 57.89305599999989,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 53.328528000000006,
+            "request_bytes": 140,
+            "response_bytes": 6031,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 53.5488519999999,
+        "p95_ms": 57.89305599999989,
+        "p99_ms": 57.89305599999989
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "rmm_ticket_context",
+      "historical_baseline": false,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 94.48397900000009,
+        "request_bytes": 132,
+        "response_bytes": 2051,
+        "fixture_autotask_calls": 6,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          }
+        ],
+        "fixture_rmm_calls": 5
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 19.719466999999895,
+            "request_bytes": 132,
+            "response_bytes": 2051,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 17.819821000000047,
+            "request_bytes": 132,
+            "response_bytes": 2051,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 20.900032999999894,
+            "request_bytes": 132,
+            "response_bytes": 2051,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 19.360111999999845,
+            "request_bytes": 132,
+            "response_bytes": 2051,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 18.146994000000177,
+            "request_bytes": 132,
+            "response_bytes": 2051,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          }
+        ],
+        "p50_ms": 19.360111999999845,
+        "p95_ms": 20.900032999999894,
+        "p99_ms": 20.900032999999894
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "report_retrieval",
+      "historical_baseline": false,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 8.195048000000043,
+        "request_bytes": 150,
+        "response_bytes": 1259,
+        "fixture_autotask_calls": 0,
+        "fixture_autotask_sequence": [],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 6.665237000000161,
+            "request_bytes": 150,
+            "response_bytes": 1259,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 5.870570999999927,
+            "request_bytes": 150,
+            "response_bytes": 1259,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.685128999999961,
+            "request_bytes": 150,
+            "response_bytes": 1259,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.3834280000000945,
+            "request_bytes": 150,
+            "response_bytes": 1259,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.163285999999971,
+            "request_bytes": 150,
+            "response_bytes": 1259,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 6.3834280000000945,
+        "p95_ms": 6.685128999999961,
+        "p99_ms": 6.685128999999961
+      }
+    },
+    {
+      "protocol": "2025-11-25",
+      "scenario": "fixture_ticket_note_write",
+      "historical_baseline": false,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 29.896426000000247,
+        "request_bytes": 266,
+        "response_bytes": 1851,
+        "fixture_autotask_calls": 9,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "create"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 9.030052000000069,
+            "request_bytes": 266,
+            "response_bytes": 1851,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 7.982602999999926,
+            "request_bytes": 266,
+            "response_bytes": 1851,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 8.54085299999997,
+            "request_bytes": 266,
+            "response_bytes": 1851,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 16.91348199999993,
+            "request_bytes": 266,
+            "response_bytes": 1851,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 8.941967000000204,
+            "request_bytes": 266,
+            "response_bytes": 1851,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 8.941967000000204,
+        "p95_ms": 16.91348199999993,
+        "p99_ms": 16.91348199999993
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "discovery",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 39.70766599999979,
+        "request_bytes": 249,
+        "response_bytes": 495048,
+        "fixture_autotask_calls": 0,
+        "fixture_autotask_sequence": [],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 14.312988000000132,
+            "request_bytes": 249,
+            "response_bytes": 495048,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 15.093020000000251,
+            "request_bytes": 249,
+            "response_bytes": 495048,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 15.691571999999724,
+            "request_bytes": 249,
+            "response_bytes": 495048,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 16.947520000000168,
+            "request_bytes": 249,
+            "response_bytes": 495048,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 16.39592300000004,
+            "request_bytes": 249,
+            "response_bytes": 495048,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 15.691571999999724,
+        "p95_ms": 16.947520000000168,
+        "p99_ms": 16.947520000000168
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "ticket_context_exact_id",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 21.96445700000004,
+        "request_bytes": 370,
+        "response_bytes": 37730,
+        "fixture_autotask_calls": 10,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "query"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "query"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "query"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TimeEntries",
+            "kind": "query"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 11.500128000000132,
+            "request_bytes": 370,
+            "response_bytes": 37730,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 15.29151899999988,
+            "request_bytes": 370,
+            "response_bytes": 37730,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 16.229455000000144,
+            "request_bytes": 370,
+            "response_bytes": 37730,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 17.17941299999984,
+            "request_bytes": 370,
+            "response_bytes": 37730,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 15.674229000000196,
+            "request_bytes": 370,
+            "response_bytes": 37730,
+            "fixture_autotask_calls": 10,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "query"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TimeEntries",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 15.674229000000196,
+        "p95_ms": 17.17941299999984,
+        "p99_ms": 17.17941299999984
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "ticket_lookup_text",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 16.331069000000298,
+        "request_bytes": 303,
+        "response_bytes": 1520,
+        "fixture_autotask_calls": 1,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "query"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 6.684488999999758,
+            "request_bytes": 303,
+            "response_bytes": 1520,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 13.48874799999976,
+            "request_bytes": 303,
+            "response_bytes": 1520,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.653496999999788,
+            "request_bytes": 303,
+            "response_bytes": 1520,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 5.950018999999884,
+            "request_bytes": 303,
+            "response_bytes": 1520,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 5.982664999999997,
+            "request_bytes": 303,
+            "response_bytes": 1520,
+            "fixture_autotask_calls": 1,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "query"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 6.653496999999788,
+        "p95_ms": 13.48874799999976,
+        "p99_ms": 13.48874799999976
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "current_user_workday",
+      "historical_baseline": true,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 47.983964000000014,
+        "request_bytes": 332,
+        "response_bytes": 6164,
+        "fixture_autotask_calls": 5,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 41.878761000000395,
+            "request_bytes": 332,
+            "response_bytes": 6164,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 41.258120999999846,
+            "request_bytes": 332,
+            "response_bytes": 6164,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 41.68303399999968,
+            "request_bytes": 332,
+            "response_bytes": 6164,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 43.43736499999977,
+            "request_bytes": 332,
+            "response_bytes": 6164,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 47.173169000000144,
+            "request_bytes": 332,
+            "response_bytes": 6164,
+            "fixture_autotask_calls": 5,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 41.878761000000395,
+        "p95_ms": 47.173169000000144,
+        "p99_ms": 47.173169000000144
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "rmm_ticket_context",
+      "historical_baseline": false,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 24.957222999999885,
+        "request_bytes": 324,
+        "response_bytes": 2184,
+        "fixture_autotask_calls": 6,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          }
+        ],
+        "fixture_rmm_calls": 5
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 17.894414999999753,
+            "request_bytes": 324,
+            "response_bytes": 2184,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 19.852738000000045,
+            "request_bytes": 324,
+            "response_bytes": 2184,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 20.778939999999693,
+            "request_bytes": 324,
+            "response_bytes": 2184,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 20.543451000000005,
+            "request_bytes": 324,
+            "response_bytes": 2184,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 20.318960999999945,
+            "request_bytes": 324,
+            "response_bytes": 2184,
+            "fixture_autotask_calls": 6,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 5
+          }
+        ],
+        "p50_ms": 20.318960999999945,
+        "p95_ms": 20.778939999999693,
+        "p99_ms": 20.778939999999693
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "report_retrieval",
+      "historical_baseline": false,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 15.006781000000046,
+        "request_bytes": 342,
+        "response_bytes": 1392,
+        "fixture_autotask_calls": 0,
+        "fixture_autotask_sequence": [],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 18.458701999999903,
+            "request_bytes": 342,
+            "response_bytes": 1392,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.142437999999856,
+            "request_bytes": 342,
+            "response_bytes": 1392,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 5.831151000000318,
+            "request_bytes": 342,
+            "response_bytes": 1392,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.186222000000271,
+            "request_bytes": 342,
+            "response_bytes": 1392,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 6.35258900000008,
+            "request_bytes": 342,
+            "response_bytes": 1392,
+            "fixture_autotask_calls": 0,
+            "fixture_autotask_sequence": [],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 6.186222000000271,
+        "p95_ms": 18.458701999999903,
+        "p99_ms": 18.458701999999903
+      }
+    },
+    {
+      "protocol": "2026-07-28",
+      "scenario": "fixture_ticket_note_write",
+      "historical_baseline": false,
+      "cold": {
+        "status": 200,
+        "elapsed_ms": 14.843160999999782,
+        "request_bytes": 458,
+        "response_bytes": 1984,
+        "fixture_autotask_calls": 9,
+        "fixture_autotask_sequence": [
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "create"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          },
+          {
+            "entity": "TicketNotes",
+            "kind": "get"
+          },
+          {
+            "entity": "Tickets",
+            "kind": "get"
+          }
+        ],
+        "fixture_rmm_calls": 0
+      },
+      "warm": {
+        "samples": [
+          {
+            "status": 200,
+            "elapsed_ms": 7.350151000000096,
+            "request_bytes": 458,
+            "response_bytes": 1984,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 8.779468000000179,
+            "request_bytes": 458,
+            "response_bytes": 1984,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 9.361875999999938,
+            "request_bytes": 458,
+            "response_bytes": 1984,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 7.78456499999993,
+            "request_bytes": 458,
+            "response_bytes": 1984,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          },
+          {
+            "status": 200,
+            "elapsed_ms": 8.219336999999996,
+            "request_bytes": 458,
+            "response_bytes": 1984,
+            "fixture_autotask_calls": 9,
+            "fixture_autotask_sequence": [
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "create"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              },
+              {
+                "entity": "TicketNotes",
+                "kind": "get"
+              },
+              {
+                "entity": "Tickets",
+                "kind": "get"
+              }
+            ],
+            "fixture_rmm_calls": 0
+          }
+        ],
+        "p50_ms": 8.219336999999996,
+        "p95_ms": 9.361875999999938,
+        "p99_ms": 9.361875999999938
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+import {withReconciliation} from '../../execution/src/index.js';
+import { assertArea } from '../../policy/src/areas.js';
+import { createHash, randomUUID } from 'node:crypto';
+import { z } from 'zod';
+import { AppError, actorKey, type JournalRecord, type Principal } from '../../contracts/src/index.js';
+import { assertCapability, reauthorize } from '../../policy/src/index.js';
+import type { IntentCipher } from '../../storage/src/intent-cipher.js';
+import type { TicketWorkflows } from '../../workflows/src/index.js';
+import { ticketReferenceSchema } from '../../workflows/src/index.js';
+import type { ChecklistItem, ChecklistPort } from './contracts.js';
+export * from './contracts.js';
+export * from './http.js';
+export * from './fixtures.js';
+export * from './tools.js';
+
+const id = z.number().int().positive().safe();
+const requestKey = z.string().trim().min(8).max(128).refine(value => !/^(wf:|sch:|job:)/.test(value), 'This request-key prefix is reserved.');
+const itemName = z.string().trim().min(1).max(600);
+const expectedFields = z.object({ item_name: itemName, is_completed: z.boolean(), is_important: z.boolean(), position: z.number().int().min(1).max(40), knowledgebase_article_id: id.nullable() }).strict();
+const changeFields = z.object({ item_name: itemName.optional(), is_completed: z.boolean().optional(), is_important: z.boolean().optional(), position: z.number().int().min(1).max(40).optional() }).strict().refine(value => Object.keys(value).length > 0, 'At least one checklist field must change.');
+export const checklistSearchSchema = z.object({ ticket: ticketReferenceSchema }).strict();
+export const checklistGetSchema = z.object({ ticket: ticketReferenceSchema, item_id: id }).strict();
+export const checklistCreateSchema = z.object({ ticket: ticketReferenceSchema, item_name: itemName, is_completed: z.boolean().default(false), is_important: z.boolean().default(false), position: z.number().int().min(1).max(40).optional(), request_key: requestKey }).strict();
+export const checklistUpdateSchema = z.object({ ticket: ticketReferenceSchema, item_id: id, changes: changeFields, expected: expectedFields, request_key: requestKey }).strict().superRefine((value, ctx) => { for (const key of Object.keys(value.changes)) if (!Object.hasOwn(value.expected, key)) ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['expected', key], message: 'Every changed field requires its current expected value.' }); });
+export const checklistDeleteSchema = z.object({ ticket: ticketReferenceSchema, item_id: id, expected: expectedFields, request_key: requestKey }).strict();
+export const checklistOptionsSchema = z.object({ ticket: ticketReferenceSchema }).strict();
+export const checklistOperationStatusSchema = z.object({ operation_id: z.string().uuid() }).strict();
+const digest = (value: unknown) => createHash('sha256').update(JSON.stringify(value)).digest('hex');
+const canonical = (value: unknown): string => Array.isArray(value) ? `[${value.map(canonical).join(',')}]` : value && typeof value === 'object' ? `{${Object.keys(value as object).sort().map(key => `${JSON.stringify(key)}:${canonical((value as Record<string, unknown>)[key])}`).join(',')}}` : JSON.stringify(value);
+const absent = () => new AppError('not_found_or_inaccessible', 'Checklist item not found or inaccessible.');
+const definite = new Set(['invalid_input', 'forbidden', 'not_found_or_inaccessible', 'missing_metadata', 'precondition_failed', 'conflict', 'throttled', 'unsupported_operation']);
+type TicketReference = z.infer<typeof ticketReferenceSchema>;
+type MutationOperation = 'checklist_item_create' | 'checklist_item_update' | 'checklist_item_delete';
+const nativeField: Record<string, string> = { ticketID: 'integer', itemName: 'string', isCompleted: 'boolean', isImportant: 'boolean', position: 'integer', knowledgebaseArticleID: 'integer' };
+
+export class ChecklistService {
+  constructor(private readonly core: TicketWorkflows, readonly port: ChecklistPort, private readonly cipher: IntentCipher, private readonly identityMaxAgeMs = 300_000, private readonly now: () => number = Date.now) {}
+  private async current(input: Principal, write = false) { const p = await reauthorize(input, this.core.principals, { resourceMaxAgeMs: this.identityMaxAgeMs }); assertCapability(p, 'operational.read'); assertArea(p,'tickets',write); if (write) assertCapability(p, 'tickets.write'); return p; }
+  private async ticket(p: Principal, reference: TicketReference) { return this.core.resolveTicket(await this.current(p), reference); }
+  private async stableTicket(p: Principal, id: number) { const row = await this.ticket(p, { kind: 'id', id }); if (row.id !== id) throw new AppError('conflict', 'The ticket changed before the checklist operation completed.'); return row; }
+  private async fields(p: Principal, ticketId: number, supplied: string[]) {
+    const fields = await this.port.fields(p, ticketId), byName = new Map(fields.map(field => [field.name, field]));
+    for (const [name, type] of Object.entries(nativeField)) { const field = byName.get(name); if (!field || field.dataType.toLowerCase() !== type) throw new AppError('missing_metadata', 'Current TicketChecklistItems field metadata is incomplete or changed.'); }
+    if (supplied.some(name => !byName.has(name) || byName.get(name)!.isReadOnly !== false)) throw new AppError('missing_metadata', 'A supplied checklist field is not writable in current metadata.');
+  }
+  private rowMatches(row: ChecklistItem, expected: Record<string, unknown>) { const map: Record<string, keyof ChecklistItem> = { item_name: 'itemName', is_completed: 'isCompleted', is_important: 'isImportant', position: 'position', knowledgebase_article_id: 'knowledgebaseArticleID', itemName: 'itemName', isCompleted: 'isCompleted', isImportant: 'isImportant', knowledgebaseArticleID: 'knowledgebaseArticleID', ticketID: 'ticketID' }; return Object.entries(expected).every(([key, value]) => { const field = map[key]; return field !== undefined && canonical(row[field] ?? null) === canonical(value ?? null); }); }
+  private bodyFromCreate(a: z.infer<typeof checklistCreateSchema>, _ticketId: number) { return { itemName: a.item_name, isCompleted: a.is_completed, isImportant: a.is_important, ...(a.position === undefined ? {} : { position: a.position }) }; }
+  private bodyFromChanges(changes: z.infer<typeof changeFields>) { return Object.fromEntries(Object.entries(changes).map(([key, value]) => [({ item_name: 'itemName', is_completed: 'isCompleted', is_important: 'isImportant', position: 'position', knowledgebase_article_id: 'knowledgebaseArticleID' } as Record<string, string>)[key]!, value])); }
+  private binding(p: Principal, key: string, hash: string) { return `${actorKey(p)}:${p.mappingVersion}:${p.resourceId}:${p.policyVersion}:${key}:${hash}`; }
+  private async receipt(p: Principal, record: JournalRecord) { const fresh = await this.current(p); if (record.actorKey !== actorKey(fresh) || record.resourceId !== fresh.resourceId || record.mappingVersion !== fresh.mappingVersion || record.policyVersion !== fresh.policyVersion) throw absent(); if (positive(record.result?.ticket_id)) await this.stableTicket(fresh, record.result!.ticket_id as number); return { status: record.state, operation_id: record.id, correlation_id: randomUUID(), data: record.result ?? {}, safe_to_redispatch: false, can_automatically_retry: false, provenance: { source: this.port.source, schema_version: 'ticket-checklists-v1' } }; }
+  private async mutate(p: Principal, operation: MutationOperation, key: string, intent: Record<string, unknown>, ticketId: number, dispatch: () => Promise<{ id: number }>, verify?: (id: number) => Promise<boolean>) {
+    const payloadHash = digest({ operation, intent, actor: actorKey(p), mapping: p.mappingVersion, policy: p.policyVersion }), prior = await this.core.journal.find(actorKey(p), key);
+    if (prior) { if (prior.operation !== operation || prior.payloadHash !== payloadHash) throw new AppError('conflict', 'The request key belongs to different checklist work.'); return this.receipt(p, prior); }
+    const reserved = await this.core.journal.reserve({ actorKey: actorKey(p), requestKey: key, payloadHash, operation, mappingVersion: p.mappingVersion, resourceId: p.resourceId, policyVersion: p.policyVersion, encryptedIntent: this.cipher.seal({ version: 1, operation, ticket_id: ticketId, intent }, this.binding(p, key, payloadHash)), intentExpiresAt: new Date(this.now() + 7 * 86_400_000).toISOString(), result: { ticket_id: ticketId } });
+    if (!reserved.created) return this.receipt(p, reserved.record);
+    let record = reserved.record, accepted = false;
+    try {
+      record = await this.core.journal.transition(record.id, 'ready', 'dispatching', record.result);
+      const saved = await dispatch(); accepted = true;
+      record = await this.core.journal.transition(record.id, 'dispatching', 'accepted_unverified', { ...record.result, item_id: saved.id });
+      await withReconciliation(async()=>{
+      if (verify) { let verified = false; try { verified = await verify(saved.id); } catch { verified = false; } if (verified) { try { await this.current(p); await this.stableTicket(p, ticketId); record = await this.core.journal.transition(record.id, 'accepted_unverified', 'succeeded_verified', { ...record.result, verification: { performed: true } }); } catch { /* A revoked actor or changed parent cannot receive verified status. */ } } }
+      });
+    } catch (error) {
+      const code = error instanceof AppError ? error.code : 'dependency_unavailable';
+      try { record = await this.core.journal.transition(record.id, record.state, accepted ? 'accepted_unverified' : definite.has(code) ? 'failed' : 'unknown_outcome', { ...record.result, error_code: code }); } catch { /* Preserve the original journal state if transition evidence is unavailable. */ }
+    }
+    return withReconciliation(()=>this.receipt(p, record));
+  }
+  async options(p: Principal, input: unknown) { const a = checklistOptionsSchema.parse(input), principal = await this.current(p), ticket = await this.ticket(principal, a.ticket), fields = await this.port.fields(principal, ticket.id); await this.fields(principal, ticket.id, []); return { status: 'succeeded', ticket_id: ticket.id, fields, limits: { max_items: 40 }, provenance: { source: this.port.source } }; }
+  async search(p: Principal, input: unknown) { const a = checklistSearchSchema.parse(input), principal = await this.current(p), ticket = await this.ticket(principal, a.ticket), page = await this.port.list(principal, ticket.id); await this.stableTicket(principal, ticket.id); for (const row of page.items) if (row.ticketID !== ticket.id || !positive(row.id) || typeof row.itemName !== 'string' || typeof row.isCompleted !== 'boolean' || typeof row.isImportant !== 'boolean') throw new AppError('dependency_unavailable', 'Autotask returned an invalid checklist item.'); return { status: 'succeeded', ticket_id: ticket.id, items: page.items.map(row => this.project(row)), completeness: { complete: page.complete, returned: page.items.length }, provenance: { source: this.port.source, fetched_at: page.fetchedAt } }; }
+  async get(p: Principal, input: unknown) { const a = checklistGetSchema.parse(input), principal = await this.current(p), ticket = await this.ticket(principal, a.ticket), row = await this.port.get(principal, ticket.id, a.item_id); if (row.ticketID !== ticket.id || row.id !== a.item_id) throw absent(); await this.stableTicket(principal, ticket.id); return { status: 'succeeded', ticket_id: ticket.id, item: this.project(row), provenance: { source: this.port.source } }; }
+  private project(row: ChecklistItem) { return { id: row.id, ticket_id: row.ticketID, item_name: row.itemName, is_completed: row.isCompleted, is_important: row.isImportant, ...(row.position === undefined ? {} : { position: row.position }), ...(row.knowledgebaseArticleID === undefined ? {} : { knowledgebase_article_id: row.knowledgebaseArticleID }), ...(row.completedByResourceID === undefined ? {} : { completed_by_resource_id: row.completedByResourceID }), ...(row.completedDateTime === undefined ? {} : { completed_date_time: row.completedDateTime }) }; }
+  async create(p: Principal, input: unknown) { const a = checklistCreateSchema.parse(input), principal = await this.current(p, true), ticket = await this.ticket(principal, a.ticket), body = this.bodyFromCreate(a, ticket.id), prior = await this.core.journal.find(actorKey(principal), a.request_key);
+    const intent = { ticket_id: ticket.id, body };
+    if (prior) { const payloadHash = digest({ operation: 'checklist_item_create', intent, actor: actorKey(principal), mapping: principal.mappingVersion, policy: principal.policyVersion }); if (prior.operation !== 'checklist_item_create' || prior.payloadHash !== payloadHash) throw new AppError('conflict', 'The request key belongs to different checklist work.'); return this.receipt(principal, prior); }
+    await this.fields(principal, ticket.id, Object.keys(body));
+    return this.mutate(principal, 'checklist_item_create', a.request_key, intent, ticket.id, () => this.port.create(principal, ticket.id, body, async () => { await this.stableTicket(principal, ticket.id); await this.fields(principal, ticket.id, Object.keys(body)); }), async id => { const row = await this.port.get(principal, ticket.id, id); return row.ticketID === ticket.id && this.rowMatches(row, body); });
+  }
+  async update(p: Principal, input: unknown) { const a = checklistUpdateSchema.parse(input), principal = await this.current(p, true), prior = await this.core.journal.find(actorKey(principal), a.request_key), ticket = await this.ticket(principal, a.ticket), body = this.bodyFromChanges(a.changes), intent = { item_id: a.item_id, expected: a.expected, changes: a.changes };
+    if (prior) { const payloadHash = digest({ operation: 'checklist_item_update', intent: { ticket_id: ticket.id, ...intent }, actor: actorKey(principal), mapping: principal.mappingVersion, policy: principal.policyVersion }); if (prior.operation !== 'checklist_item_update' || prior.payloadHash !== payloadHash) throw new AppError('conflict', 'The request key belongs to different checklist work.'); return this.receipt(principal, prior); }
+    const current = await this.port.get(principal, ticket.id, a.item_id); if (current.ticketID !== ticket.id || !this.rowMatches(current, a.expected)) throw new AppError('conflict', 'The checklist item changed; refresh before updating.'); await this.fields(principal, ticket.id, Object.keys(body));
+    return this.mutate(principal, 'checklist_item_update', a.request_key, { ticket_id: ticket.id, ...intent }, ticket.id, () => this.port.update(principal, ticket.id, a.item_id, body, async () => { await this.stableTicket(principal, ticket.id); const fresh = await this.port.get(principal, ticket.id, a.item_id); if (fresh.ticketID !== ticket.id || !this.rowMatches(fresh, a.expected)) throw new AppError('conflict', 'The checklist item changed before update.'); await this.fields(principal, ticket.id, Object.keys(body)); }), async id => { const row = await this.port.get(principal, ticket.id, id); return row.ticketID === ticket.id && this.rowMatches(row, body); });
+  }
+  async delete(p: Principal, input: unknown) { const a = checklistDeleteSchema.parse(input), principal = await this.current(p, true), prior = await this.core.journal.find(actorKey(principal), a.request_key), ticket = await this.ticket(principal, a.ticket), intent = { ticket_id: ticket.id, item_id: a.item_id, expected: a.expected };
+    if (prior) { const payloadHash = digest({ operation: 'checklist_item_delete', intent, actor: actorKey(principal), mapping: principal.mappingVersion, policy: principal.policyVersion }); if (prior.operation !== 'checklist_item_delete' || prior.payloadHash !== payloadHash) throw new AppError('conflict', 'The request key belongs to different checklist work.'); return this.receipt(principal, prior); }
+    const current = await this.port.get(principal, ticket.id, a.item_id); if (current.ticketID !== ticket.id || !this.rowMatches(current, a.expected)) throw new AppError('conflict', 'The checklist item changed; refresh before deleting.'); await this.fields(principal, ticket.id, []);
+    return this.mutate(principal, 'checklist_item_delete', a.request_key, intent, ticket.id, async () => { await this.port.delete(principal, ticket.id, a.item_id, async () => { await this.stableTicket(principal, ticket.id); const fresh = await this.port.get(principal, ticket.id, a.item_id); if (fresh.ticketID !== ticket.id || !this.rowMatches(fresh, a.expected)) throw new AppError('conflict', 'The checklist item changed before deletion.'); await this.fields(principal, ticket.id, []); }); return { id: a.item_id }; }, async id => { try { await this.port.get(principal, ticket.id, id); return false; } catch (error) { return error instanceof AppError && error.code === 'not_found_or_inaccessible'; } });
+  }
+  async operationStatus(p: Principal, input: unknown) { const { operation_id } = checklistOperationStatusSchema.parse(input), principal = await this.current(p), record = await this.core.journal.get(operation_id, actorKey(principal)); if (!record || !['checklist_item_create', 'checklist_item_update', 'checklist_item_delete'].includes(record.operation)) throw absent(); if (record.resourceId !== principal.resourceId || record.mappingVersion !== principal.mappingVersion || record.policyVersion !== principal.policyVersion) throw new AppError('conflict', 'The employee mapping or policy changed.');
+    const intentExpired = record.intentExpiresAt !== undefined && Date.parse(record.intentExpiresAt) <= this.now();
+    if (!intentExpired && ['accepted_unverified', 'unknown_outcome'].includes(record.state) && positive(record.result?.ticket_id) && positive(record.result?.item_id) && record.encryptedIntent) { try { const ticketId = record.result!.ticket_id as number; await this.stableTicket(principal, ticketId); const open = this.cipher.open(record.encryptedIntent, this.binding(principal, record.requestKey, record.payloadHash)) as { operation?: string; ticket_id?: number; intent?: Record<string, unknown> }; let verified = false; if (record.operation === 'checklist_item_delete') { try { await this.port.get(principal, ticketId, record.result!.item_id as number); } catch (error) { verified = error instanceof AppError && error.code === 'not_found_or_inaccessible'; } } else { const row = await this.port.get(principal, ticketId, record.result!.item_id as number); const expected = record.operation === 'checklist_item_create' ? open.intent?.body ?? {} : (open.intent?.changes ?? {}); verified = row.ticketID === ticketId && this.rowMatches(row, expected as Record<string, unknown>); } if (verified) { await this.current(principal); await this.stableTicket(principal, ticketId); await this.core.journal.transition(record.id, record.state, 'succeeded_verified', { ...record.result, verification: { performed: true } }); } } catch { /* Keep accepted/unknown until a later independent readback succeeds. */ } }
+    return this.receipt(principal, await this.core.journal.get(record.id, actorKey(principal)) ?? record);
+  }
+}
+function positive(value: unknown): value is number { return typeof value === 'number' && Number.isSafeInteger(value) && value > 0; }

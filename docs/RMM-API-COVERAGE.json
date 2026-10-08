@@ -1,0 +1,481 @@
+{
+  "version": "0.1.0-rmm-expanded.20260917.1",
+  "scope": "Local implementation coverage, not live activation or tenant acceptance evidence.",
+  "operations": [
+    {
+      "method": "PUT",
+      "path": "/v2/site",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_create"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/v2/site/{siteUid}/variable",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_create"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/v2/device/{deviceUid}/site/{siteUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_move"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/v2/device/{deviceUid}/quickjob",
+      "status": "implemented",
+      "tools": [
+        "rmm_quickjob_run"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/v2/account/variable",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_create"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/user/resetApiKeys",
+      "status": "excluded",
+      "tools": [],
+      "reason": "Explicitly excluded by user; transport blocks this endpoint."
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_get"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/site/{siteUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_update"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/site/{siteUid}/variable/{variableId}",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_update"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/site/{siteUid}/variable/{variableId}",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_delete"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/site/{siteUid}/settings/proxy",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_proxy_set"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/site/{siteUid}/settings/proxy",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_proxy_delete"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/device/{deviceUid}/warranty",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_warranty_set"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/device/{deviceUid}/udf",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_udf_set"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/alert/{alertUid}/unmute",
+      "status": "excluded",
+      "tools": [],
+      "reason": "Vendor deprecated and unavailable."
+    },
+    {
+      "method": "POST",
+      "path": "/v2/alert/{alertUid}/resolve",
+      "status": "implemented",
+      "tools": [
+        "rmm_alert_resolve"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v2/alert/{alertUid}/mute",
+      "status": "excluded",
+      "tools": [],
+      "reason": "Vendor deprecated and unavailable."
+    },
+    {
+      "method": "POST",
+      "path": "/v2/account/variable/{variableId}",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_update"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/account/variable/{variableId}",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_delete"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/system/status",
+      "status": "implemented",
+      "tools": [
+        "rmm_system_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/system/request_rate",
+      "status": "implemented",
+      "tools": [
+        "rmm_system_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/system/pagination",
+      "status": "implemented",
+      "tools": [
+        "rmm_system_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/variables",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/settings",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_settings_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/patches",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_patch_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/filters",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_filter_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/devices",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_search"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/devices/network-interface",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_network_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/alerts/resolved",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_alert_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/site/{siteUid}/alerts/open",
+      "status": "implemented",
+      "tools": [
+        "rmm_site_alert_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/job/{jobUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_job_get",
+        "rmm_external_job_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/job/{jobUid}/results/{deviceUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_job_result_get",
+        "rmm_external_job_result_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/job/{jobUid}/results/{deviceUid}/stdout",
+      "status": "implemented",
+      "tools": [
+        "rmm_job_output_get",
+        "rmm_external_job_output_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/job/{jobUid}/results/{deviceUid}/stderr",
+      "status": "implemented",
+      "tools": [
+        "rmm_job_output_get",
+        "rmm_external_job_output_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/job/{jobUid}/components",
+      "status": "implemented",
+      "tools": [
+        "rmm_job_component_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/filter/default-filters",
+      "status": "implemented",
+      "tools": [
+        "rmm_filter_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/filter/custom-filters",
+      "status": "implemented",
+      "tools": [
+        "rmm_filter_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/device/{deviceUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/device/{deviceUid}/patches",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_patch_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/device/{deviceUid}/alerts/resolved",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_alert_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/device/{deviceUid}/alerts/open",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_alert_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/device/macAddress/{macAddress}",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_lookup"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/device/id/{deviceId}",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_lookup"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/audit/printer/{deviceUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_audit_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/audit/esxihost/{deviceUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_audit_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/audit/device/{deviceUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_audit_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/audit/device/{deviceUid}/software",
+      "status": "implemented",
+      "tools": [
+        "rmm_device_software_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/audit/device/macAddress/{macAddress}",
+      "status": "composed",
+      "tools": [
+        "rmm_device_audit_by_mac"
+      ],
+      "reason": "Resolve scoped devices by MAC and retrieve identified device audits; never expose unscoped anonymous audit arrays."
+    },
+    {
+      "method": "GET",
+      "path": "/v2/alert/{alertUid}",
+      "status": "implemented",
+      "tools": [
+        "rmm_alert_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/activity-logs",
+      "status": "implemented",
+      "tools": [
+        "rmm_activity_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account",
+      "status": "implemented",
+      "tools": [
+        "rmm_account_get"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/variables",
+      "status": "implemented",
+      "tools": [
+        "rmm_variable_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/users",
+      "status": "implemented",
+      "tools": [
+        "rmm_account_user_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/sites",
+      "status": "console",
+      "tools": [
+        "rmm_site_list"
+      ],
+      "reason": "Console site catalog; MCP site list returns only enabled, verified company mappings."
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/dnet-site-mappings",
+      "status": "implemented",
+      "tools": [
+        "rmm_network_mapping_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/devices",
+      "status": "implemented",
+      "tools": [
+        "rmm_account_device_search"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/components",
+      "status": "implemented",
+      "tools": [
+        "rmm_component_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/alerts/resolved",
+      "status": "implemented",
+      "tools": [
+        "rmm_account_alert_list"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/v2/account/alerts/open",
+      "status": "implemented",
+      "tools": [
+        "rmm_account_alert_list"
+      ]
+    }
+  ]
+}

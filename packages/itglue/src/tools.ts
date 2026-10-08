@@ -1,0 +1,4 @@
+import type {Principal} from '../../contracts/src/index.js';
+import {schemas,isWrite,type ItGlueTool} from './contracts.js';
+import type {ItGlueService} from './service.js';
+export function itGlueTools(service:ItGlueService){return(Object.keys(schemas) as ItGlueTool[]).map(name=>({name,schema:schemas[name],description:`${name.replace(/^itg_/,'').replaceAll('_',' ')} in a verified IT Glue organization and Autotask company scope. ${isWrite(name)?'Requires documentation.write, enabled writes, expected old values for updates, and a stable request_key. Never repeat an unknown outcome.':'Returns bounded, projected untrusted evidence. Follow next_cursor before claiming completeness. No password access.'}`,destructive:isWrite(name),localEffect:false,idempotent:true,run:(p:Principal,a:unknown)=>service.run(p,name,a)}));}

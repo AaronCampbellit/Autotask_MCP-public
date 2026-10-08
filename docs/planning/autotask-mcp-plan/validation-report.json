@@ -1,0 +1,29 @@
+{
+  "validation": "Planning artifacts and provenance metadata only; vendor copies excluded; no server or tenant tests",
+  "markdown_documents": 20,
+  "authored_words_approx": 28963,
+  "unique_entity_labels": 231,
+  "source_index_rows": 232,
+  "domain_counts": {
+    "Assets": 15,
+    "CRM": 18,
+    "Contracts and finance": 42,
+    "Inventory and procurement": 20,
+    "Knowledge": 21,
+    "Platform administration": 24,
+    "Projects": 14,
+    "Reference catalogs": 10,
+    "Resources and scheduling": 31,
+    "Sales and quoting": 7,
+    "Service desk": 22,
+    "Shared attachments": 1,
+    "Time and expenses": 6
+  },
+  "work_packages": 36,
+  "traceable_requirements": 64,
+  "additional_technician_workflows": 5,
+  "technician_scenarios": 38,
+  "source_pages": 210,
+  "supplemental_pages": 19,
+  "errors": []
+}

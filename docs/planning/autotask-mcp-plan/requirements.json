@@ -1,0 +1,386 @@
+[
+  {
+    "id": "R-01",
+    "requirement": "Single Rarity instance, staff-only access",
+    "implementation": "WP-01,07,08",
+    "acceptance": "AUTH-01, POL-01"
+  },
+  {
+    "id": "R-02",
+    "requirement": "Portable deployment with Entra identity",
+    "implementation": "WP-03\u201307,30",
+    "acceptance": "AUTH-04, OPS-02/03"
+  },
+  {
+    "id": "R-03",
+    "requirement": "Every indexed entity/operation accounted for",
+    "implementation": "WP-02,16\u201324,30",
+    "acceptance": "Registry validation, Gate E"
+  },
+  {
+    "id": "R-04",
+    "requirement": "Supported methods/child routes only",
+    "implementation": "WP-02,09,10",
+    "acceptance": "API-01, API-05, domain cases"
+  },
+  {
+    "id": "R-05",
+    "requirement": "Workflow and generic tools share controls",
+    "implementation": "WP-08,14",
+    "acceptance": "POL-03"
+  },
+  {
+    "id": "R-06",
+    "requirement": "Identity/resource mapping cannot be overridden",
+    "implementation": "WP-07\u201309",
+    "acceptance": "AUTH-02, POL-05"
+  },
+  {
+    "id": "R-07",
+    "requirement": "Record scope includes child/direct-ID paths",
+    "implementation": "WP-08,11,12",
+    "acceptance": "POL-01/02"
+  },
+  {
+    "id": "R-08",
+    "requirement": "Financial field/filter/export controls",
+    "implementation": "WP-08,21,27",
+    "acceptance": "POL-04"
+  },
+  {
+    "id": "R-09",
+    "requirement": "Routine edits execute directly",
+    "implementation": "WP-12,13",
+    "acceptance": "EXEC-05"
+  },
+  {
+    "id": "R-10",
+    "requirement": "Bulk, destructive and billing writes execute directly when authorized; otherwise deny",
+    "implementation": "WP-08,12,13,28",
+    "acceptance": "EXEC-01\u201304"
+  },
+  {
+    "id": "R-11",
+    "requirement": "Native and application attribution distinguished",
+    "implementation": "WP-07,12,29",
+    "acceptance": "AUTH-04, domain readback"
+  },
+  {
+    "id": "R-12",
+    "requirement": "Current metadata/picklist/UDF validation",
+    "implementation": "WP-10",
+    "acceptance": "API-03/04/06"
+  },
+  {
+    "id": "R-13",
+    "requirement": "No silently dropped requested fields",
+    "implementation": "WP-10,12",
+    "acceptance": "API-03, WRITE-04"
+  },
+  {
+    "id": "R-14",
+    "requirement": "No automatic partial PUT fallback",
+    "implementation": "WP-09,12",
+    "acceptance": "API-05"
+  },
+  {
+    "id": "R-15",
+    "requirement": "Root and child pagination complete or explicit",
+    "implementation": "WP-11",
+    "acceptance": "API-01"
+  },
+  {
+    "id": "R-16",
+    "requirement": "Unknown permitted response fields preserved",
+    "implementation": "WP-10,11",
+    "acceptance": "API-07"
+  },
+  {
+    "id": "R-17",
+    "requirement": "Uncertain writes reconciled before retry",
+    "implementation": "WP-12,15",
+    "acceptance": "WRITE-01/02"
+  },
+  {
+    "id": "R-18",
+    "requirement": "No false exactly-once/atomicity guarantees",
+    "implementation": "WP-12,15,28",
+    "acceptance": "WRITE-01/03, JOB-01"
+  },
+  {
+    "id": "R-19",
+    "requirement": "Persisted result verification",
+    "implementation": "WP-12, domain packs",
+    "acceptance": "WRITE-04/05"
+  },
+  {
+    "id": "R-20",
+    "requirement": "Complete ticket context including internal notes",
+    "implementation": "WP-16",
+    "acceptance": "DOM-TICKET, API-01"
+  },
+  {
+    "id": "R-21",
+    "requirement": "Ticket/task/internal time, existing entries",
+    "implementation": "WP-17",
+    "acceptance": "DOM-TIME"
+  },
+  {
+    "id": "R-22",
+    "requirement": "Scheduling/resources/time-off constraints",
+    "implementation": "WP-19",
+    "acceptance": "DOM-SCHEDULE"
+  },
+  {
+    "id": "R-23",
+    "requirement": "CRM relationships/protected fields",
+    "implementation": "WP-18",
+    "acceptance": "DOM-CRM"
+  },
+  {
+    "id": "R-24",
+    "requirement": "Projects/dependencies/complete context",
+    "implementation": "WP-20",
+    "acceptance": "DOM-PROJECT"
+  },
+  {
+    "id": "R-25",
+    "requirement": "Contracts, adjustments, finance/invoice outputs",
+    "implementation": "WP-21",
+    "acceptance": "DOM-FIN"
+  },
+  {
+    "id": "R-26",
+    "requirement": "Assets/subscriptions/protected UDFs",
+    "implementation": "WP-22",
+    "acceptance": "DOM-ASSET"
+  },
+  {
+    "id": "R-27",
+    "requirement": "Quotes, procurement and stock commands",
+    "implementation": "WP-23",
+    "acceptance": "DOM-SALES, DOM-INVENTORY"
+  },
+  {
+    "id": "R-28",
+    "requirement": "Knowledge/document child routes and visibility",
+    "implementation": "WP-24",
+    "acceptance": "DOM-KNOWLEDGE"
+  },
+  {
+    "id": "R-29",
+    "requirement": "UDF/resource/webhook administration",
+    "implementation": "WP-24,26",
+    "acceptance": "DOM-ADMIN"
+  },
+  {
+    "id": "R-30",
+    "requirement": "Reference catalogs/historical inactive values",
+    "implementation": "WP-10,22",
+    "acceptance": "DOM-REFERENCE"
+  },
+  {
+    "id": "R-31",
+    "requirement": "Attachments authorized through parents",
+    "implementation": "WP-25",
+    "acceptance": "FILE-01/02"
+  },
+  {
+    "id": "R-32",
+    "requirement": "Safe exported HTML/CSV/binary handling",
+    "implementation": "WP-25,27",
+    "acceptance": "FILE-03"
+  },
+  {
+    "id": "R-33",
+    "requirement": "Durable cancellable resumable jobs",
+    "implementation": "WP-15",
+    "acceptance": "JOB-01/02"
+  },
+  {
+    "id": "R-34",
+    "requirement": "Revoked users cannot continue queued work",
+    "implementation": "WP-07,15",
+    "acceptance": "AUTH-03, JOB-03"
+  },
+  {
+    "id": "R-35",
+    "requirement": "Shared throughput and fair interactive capacity",
+    "implementation": "WP-09,15,29",
+    "acceptance": "API-08, load qualification"
+  },
+  {
+    "id": "R-36",
+    "requirement": "Webhook validation, ordering and gap recovery",
+    "implementation": "WP-26",
+    "acceptance": "SYNC-01\u201303"
+  },
+  {
+    "id": "R-37",
+    "requirement": "Reports disclose freshness/completeness",
+    "implementation": "WP-11,27",
+    "acceptance": "API-01, domain reconciliation"
+  },
+  {
+    "id": "R-38",
+    "requirement": "Caches/cursors/artifacts retain scope",
+    "implementation": "WP-08,11,25",
+    "acceptance": "POL-06"
+  },
+  {
+    "id": "R-39",
+    "requirement": "Prompt-injected content has no authority",
+    "implementation": "WP-08,14,29",
+    "acceptance": "SEC-01"
+  },
+  {
+    "id": "R-40",
+    "requirement": "Secret redaction and safe support bundles",
+    "implementation": "WP-09,29",
+    "acceptance": "SEC-02"
+  },
+  {
+    "id": "R-41",
+    "requirement": "Audit/journal outage fails writes safely",
+    "implementation": "WP-06,12,29",
+    "acceptance": "OPS-01"
+  },
+  {
+    "id": "R-42",
+    "requirement": "Operator console/operation accessibility",
+    "implementation": "WP-28",
+    "acceptance": "Human keyboard/screen-reader scenarios"
+  },
+  {
+    "id": "R-43",
+    "requirement": "Write pause, revoke and recovery controls",
+    "implementation": "WP-07,15,28,29",
+    "acceptance": "OPS-04"
+  },
+  {
+    "id": "R-44",
+    "requirement": "Backup/restore and upgrade compatibility",
+    "implementation": "WP-05,06,29,30",
+    "acceptance": "OPS-02/03"
+  },
+  {
+    "id": "R-45",
+    "requirement": "Actual supported clients qualified",
+    "implementation": "WP-03,04,14,30",
+    "acceptance": "AUTH-04, Gate C"
+  },
+  {
+    "id": "R-46",
+    "requirement": "Explicit unsupported/ambiguous capability status",
+    "implementation": "WP-02,10,28",
+    "acceptance": "Registry checks, Gate E"
+  },
+  {
+    "id": "R-47",
+    "requirement": "No unrequested model/provider dependency",
+    "implementation": "WP-03,14",
+    "acceptance": "Dependency/configuration review"
+  },
+  {
+    "id": "R-48",
+    "requirement": "Customer/finance/test decisions tracked",
+    "implementation": "WP-01,30",
+    "acceptance": "Decision log and release gate review"
+  },
+  {
+    "id": "R-49",
+    "requirement": "Required employee impersonation rejects invalid/missing mappings with no integration-identity fallback",
+    "implementation": "WP-07\u201309,12,15",
+    "acceptance": "AUTH-05,06,08; POL-05"
+  },
+  {
+    "id": "R-50",
+    "requirement": "Native employee permission enforcement qualified separately from attribution per operation",
+    "implementation": "WP-02,09,16\u201324,30",
+    "acceptance": "AUTH-07; operation evidence and enablement gate"
+  },
+  {
+    "id": "R-51",
+    "requirement": "Mandatory named technician tools; generic access cannot substitute for daily workflows",
+    "implementation": "WP-14,16,17,19",
+    "acceptance": "BENCH-03; required catalog in 14"
+  },
+  {
+    "id": "R-52",
+    "requirement": "Natural-language ticket-context workflow resolves references and retrieves internal notes plus existing time without API plumbing",
+    "implementation": "WP-11,14,16,17",
+    "acceptance": "BENCH-04; per-collection completeness and scope"
+  },
+  {
+    "id": "R-53",
+    "requirement": "Focused initial console with later detailed entity/reporting/sync interfaces",
+    "implementation": "WP-28 initial/later slices,26,27",
+    "acceptance": "BENCH-06; no later-UI dependency for technician release"
+  },
+  {
+    "id": "R-54",
+    "requirement": "Thread benchmark demonstrated before first technician production release",
+    "implementation": "WP-04,07,08,12,14\u201319,28\u201330 applicable slices",
+    "acceptance": "BENCH-01\u201306 and Gates A\u2013D; Gate E remains full-product requirement"
+  },
+  {
+    "id": "R-55",
+    "requirement": "Shared scoped business references and deterministic ambiguity handling",
+    "implementation": "WP-31",
+    "acceptance": "WF-01\u201305"
+  },
+  {
+    "id": "R-56",
+    "requirement": "Reviewed eligible defaults with provenance; no invented work/time/customer text",
+    "implementation": "WP-31",
+    "acceptance": "WF-06\u201308"
+  },
+  {
+    "id": "R-57",
+    "requirement": "Four purpose-specific ticket context recipes with evidence and continuation",
+    "implementation": "WP-32",
+    "acceptance": "WF-11\u201315"
+  },
+  {
+    "id": "R-58",
+    "requirement": "Documentation/time workflow with prerequisite ordering and honest partial result",
+    "implementation": "WP-33",
+    "acceptance": "WF-16\u201318"
+  },
+  {
+    "id": "R-59",
+    "requirement": "Eligible handoff and completion workflows preserve supplied intent",
+    "implementation": "WP-34",
+    "acceptance": "WF-19\u201324"
+  },
+  {
+    "id": "R-60",
+    "requirement": "Workday and visit packages join authorized records without writes",
+    "implementation": "WP-32",
+    "acceptance": "WF-25\u201328"
+  },
+  {
+    "id": "R-61",
+    "requirement": "Fixed workflow journals/resume retain actor, payload and completed effects",
+    "implementation": "WP-33,34",
+    "acceptance": "WF-09,10,31,32"
+  },
+  {
+    "id": "R-62",
+    "requirement": "Actionable descriptions/errors and portable versioned playbooks",
+    "implementation": "WP-35",
+    "acceptance": "WF-34,37"
+  },
+  {
+    "id": "R-63",
+    "requirement": "Concise truthful receipts include defaults, record IDs and incomplete steps",
+    "implementation": "WP-33\u201335",
+    "acceptance": "WF-33,36"
+  },
+  {
+    "id": "R-64",
+    "requirement": "Measure technician routing, needless questions/lookups, comprehension and concurrent behavior across clients",
+    "implementation": "WP-36",
+    "acceptance": "WF-35\u201338"
+  }
+]

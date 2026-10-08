@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createFixtureSystem} from '../apps/server/src/fixture-system.js';
+const base='http://127.0.0.1:3030';
+test('IT Glue admin routes require current administration and CSRF, retain credentials privately, and gate tools',async t=>{
+ const s=createFixtureSystem();t.after(()=>s.app.close());const initial=s.principals[0]!;
+ const p=await s.control.saveMember(initial,{objectId:initial.objectId,resourceId:initial.resourceId,active:true,companyIds:initial.companyIds,capabilities:[...initial.capabilities,'platform.manage','documentation.read','documentation.write']},initial.mappingVersion);
+ const login=await s.app.fetch(new Request(base+'/admin/auth/fixture',{method:'POST',headers:{origin:base,'content-type':'application/json'},body:JSON.stringify({token:s.tokens[0]!.token})}));const cookie=login.headers.getSetCookie()[0]!.split(';')[0]!,csrf=(await login.json()).csrf;
+ const call=(route:string,args?:unknown,withCsrf=true)=>s.app.fetch(new Request(base+'/admin/api/itglue/'+route,{method:args?'POST':'GET',headers:{cookie,origin:base,'content-type':'application/json',...(withCsrf?{'x-csrf-token':csrf}:{})},...(args?{body:JSON.stringify(args)}:{})}));
+ assert.equal((await call('status')).status,200);
+ const config={version:0,region:'us',key:'PRIVATE-FIXTURE-KEY',enabled:false,writes_enabled:false};
+ assert.equal((await call('connection',config,false)).status,403);
+ const saved=await call('connection',config);assert.equal(saved.status,200);assert.doesNotMatch(await saved.text(),/PRIVATE-FIXTURE-KEY/);
+ assert.ok(!(await s.runtime.available(p)).some(v=>v.name.startsWith('itg_')));
+ const mapped=await call('mapping',{version:1,organization_id:'100',company:10,enabled:true});assert.equal(mapped.status,200,await mapped.text());
+ const enabled=await call('connection',{version:2,region:'us',enabled:true,writes_enabled:false});assert.equal(enabled.status,200,await enabled.text());
+ const available=await s.runtime.available(p);assert.ok(available.some(v=>v.name==='itg_document_search'));assert.ok(!available.some(v=>v.name==='itg_document_create'));
+ await s.control.saveMember(p,{objectId:p.objectId,resourceId:p.resourceId,active:true,companyIds:p.companyIds,capabilities:p.capabilities.filter(c=>c!=='platform.manage')},p.mappingVersion);
+ assert.equal((await call('status')).status,403);
+});

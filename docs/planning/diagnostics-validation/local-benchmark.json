@@ -1,0 +1,428 @@
+{
+  "measured_at": "2026-09-20T00:40:55.615Z",
+  "release": "0.2.0-integrations-diagnostics.20260920.1",
+  "node": "v24.19.0",
+  "samples_per_condition": 30,
+  "warmup_requests_per_condition": 5,
+  "provider": "local HTTP simulator, 5 ms scheduled delay",
+  "wal_bytes": null,
+  "limitations": [
+    "Local fixture CPU/filesystem/network only; no production provider or ChatGPT/Codex host measurements.",
+    "One actor: concurrency20 intentionally exceeds four-per-actor admission; inspect successful latency separately from429 latency.",
+    "Memory database is an in-memory diagnostic sink, not PostgreSQL. Fsync fallback uses actual encrypted file/directory fsync with database outage simulation.",
+    "Five successful warmup requests precede each measured condition; byte totals subtract warmup capture.",
+    "Memory values reflect the same sequential Node process including prior conditions; they are not isolated-process allocation deltas.",
+    "Console query calls the authorized service directly; browser rendering and administrator network latency excluded.",
+    "WAL unavailable: no real PostgreSQL server measured.",
+    "No raw business payloads or secrets persisted in benchmark output."
+  ],
+  "results": [
+    {
+      "mode": "disabled",
+      "concurrency": 1,
+      "samples": 30,
+      "statuses": {
+        "200_succeeded": 30
+      },
+      "successful": 30,
+      "latency_ms": {
+        "p50": 14.520755000000008,
+        "p95": 15.817291000000068,
+        "p99": 17.71172200000001
+      },
+      "successful_latency_ms": {
+        "p50": 14.520755000000008,
+        "p95": 15.817291000000068,
+        "p99": 17.71172200000001
+      },
+      "elapsed_ms": 434.10891100000003,
+      "requests_per_second": 69.10708174797176,
+      "successful_per_second": 69.10708174797176,
+      "cpu_ms": {
+        "user": 285.549,
+        "system": 21.443
+      },
+      "memory_bytes": {
+        "rss_before": 221167616,
+        "peak_rss": 221954048,
+        "heap_before": 54864816,
+        "peak_heap": 75456208
+      },
+      "diagnostic_bytes": 0,
+      "diagnostic_bytes_per_received_request": 0,
+      "console_query_ms": null,
+      "console_query_returned": null,
+      "spool": null,
+      "added_latency_vs_disabled_ms": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      }
+    },
+    {
+      "mode": "memory_database",
+      "concurrency": 1,
+      "samples": 30,
+      "statuses": {
+        "200_succeeded": 30
+      },
+      "successful": 30,
+      "latency_ms": {
+        "p50": 14.811453000000256,
+        "p95": 19.52654399999983,
+        "p99": 23.82402000000002
+      },
+      "successful_latency_ms": {
+        "p50": 14.811453000000256,
+        "p95": 19.52654399999983,
+        "p99": 23.82402000000002
+      },
+      "elapsed_ms": 464.13430400000016,
+      "requests_per_second": 64.63646350087492,
+      "successful_per_second": 64.63646350087492,
+      "cpu_ms": {
+        "user": 313.012,
+        "system": 22.827
+      },
+      "memory_bytes": {
+        "rss_before": 223264768,
+        "peak_rss": 229556224,
+        "heap_before": 73049064,
+        "peak_heap": 80400104
+      },
+      "diagnostic_bytes": 127693,
+      "diagnostic_bytes_per_received_request": 4256.433333333333,
+      "console_query_ms": 17.560578000000078,
+      "console_query_returned": 35,
+      "spool": {
+        "events": 0,
+        "bytes": 0,
+        "captureFailures": 0
+      },
+      "added_latency_vs_disabled_ms": {
+        "p50": 0.2906980000002477,
+        "p95": 3.7092529999997623,
+        "p99": 6.11229800000001
+      }
+    },
+    {
+      "mode": "fsync_fallback",
+      "concurrency": 1,
+      "samples": 30,
+      "statuses": {
+        "200_succeeded": 30
+      },
+      "successful": 30,
+      "latency_ms": {
+        "p50": 189.0938989999995,
+        "p95": 218.91684600000008,
+        "p99": 729.7814629999993
+      },
+      "successful_latency_ms": {
+        "p50": 189.0938989999995,
+        "p95": 218.91684600000008,
+        "p99": 729.7814629999993
+      },
+      "elapsed_ms": 6328.869657,
+      "requests_per_second": 4.740182943540118,
+      "successful_per_second": 4.740182943540118,
+      "cpu_ms": {
+        "user": 723.981,
+        "system": 200.845
+      },
+      "memory_bytes": {
+        "rss_before": 230604800,
+        "peak_rss": 252231680,
+        "heap_before": 74050848,
+        "peak_heap": 109434464
+      },
+      "diagnostic_bytes": 183048,
+      "diagnostic_bytes_per_received_request": 6101.6,
+      "console_query_ms": 148.68244100000084,
+      "console_query_returned": 35,
+      "spool": {
+        "events": 175,
+        "bytes": 213558,
+        "captureFailures": 0
+      },
+      "added_latency_vs_disabled_ms": {
+        "p50": 174.5731439999995,
+        "p95": 203.099555,
+        "p99": 712.0697409999993
+      }
+    },
+    {
+      "mode": "disabled",
+      "concurrency": 4,
+      "samples": 30,
+      "statuses": {
+        "200_succeeded": 30
+      },
+      "successful": 30,
+      "latency_ms": {
+        "p50": 28.245685000001686,
+        "p95": 42.854443000000174,
+        "p99": 44.647085999999035
+      },
+      "successful_latency_ms": {
+        "p50": 28.245685000001686,
+        "p95": 42.854443000000174,
+        "p99": 44.647085999999035
+      },
+      "elapsed_ms": 234.13419599999906,
+      "requests_per_second": 128.13164634866118,
+      "successful_per_second": 128.13164634866118,
+      "cpu_ms": {
+        "user": 404.615,
+        "system": 19.516
+      },
+      "memory_bytes": {
+        "rss_before": 171671552,
+        "peak_rss": 180191232,
+        "heap_before": 56117280,
+        "peak_heap": 62804720
+      },
+      "diagnostic_bytes": 0,
+      "diagnostic_bytes_per_received_request": 0,
+      "console_query_ms": null,
+      "console_query_returned": null,
+      "spool": null,
+      "added_latency_vs_disabled_ms": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      }
+    },
+    {
+      "mode": "memory_database",
+      "concurrency": 4,
+      "samples": 30,
+      "statuses": {
+        "200_succeeded": 30
+      },
+      "successful": 30,
+      "latency_ms": {
+        "p50": 29.274747999999818,
+        "p95": 39.40176200000133,
+        "p99": 39.836543999999776
+      },
+      "successful_latency_ms": {
+        "p50": 29.274747999999818,
+        "p95": 39.40176200000133,
+        "p99": 39.836543999999776
+      },
+      "elapsed_ms": 233.1463960000001,
+      "requests_per_second": 128.67451744782701,
+      "successful_per_second": 128.67451744782701,
+      "cpu_ms": {
+        "user": 245.589,
+        "system": 24.496
+      },
+      "memory_bytes": {
+        "rss_before": 182943744,
+        "peak_rss": 194609152,
+        "heap_before": 62421168,
+        "peak_heap": 73067760
+      },
+      "diagnostic_bytes": 127716,
+      "diagnostic_bytes_per_received_request": 4257.2,
+      "console_query_ms": 1.9445360000008804,
+      "console_query_returned": 35,
+      "spool": {
+        "events": 0,
+        "bytes": 0,
+        "captureFailures": 0
+      },
+      "added_latency_vs_disabled_ms": {
+        "p50": 1.029062999998132,
+        "p95": -3.4526809999988473,
+        "p99": -4.810541999999259
+      }
+    },
+    {
+      "mode": "fsync_fallback",
+      "concurrency": 4,
+      "samples": 30,
+      "statuses": {
+        "200_succeeded": 30
+      },
+      "successful": 30,
+      "latency_ms": {
+        "p50": 756.5560879999994,
+        "p95": 1420.7090869999993,
+        "p99": 1431.6041489999989
+      },
+      "successful_latency_ms": {
+        "p50": 756.5560879999994,
+        "p95": 1420.7090869999993,
+        "p99": 1431.6041489999989
+      },
+      "elapsed_ms": 6438.109337999998,
+      "requests_per_second": 4.659753108405504,
+      "successful_per_second": 4.659753108405504,
+      "cpu_ms": {
+        "user": 735.612,
+        "system": 173.968
+      },
+      "memory_bytes": {
+        "rss_before": 199983104,
+        "peak_rss": 202473472,
+        "heap_before": 71237824,
+        "peak_heap": 76344720
+      },
+      "diagnostic_bytes": 183037,
+      "diagnostic_bytes_per_received_request": 6101.233333333334,
+      "console_query_ms": 136.91412599999967,
+      "console_query_returned": 35,
+      "spool": {
+        "events": 175,
+        "bytes": 213550,
+        "captureFailures": 0
+      },
+      "added_latency_vs_disabled_ms": {
+        "p50": 728.3104029999977,
+        "p95": 1377.854643999999,
+        "p99": 1386.9570629999998
+      }
+    },
+    {
+      "mode": "disabled",
+      "concurrency": 20,
+      "samples": 30,
+      "statuses": {
+        "200_succeeded": 9,
+        "429_rejected_or_failed": 21
+      },
+      "successful": 9,
+      "latency_ms": {
+        "p50": 64.48138800000015,
+        "p95": 100.39318799999819,
+        "p99": 100.52658200000224
+      },
+      "successful_latency_ms": {
+        "p50": 74.63978999999745,
+        "p95": 100.52658200000224,
+        "p99": 100.52658200000224
+      },
+      "elapsed_ms": 129.7371400000011,
+      "requests_per_second": 231.23679156176672,
+      "successful_per_second": 69.37103746853002,
+      "cpu_ms": {
+        "user": 134.746,
+        "system": 17.398
+      },
+      "memory_bytes": {
+        "rss_before": 203784192,
+        "peak_rss": 204832768,
+        "heap_before": 64104528,
+        "peak_heap": 73722048
+      },
+      "diagnostic_bytes": 0,
+      "diagnostic_bytes_per_received_request": 0,
+      "console_query_ms": null,
+      "console_query_returned": null,
+      "spool": null,
+      "added_latency_vs_disabled_ms": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0
+      }
+    },
+    {
+      "mode": "memory_database",
+      "concurrency": 20,
+      "samples": 30,
+      "statuses": {
+        "429_rejected_or_failed": 21,
+        "200_succeeded": 9
+      },
+      "successful": 9,
+      "latency_ms": {
+        "p50": 57.707344000002195,
+        "p95": 87.9869800000015,
+        "p99": 98.79265899999882
+      },
+      "successful_latency_ms": {
+        "p50": 76.94293100000141,
+        "p95": 98.79265899999882,
+        "p99": 98.79265899999882
+      },
+      "elapsed_ms": 123.77233500000148,
+      "requests_per_second": 242.380496417068,
+      "successful_per_second": 72.7141489251204,
+      "cpu_ms": {
+        "user": 128.937,
+        "system": 21.827
+      },
+      "memory_bytes": {
+        "rss_before": 205094912,
+        "peak_rss": 213090304,
+        "heap_before": 73256656,
+        "peak_heap": 86154936
+      },
+      "diagnostic_bytes": 46987,
+      "diagnostic_bytes_per_received_request": 1566.2333333333333,
+      "console_query_ms": 1.707815000001574,
+      "console_query_returned": 14,
+      "spool": {
+        "events": 0,
+        "bytes": 0,
+        "captureFailures": 0
+      },
+      "added_latency_vs_disabled_ms": {
+        "p50": -6.774043999997957,
+        "p95": -12.406207999996695,
+        "p99": -1.733923000003415
+      }
+    },
+    {
+      "mode": "fsync_fallback",
+      "concurrency": 20,
+      "samples": 30,
+      "statuses": {
+        "429_rejected_or_failed": 26,
+        "200_succeeded": 4
+      },
+      "successful": 4,
+      "latency_ms": {
+        "p50": 742.5989679999984,
+        "p95": 2415.7017610000003,
+        "p99": 2454.064174000003
+      },
+      "successful_latency_ms": {
+        "p50": 2381.218777000002,
+        "p95": 2454.064174000003,
+        "p99": 2454.064174000003
+      },
+      "elapsed_ms": 2455.485830999998,
+      "requests_per_second": 12.217541482527098,
+      "successful_per_second": 1.6290055310036131,
+      "cpu_ms": {
+        "user": 186.814,
+        "system": 59.521
+      },
+      "memory_bytes": {
+        "rss_before": 217546752,
+        "peak_rss": 229212160,
+        "heap_before": 75174104,
+        "peak_heap": 90891688
+      },
+      "diagnostic_bytes": 40939,
+      "diagnostic_bytes_per_received_request": 1364.6333333333334,
+      "console_query_ms": 54.44904400000087,
+      "console_query_returned": 9,
+      "spool": {
+        "events": 71,
+        "bytes": 71449,
+        "captureFailures": 0
+      },
+      "added_latency_vs_disabled_ms": {
+        "p50": 678.1175799999983,
+        "p95": 2315.308573000002,
+        "p99": 2353.5375920000006
+      }
+    }
+  ],
+  "protocol": "2025-11-25",
+  "test_competition": "Root and both other agents confirmed heavy tests paused; process check found no test or tsc process before start."
+}

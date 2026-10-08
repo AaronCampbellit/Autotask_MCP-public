@@ -1,0 +1,126 @@
+{
+  "review_date": "2026-09-17",
+  "repository": "AaronCampbellit/Autotask_MCP",
+  "commit": "c9175fac35e9e0ce0130f3f33a192618848df261",
+  "scope": "Static code and pinned SDK source review; official documentation research; GitHub CI evidence; three Luna high agent reviews; subsequently authorized local dependency installation, typecheck, 782-test suite, build and container validation. Retained deliverable is documentation only; exploratory prototypes excluded. No production probe or deployment; publication contains documentation only.",
+  "application_release": "0.1.0-mcp-expanded.20260917.3",
+  "ci": {
+    "url": "https://github.com/AaronCampbellit/Autotask_MCP/actions/runs/35271662839",
+    "status": "success",
+    "tests": 782,
+    "pass": 782,
+    "fail": 0,
+    "duration_ms": 137888.237213,
+    "legacy_discovery_bytes": 1739552,
+    "modern_discovery_bytes": 1739729
+  },
+  "catalog": {
+    "operations": 281,
+    "rmm_operations": 55,
+    "unique_output_contracts": 191
+  },
+  "sdk_archives": {
+    "server": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/@modelcontextprotocol/server/-/server-2.0.0.tgz",
+      "integrity": "sha512-YhHWdHfpFMQfd0prsEnxKeS3Qz3ytIGmsS0sth4KDjnacIT7hxk6hXHkJ9KysxlkvTM+WZAtQbbcUhdoP4Hvtw==",
+      "license": "MIT",
+      "dependencies": {
+        "@modelcontextprotocol/core": "2.0.0",
+        "zod": "^4.2.0"
+      },
+      "engines": {
+        "node": ">=20"
+      }
+    },
+    "core": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/@modelcontextprotocol/core/-/core-2.0.0.tgz",
+      "integrity": "sha512-pJCEwGG7Lfr/+PQp9ZTwKXNeO5wzbfKL7H3MYpCorM4oFBoQrdjnBgEoqG+RjhsvS1FKrDbKux+M1HhlnGWqcA==",
+      "license": "MIT",
+      "dependencies": {
+        "zod": "^4.2.0"
+      },
+      "engines": {
+        "node": ">=20"
+      }
+    }
+  },
+  "source_sha256": {
+    "package.json": "2de246a2d1a1511be25d1183940ebc47d34820a4c1585f63d6b1e1b945746dde",
+    "package-lock.json": "ab77fae881594fcfb9636f8400101ffc360d8b27688fc2ac650fff63a1e4c085",
+    "apps/server/src/app.ts": "e39610d997f182927d0bc45ed817398bcf90bd41eb7cb82f010794ecda62b084",
+    "apps/server/src/ingress.ts": "2cf27f6796280f7382f6758c57f3e3d228a54f5870d67564e8c2a27a5a4821bd",
+    "apps/server/src/tool-runtime.ts": "8438f8f4cb7920fc7dd231d8458cd9d2b34f0914e65bd3f9306f280e2a505ece",
+    "apps/server/src/job-worker.ts": "8c64813fd81de8b3281b0645d2bd3ce47c60cd422e5361945c23b696b30cb74a",
+    "apps/server/src/publication.ts": "2306f7aeec4b5a20d3c3dcb77222ca9e50882e5417136d8cb909ed198590018a",
+    "apps/server/src/schema-publication.ts": "6c062be373ac58764da2cf53a87fe6fc833b9994278d6a31cd8a1b0496213f42",
+    "packages/autotask/src/index.ts": "2d63e5991b5c4e44883f7c43fb3ded7b3374eebbbb1117c2809f90f6a2b9fc5b",
+    "packages/autotask/src/budget.ts": "967c534bb07b7396c007ef072f894853941c33834972119006e3a98367bcf358",
+    "packages/rmm/src/client.ts": "c06d7d6aaccda459022ef2ae58b43622a6ee7692fbcec8908ccdd766e13d8e7a",
+    "packages/rmm/src/service.ts": "9e0aa83e9ecd9d8381f30552b6c649844678c74ffd2e49dfc69b355c0123e46d",
+    "packages/rmm/src/composites.ts": "3a9eade66d5f59ec6eb146d20f7a9ea08c6013dfa7d8ceccba28540cf80042ca",
+    "packages/technician/src/index.ts": "aa6473142a19276fb1a4b45931b4e123ee9891155bdd368a7b3429cec3547718",
+    "packages/control-plane/src/execution.ts": "9dde55452ac3cdcbb4c67ff92b80a89bb5d4607506ec50b7c0e75e4a6c090923",
+    "packages/control-plane/src/index.ts": "50b54b27818c6b76530db0c9307528a171bed1e4b22bd1e287eee01d6583ce5f",
+    "packages/operational/src/metadata.ts": "3be88071b239d32cc83cea224380e5a86b0c1ccda4002545b10a37d5e9f33368",
+    "packages/work-management/src/metadata.ts": "827d85c671a67135aa7f68dacec45cd5a4abd9f3baf32b81191146645d5487cc",
+    "packages/metadata/src/refreshing-provider.ts": "91bb017f9d1b0d33a98f852623995aeebe49f9cbc8770bed43c4c1b4f7a0f724",
+    "packages/reports/src/index.ts": "91de0ddd1b08aa9604943598ca66fedbba2e16b2838e1cb5f35c2b39de3eab12",
+    "tests/http.test.ts": "d0d7954317a92c8121d9d65241c029e02f67b58920013d7d32b86f58c55d2177",
+    "tests/output-contracts.test.ts": "fd6e33c876a575dd911493c48fb4d0e7d748c8aa8d62f60d68556c81eef7d96a",
+    ".github/workflows/verify.yml": "3ec904ca2d0000d8e11da9d31ce004a19b5a92d10add3e4c8ca69e5547f6eda6",
+    "docs/TOOL-CATALOG.json": "0246940410101c8e086092d1ec9b464153491190ae4bb6d12e1e970bec0f0b90"
+  },
+  "official_source_urls": [
+    "https://api.itglue.com/developer/",
+    "https://developers.openai.com/api/docs/guides/tools-connectors-mcp",
+    "https://developers.openai.com/plugins/deploy/connect-chatgpt#refresh-metadata",
+    "https://modelcontextprotocol.io/specification/2026-07-28/basic",
+    "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http",
+    "https://modelcontextprotocol.io/specification/2026-07-28/changelog",
+    "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+    "https://rmm.datto.com/help/en/Content/2SETUP/APIv2.htm",
+    "https://tasks.extensions.modelcontextprotocol.io/specification/2026-07-28/tasks",
+    "https://ts.sdk.modelcontextprotocol.io/v2/clients/caching.html",
+    "https://ts.sdk.modelcontextprotocol.io/v2/migration/support-2026-07-28",
+    "https://ts.sdk.modelcontextprotocol.io/v2/protocol-versions",
+    "https://ts.sdk.modelcontextprotocol.io/v2/servers/input-required.html",
+    "https://ts.sdk.modelcontextprotocol.io/v2/servers/logging-progress-cancellation.html",
+    "https://ts.sdk.modelcontextprotocol.io/v2/servers/notifications.html",
+    "https://ts.sdk.modelcontextprotocol.io/v2/servers/resources.html",
+    "https://ts.sdk.modelcontextprotocol.io/v2/serving/http.html",
+    "https://ts.sdk.modelcontextprotocol.io/v2/testing.html"
+  ],
+  "planning_review": {
+    "agents": 3,
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "high",
+    "tracks": [
+      "protocol and transport lifecycle",
+      "discovery and effect metadata",
+      "read optimization and cache lifecycle"
+    ]
+  },
+  "local_validation": {
+    "date": "2026-09-17",
+    "commit": "c9175fac35e9e0ce0130f3f33a192618848df261",
+    "node": "24.19.0",
+    "npm": "11.17.0",
+    "dependency_install": "npm ci --no-fund",
+    "check": "passed",
+    "tests": 782,
+    "pass": 782,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "duration_ms": 53494.270358,
+    "build": "passed",
+    "compiled_preflight_syntax": "passed",
+    "compose_config": "passed with fixture values",
+    "container_build": "passed",
+    "container_tag": "rarity-autotask-mcp:review-c9175fac",
+    "legacy_discovery_bytes": 1739552,
+    "modern_discovery_bytes": 1739729
+  }
+}

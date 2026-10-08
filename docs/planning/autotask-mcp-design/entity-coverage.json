@@ -1,0 +1,3042 @@
+[
+  {
+    "IndexLabel": "ActionTypes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ActionTypesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "AdditionalInvoiceFieldValues",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AdditionalInvoiceFieldValuesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Appointments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AppointmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticleAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleAttachmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticleConfigurationItemCategoryAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleConfigurationItemCategoryAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticleNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticlePlainTextContent",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticlePlainTextContentEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticleTagAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleTagAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticleTicketAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleTicketAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticleToArticleAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/default_csh.htm#1576",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleToArticleAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ArticleToDocumentAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/default_csh.htm#1576",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ArticleToDocumentAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "AttachmentInfo (REST API)",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/AttachmentInfoEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "BillingCodes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingCodesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "BillingItemApprovalLevels",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingItemApprovalLevelsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "BillingItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/BillingItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ChangeOrderCharges",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChangeOrderChargesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ChangeRequestLinks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChangeRequestLinksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ChecklistLibraries",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChecklistLibrariesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ChecklistLibraryChecklistItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ChecklistLibraryChecklistItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ClassificationIcons",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ClassificationIconsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ClientPortalUsers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ClientPortalUsersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ComanagedAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ComanagedAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Companies",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompaniesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyAlerts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyAlertsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompaniesEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyAttachmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyCategories",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyCategoriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyLocations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyLocationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyNoteAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyNoteAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanySiteConfigurations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanySiteConfigurationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyTeams",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyTeamsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyToDos",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CompanyToDosEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyWebhookExcludedResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookExcludedResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyWebhookField",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyWebhooks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhooksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "CompanyWebhookUdfFields",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookUdfFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemBillingProductAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemBillingProductAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemCategories",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemCategoriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemCategoryUdfAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemCategoryUdfAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemDnsRecords",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemDnsRecordsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemExts",
+    "DocumentationURLs": [],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemNoteAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemNoteAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemRelatedItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemRelatedItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemSslSubjectAlternativeName",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemSslSubjectAlternativeNameEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemTypes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ConfigurationItemTypesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemWebhookExcludedResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookExcludedResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemWebhookFields",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemWebhooks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhooksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ConfigurationItemWebhookUdfFields",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookUdfFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContactBillingProductAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactBillingProductAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContactGroupContacts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactGroupContactsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContactGroups",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactGroupsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Contacts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContactsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContactWebhook",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhooksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContactWebhookExcludedResource",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookExcludedResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContactWebhookField",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContactWebhookUdfField",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookUdfFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractBillingRules",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBillingRulesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractBlockHourFactors",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBlockHourFactorsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractBlocks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractBlocksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractCharges",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractChargesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractExclusionBillingCodes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionBillingCodesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractExclusionRoles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionRolesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractExclusionSetExcludedRoles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetExcludedRolesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractExclusionSetExcludedWorkTypes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetExcludedWorkTypesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractExclusionSets",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractExclusionSetsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractMilestones",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractMilestonesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractNoteAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractNoteAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractRates",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRatesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractRetainers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRetainersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractRoleCosts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractRoleCostsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Contracts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractServiceAdjustments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceAdjustmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractServiceBundleAdjustments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundleAdjustmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractServiceBundles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundlesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractServiceBundleUnits",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceBundleUnitsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractServices",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServicesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractServiceUnits",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractServiceUnitsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ContractTicketPurchases",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ContractTicketPurchasesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Countries",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CountriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Currencies",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/CurrenciesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DeletedTaskActivityLogs",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTaskActivityLogsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DeletedTicketActivityLogs",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTicketActivityLogsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DeletedTicketLogs",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DeletedTicketLogsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Departments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DepartmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentAttachmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentCategories",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentCategoriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentChecklistItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentChecklistItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentChecklistLibraries",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentChecklistLibrariesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentConfigurationItemAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentConfigurationItemAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentConfigurationItemCategoryAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentConfigurationItemCategoryAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Documents",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentTagAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentTagAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentTicketAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentTicketAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DocumentToArticleAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/default_csh.htm#1576",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DocumentToArticleAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "DomainRegistrars",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/DomainRegistrarsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ExpenseItemAttachment",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseItemAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ExpenseItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ExpenseReportAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseReportAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseReportsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ExpenseReports",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ExpenseReportsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Holidays",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/HolidaysEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "HolidaySets",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/HolidaySetsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InternalLocations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InternalLocationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InternalLocationWithBusinessHours",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InternalLocationWithBusinessHoursEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryItemSerialNumbers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryItemSerialNumbersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryLocations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryLocationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryProducts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryProductsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryStockedItemsAdd",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryProductsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsAdd.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryStockedItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryProductsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItems.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryStockedItemsRemove",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryProductsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsRemove.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryStockedItemsTransfer",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryProductsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItems.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryStockedItemsTransfer.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InventoryTransfers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InventoryTransfersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Invoices",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InvoicesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "InvoiceTemplates",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/InvoiceTemplatesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "KnowledgeBaseArticles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/KnowledgeBaseArticlesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "KnowledgeBaseCategories",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/KnowledgeBaseCategoriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Modules",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ModulesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "NotificationHistory",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/NotificationHistoryEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Opportunities",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunitiesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "OpportunityAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunitiesEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunityAttachmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "OpportunityCategories",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OpportunityCategories.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "OrganizationalLevel1",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevel1Entity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "OrganizationalLevel2",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevel2Entity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "OrganizationalLevelAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizationalLevelAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "OrganizatonalResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/OrganizatonalResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PaymentTerms",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PaymentTermsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Phases",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PhasesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PriceListMaterialCodes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListMaterialCodesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PriceListProducts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListProductsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PriceListProductTiers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListProductTiersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PriceListRoles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListRolesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PriceListServiceBundles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListServiceBundlesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PriceListServices",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListServicesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PriceListWorkTypeModifiers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PriceListWorkTypeModifiersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ProductNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Products",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ProductTiers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductTiersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ProductVendors",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProductVendorsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ProjectAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ProjectCharges",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectChargesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ProjectNoteAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectNoteAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ProjectNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Projects",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ProjectsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PurchaseApprovals",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseApprovalsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PurchaseOrderItemReceiving",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrderItemReceivingEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PurchaseOrderItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrderItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "PurchaseOrders",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/PurchaseOrdersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "QuoteItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "QuoteLocations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteLocationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Quotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "QuoteTemplates",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/QuoteTemplatesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceDailyAvailabilities",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceDailyAvailability.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceRoleDepartments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRoleDepartmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceRoleQueues",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRoleQueuesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceRoles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceRolesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Resources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceServiceDeskRoles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceServiceDeskRolesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceSkills",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceSkillsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceTimeOffBalances",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffBalanceEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceTimeOffAdditional",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffAdditionalEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceTimeOffApprovers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffApproversEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Roles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/RolesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "SalesOrderAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SalesOrderAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SalesOrdersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "SalesOrders",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SalesOrdersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceBundles",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceBundlesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceBundleServices",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceBundleServicesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceCalls",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceCallTaskResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTaskResourceEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceCallTasks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTasksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceCallTicketResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTicketResourceEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceCallTickets",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceCallTicketsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ServiceLevelAgreementResults",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServiceLevelAgreementResultsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Services",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ServicesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ShippingTypes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ShippingTypesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Skills",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SkillsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "SubscriptionPeriods",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SubscriptionPeriodsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Subscriptions",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SubscriptionsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "SurveyResults",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SurveyResultsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Surveys",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/SurveysEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TagAliases",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagAliasesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TagGroups",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagGroupsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Tags",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TagsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TaskAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TasksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TaskNoteAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskNoteAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TaskNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TaskPredecessors",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskPredecessorsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Tasks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TasksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TaskSecondaryResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaskSecondaryResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TaxCategories",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxCategoriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Taxes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TaxRegions",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TaxRegionsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketAdditionalConfigurationItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAdditionalConfigurationItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketAdditionalContacts",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAdditionalContactsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketCategories",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketCategoriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketCategoryFieldDefaults",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketCategoryFieldDefaultsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketChangeRequestApprovals",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChangeRequestApprovalsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketCharges",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChargesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketChecklistItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChecklistItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketChecklistLibraries",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketChecklistLibrariesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketHistory",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketHistoryEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketNoteAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketNoteAttachmentsEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketNotes",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketNotesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketNoteWebhookExcludedResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookExcludedResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketNoteWebhookFields",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketNoteWebhooks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhooksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketRmaCredits",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketRmaCreditsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Tickets",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketSecondaryResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketSecondaryResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketTagAssociations",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TicketTagAssociationsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketWebhookExcludedResources",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookExcludedResourcesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketWebhookFields",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketWebhooks",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhooksEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TicketWebhookUdfFields",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/REST_WebhookUdfFieldsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TimeEntries",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeEntriesEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TimeEntryAttachments",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeEntriesEntity.htm",
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeEntryAttachmentsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "ResourceTimeOffAdditional",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/ResourceTimeOffAdditionalEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TimeOffRequestsApprove",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsApproveEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TimeOffRequests",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "TimeOffRequestsReject",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/TimeOffRequestsRejectEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "UserDefinedFieldDefinitions",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/UserDefinedFieldDefinitionsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "UserDefinedFieldListItems",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/UserDefinedFieldListItemsEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "Version",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/VersionEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "WebhookEventErrorLogs",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/Webhooks/WebhookEventErrorLogEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  },
+  {
+    "IndexLabel": "WorkTypeModifiers",
+    "DocumentationURLs": [
+      "https://www.autotask.net/help/developerhelp/Content/APIs/REST/Entities/WorkTypeModifiersEntity.htm"
+    ],
+    "Read": "Not yet verified",
+    "Create": "Not yet verified",
+    "Update": "Not yet verified",
+    "Delete": "Not yet verified",
+    "Impersonation": "Not yet verified",
+    "TenantValidation": "Not run",
+    "Implementation": "Not started"
+  }
+]

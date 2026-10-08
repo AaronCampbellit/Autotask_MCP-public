@@ -1,0 +1,221 @@
+{
+  "format_version": 1,
+  "preserved_on": "2026-09-10",
+  "source_root": "work",
+  "files": [
+    {
+      "path": "autotask-mcp-plan/01-PRODUCT-AND-DECISIONS.md",
+      "sha256": "2e1121fd78158f2ebf539e23f3e76c2557ef0e5a05b652531b9389e3307436e7",
+      "bytes": 8522
+    },
+    {
+      "path": "autotask-mcp-plan/02-ARCHITECTURE-AND-CLIENTS.md",
+      "sha256": "a4cbcec6221b2b5d6692d213a9797e7811a880231e15459ab504ef282e358bf6",
+      "bytes": 9150
+    },
+    {
+      "path": "autotask-mcp-plan/03-IDENTITY-AND-PERMISSIONS.md",
+      "sha256": "7d7895823305493f07f0e427de7cd4c4931d20b437078f0264a293fa75d3aba4",
+      "bytes": 11031
+    },
+    {
+      "path": "autotask-mcp-plan/04-AUTOTASK-ADAPTER.md",
+      "sha256": "4abab8237f354f33c13eca31c89c317f83a11d8d6adce8ff426ac10f7915de0b",
+      "bytes": 12281
+    },
+    {
+      "path": "autotask-mcp-plan/05-DOMAIN-WORKFLOWS.md",
+      "sha256": "6d7c0bea348cff392c4adaea91c51196684a6a3e233f31ba9ca1b2a2f8579fc9",
+      "bytes": 21136
+    },
+    {
+      "path": "autotask-mcp-plan/06-DATA-JOBS-SYNC-FILES.md",
+      "sha256": "359a93719ea799bf524e4b3b67da4e2f36a343ed2f3b9fba79d6b11d7e08881f",
+      "bytes": 10564
+    },
+    {
+      "path": "autotask-mcp-plan/07-ADMIN-AND-OPERATOR-EXPERIENCE.md",
+      "sha256": "3cdf708ef3ec2a1ec9c0c288bf9134488ca57476d478a3eb57ab73178699397b",
+      "bytes": 8296
+    },
+    {
+      "path": "autotask-mcp-plan/08-SECURITY-AND-PRIVACY.md",
+      "sha256": "1028133c60840500e1f4719e99bbd113bc3f5bebe1dfb42005a075dcf7a314cd",
+      "bytes": 6315
+    },
+    {
+      "path": "autotask-mcp-plan/09-VERIFICATION.md",
+      "sha256": "0b9eb8f4bce3a67d91868d360ff024700d1dcc3a01da8434b61e444c3804fc29",
+      "bytes": 17123
+    },
+    {
+      "path": "autotask-mcp-plan/10-DELIVERY-BACKLOG.md",
+      "sha256": "d3998d780139bbd38bccf0449b6d0b0f813b7da5c2e178f085f709af218c3f6d",
+      "bytes": 12125
+    },
+    {
+      "path": "autotask-mcp-plan/11-DEPLOYMENT-AND-OPERATIONS.md",
+      "sha256": "b266a686c8a92a1efa2086d35ebab2b1f9f654aecac47fd62f4312992a317537",
+      "bytes": 8344
+    },
+    {
+      "path": "autotask-mcp-plan/12-DECISIONS-AND-QUESTIONS.md",
+      "sha256": "2e2621471e70c6184251a57219c62d93fccd5f8a6376d05137f2d164ef012979",
+      "bytes": 6188
+    },
+    {
+      "path": "autotask-mcp-plan/13-ENTITY-COVERAGE.md",
+      "sha256": "8b72639e192c034f38fd5e92c1ded05c580896800397e388b0157d04ac4a5a76",
+      "bytes": 51511
+    },
+    {
+      "path": "autotask-mcp-plan/14-TOOL-CONTRACTS.md",
+      "sha256": "d8a8a81f945c6da36767d7707b8485fefab6d5eb2cd433f6413a6587dd1f4ff5",
+      "bytes": 15848
+    },
+    {
+      "path": "autotask-mcp-plan/15-TRACEABILITY.md",
+      "sha256": "3c9df4dcb5979f6cefc54a7a057645660c2710d18417be550587614ab3811822",
+      "bytes": 7520
+    },
+    {
+      "path": "autotask-mcp-plan/16-LATER-AUTOMATION-AND-EXPANSION.md",
+      "sha256": "044942dee2ce5568697fd8bebce5cf848bf06922cf6832664395a1e8c7be4ca2",
+      "bytes": 3803
+    },
+    {
+      "path": "autotask-mcp-plan/17-TECHNICIAN-WORKFLOW-CONTRACT.md",
+      "sha256": "c99328a8cf64b14e5aa909acc4280ea3b713554c87d3b26996d86d5ad2da59bc",
+      "bytes": 21233
+    },
+    {
+      "path": "autotask-mcp-plan/18-RARITY-TECHNICIAN-PLAYBOOKS.md",
+      "sha256": "7a7fe306fc5aaa9cdf37052fc7a3e8c3f4ecd742c09381db240142223b86c770",
+      "bytes": 26601
+    },
+    {
+      "path": "autotask-mcp-plan/19-TECHNICIAN-WORKFLOW-EVALUATION.md",
+      "sha256": "27c11256295cc40f732b5fb6439a141dc84cc553bc1fb8e5607eb5503f99a43f",
+      "bytes": 27576
+    },
+    {
+      "path": "autotask-mcp-plan/delivery-backlog.json",
+      "sha256": "1922e94cbc033174e1dbbea27fcd532d0b68cd190448805272ee7476bc4c3201",
+      "bytes": 9481
+    },
+    {
+      "path": "autotask-mcp-plan/entity-coverage.json",
+      "sha256": "3ba7bd08ebdab4bdd00f95ae6f8ca749f70d171f22561e151e5a2281d62c8f7a",
+      "bytes": 259678
+    },
+    {
+      "path": "autotask-mcp-plan/extracted-reference-details.json",
+      "sha256": "d935bcb9fe4b1579981945db8d1165ed9c0b0e2af4b5f5b366cca831b78b58ce",
+      "bytes": 208622
+    },
+    {
+      "path": "autotask-mcp-plan/README.md",
+      "sha256": "884c0a5e4b4a6ce903e14ce57a758cfa847aa90e259526cc092c92c1d366e227",
+      "bytes": 8012
+    },
+    {
+      "path": "autotask-mcp-plan/requirements.json",
+      "sha256": "bfa15458b7906d48c74cec984d6f584eaeedb08391f91aee3db2bce597fd2945",
+      "bytes": 11603
+    },
+    {
+      "path": "autotask-mcp-plan/source-manifest.json",
+      "sha256": "18ac23eac05c7483f7ca55de006ffa2de75cbfa8edfe8bc53d575fa4eb0a4574",
+      "bytes": 237130
+    },
+    {
+      "path": "autotask-mcp-plan/supplemental-manifest.json",
+      "sha256": "c8debce5de595b80e3532bd0694b3531e99af9ff3ac8a739e93833d59bd9f959",
+      "bytes": 7553
+    },
+    {
+      "path": "autotask-mcp-plan/technician-evaluations.json",
+      "sha256": "59fc85993200ccfc0acbc4f33125ac6e3d33f0a7a9926806d65bbf2214f7586e",
+      "bytes": 16451
+    },
+    {
+      "path": "autotask-mcp-plan/technician-workflows.json",
+      "sha256": "b0220f63e921e4cdb5561e452c5fcbf5ebab855a1e2df213cc765115f27d8d3b",
+      "bytes": 5850
+    },
+    {
+      "path": "autotask-mcp-plan/validation-report.json",
+      "sha256": "3a5aeeae29150290ca0c3d26795355060f6fa48644bc35b47b01244e8100f221",
+      "bytes": 792
+    },
+    {
+      "path": "autotask-mcp-plan/inputs/technician-workflow-brief.txt",
+      "sha256": "24b5559c88fb27d2066ae08d18f1a3810f0c3274f5db5ae3fe358d533d90b1d6",
+      "bytes": 6875
+    },
+    {
+      "path": "autotask-mcp-plan/scripts/build_coverage.py",
+      "sha256": "cd4c07b171815fed71462011e7e2da4bb4a4c98ba987233c903d75f71c6188cf",
+      "bytes": 8429
+    },
+    {
+      "path": "autotask-mcp-plan/scripts/collect_reference.py",
+      "sha256": "335e32557a72f31abcc7752a646c4a877d2f05526464dc1ce1f375bb9b7dc097",
+      "bytes": 5826
+    },
+    {
+      "path": "autotask-mcp-plan/scripts/validate_plan.py",
+      "sha256": "f34826ad256da17738ca5319f7e80cf5c8bb868ab80ccc886eba80ce4d071277",
+      "bytes": 6006
+    },
+    {
+      "path": "autotask-mcp-design/BUILD-SPEC.md",
+      "sha256": "ecb0bf18a2ca0c3c6ea59fb4ff54c7f769e899f791a2fcaa30f6d57ebe13a8a6",
+      "bytes": 18189
+    },
+    {
+      "path": "autotask-mcp-design/entity-coverage.json",
+      "sha256": "043c6f4af55825112072287068508b4b92a361cd307f60e94a69010a6d68fe20",
+      "bytes": 107321
+    },
+    {
+      "path": "autotask-mcp-design/source-manifest.json",
+      "sha256": "f7219af229b00590ea8e4b288dee059bcf7867cd68317de409d76f2496fd9b18",
+      "bytes": 398
+    },
+    {
+      "path": "thread-research-2026-09-10/manifest.json",
+      "sha256": "99666c2513408709cc0d3d4825f4dafb8a6252a17aff658fddfed4eb5d9fa92c",
+      "bytes": 28060
+    },
+    {
+      "path": "thread-research-2026-09-10/RESEARCH.md",
+      "sha256": "1c8af62b87769df5880f7b8f575b0d02db5a2521d44eda874a8f6231a4d459c0",
+      "bytes": 14419
+    },
+    {
+      "path": "thread-research-2026-09-10/SOURCE-INDEX.md",
+      "sha256": "741421736c7da5d13d5f67e41f6def83bf92b388c4e77238e318411afdccf864",
+      "bytes": 13348
+    },
+    {
+      "path": "thread-research-2026-09-10/tool-inventory.json",
+      "sha256": "ae3508b4449c662047b54ab931a6f8b0a32a8966a0cf79653466edc82a988370",
+      "bytes": 20789
+    }
+  ],
+  "excluded": [
+    "autotask-mcp-plan/scripts/__pycache__/collect_reference.cpython-313.pyc"
+  ],
+  "notes": [
+    "Historical preservation record of original planning artifacts; hashes describe the September 10 copies, not this revised tree.",
+    "The current normative baseline is autotask-mcp-plan; historical approval designs remain superseded.",
+    "Copied vendor pages, specifications and documentation indexes are excluded from this publication candidate."
+  ],
+  "publication_cleanup": {
+    "date": "2026-10-08",
+    "removed_vendor_source_files": 521,
+    "removed_vendor_indexes": 2,
+    "note": "Original research snapshots remain in private history only. Current tree keeps original analysis, factual inventories and source URLs. Historical checksums may differ from cleaned authored files."
+  }
+}

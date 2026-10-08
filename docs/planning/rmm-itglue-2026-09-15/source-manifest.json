@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://vidal-api.centrastage.net/api/v3/api-docs/Datto-RMM-v2",
+    "retrieved_utc": "2026-09-15T16:16:51.066976+00:00",
+    "sha256": "fa67d5dd2013bb8c2abf74e93739c45d3cc05668d9b3dad9a9e49eba6c94e829",
+    "bytes": 164612,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://vidal-api.centrastage.net/api/v3/api-docs/swagger-config",
+    "retrieved_utc": "2026-09-15T16:16:51.234013+00:00",
+    "sha256": "6028b292ccda5eb4f94844f657fdc1cadef4ea8e18ae6c2bf23815285ca73f75",
+    "bytes": 228,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://rmm.datto.com/help/en/Content/2SETUP/APIv2.htm",
+    "retrieved_utc": "2026-09-15T16:16:51.459989+00:00",
+    "sha256": "d9e9b725833d7f5c54eb249131e91606b56ec3d78b37e00a014f532e6f6a6330",
+    "bytes": 309014,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://api.itglue.com/developer/",
+    "retrieved_utc": "2026-09-15T16:16:52.197034+00:00",
+    "sha256": "ccc55b456556988a0093a079c591c479e81e8e05516ed31ba55224a48ce31e1f",
+    "bytes": 1157199,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://help.itglue.kaseya.com/help/Content/1-admin/it-glue-api/getting-started-with-the-it-glue-api.html",
+    "retrieved_utc": "2026-09-15T16:16:52.903718+00:00",
+    "sha256": "78a3dc07ef6b7f9859504a292feaa1c7ba25f676edefc70bfcfc5e4ed14ed410",
+    "bytes": 102594,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://help.itglue.kaseya.com/help/Content/1-admin/it-glue-api/pagination-in-the-it-glue-api.html",
+    "retrieved_utc": "2026-09-15T16:16:53.341803+00:00",
+    "sha256": "927e81550419ca1808551ae6a20603c221454b3888764b942f088c3cbc7a152a",
+    "bytes": 31315,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://help.itglue.kaseya.com/help/Content/1-admin/it-glue-api/sorting-and-filtering-in-the-it-glue-api.html",
+    "retrieved_utc": "2026-09-15T16:16:53.757297+00:00",
+    "sha256": "2ab147ffa3d7cb18bd9767e86fb32d28c81021ab4071b3981a8b9a4a8c74debe",
+    "bytes": 33187,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://rmm.datto.com/help/en/Content/3NEWUI/Setup/Integrations/ITGlueIntegration.htm",
+    "retrieved_utc": "2026-09-15T16:16:53.977913+00:00",
+    "sha256": "ab0b78362bd6bb11822c9aac01b26fd19d0779943834ac8b40c33862f5d656d3",
+    "bytes": 83343,
+    "repository_copy": "Not retained; consult the source URL."
+  },
+  {
+    "url": "https://rmm.datto.com/help/en/Content/3NEWUI/Automation/Components/Scripting.htm",
+    "retrieved_utc": "2026-09-15T16:16:54.137176+00:00",
+    "sha256": "759e13f43c0a6b00095dbe05a304db7c6874355b46f263db3fdc2ddf3774efbe",
+    "bytes": 62725,
+    "repository_copy": "Not retained; consult the source URL."
+  }
+]

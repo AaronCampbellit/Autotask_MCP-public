@@ -1,0 +1,70 @@
+Yes. Named tools are the foundation; the next layer is making the MCP understand technician workflows well enough to resolve details, gather related information, and coordinate several API calls reliably.
+The plan already covers some of this. The biggest remaining opportunity is to make those behaviors explicit, reusable requirements rather than leaving each tool—or the AI client—to figure them out independently.
+The examples give us useful guidance:
+Reference	Useful pattern	What we should take from it
+Thread	Pairs lookup tools with actions: find contacts before assigning them, discover valid categories before setting one, check schedules before booking. Tool reference	Tools should provide the information needed to perform the next step correctly.
+Thread	Documents default work role/type selection from ticket → agreement → member. Default logic	Resolve routine defaults automatically, with eligibility checks and a clear explanation of the chosen value.
+WYRE	Enriches API results with company and technician names. Mapping documentation	Return readable business information alongside stable IDs so subsequent calls don’t require repeated lookups.
+tphakala	Provides category discovery, a keyword-based tool router, and compact results with truncation hints. Discovery code, Formatter	Help the assistant select tools and consume results efficiently. Its router suggests tools; it isn’t a complete workflow engine.
+
+
+I would build out these six areas.
+1. Shared name resolution and sensible defaults
+Every relevant tool should understand business references such as:
+- “Me,” resolved from the signed-in employee.
+- A ticket number or Autotask ticket link.
+- A company, contact, queue, or technician name.
+- “Today,” resolved using an explicit employee/workspace timezone.
+The same resolver should serve all tools. If two contacts match “John at Acme,” return a short choice with distinguishing details. If there is one authorized match, proceed without asking for its numeric ID.
+Defaults should follow reviewed Rarity rules. Thread’s default hierarchy is useful inspiration, but we must verify its applicability to Autotask rather than copy it wholesale. Never invent work performed, time spent, or customer-facing text merely to fill a required field.
+2. Context packages for particular jobs
+Our current ticket_context is a good start. It should support different purposes so the assistant receives relevant information without a giant dump:
+Purpose	Information to gather
+Investigate	Issue, recent changes, internal/external notes, linked assets, related tickets
+Continue work	Previous attempts, outstanding checklist items, time already logged, next scheduled work
+Hand off	Current state, completed work, blockers, next steps, ownership
+Resolve	Resolution information, outstanding requirements, existing time, valid completion status
+
+
+These packages should supply evidence for the AI client to explain. The MCP doesn’t need its own LLM to retrieve and organize that evidence.
+Knowledge and similar-ticket search would also help, but matches should carry source links and relevance explanations—not automatically become trusted fixes.
+3. A few tools that complete common multi-step jobs
+This is where we can improve how tools are strung together. Proposed additions:
+Workflow	Example request	Coordinated work
+ticket_document_work	“Document the switch replacement and log 30 minutes.”	Validate note audience, resolve time defaults, save the requested documentation and time, verify both
+ticket_handoff	“Assign this to Jamie with these handoff notes.”	Check eligibility, save the supplied handoff details, update ownership
+ticket_resolve	“Record this resolution, log 20 minutes, and close the ticket.”	Check completion requirements, save requested records, apply valid completion status
+my_workday	“What’s on my plate today?”	Gather assigned tickets, scheduled work, due tasks, and recorded time
+ticket_prepare_visit	“Get me ready for the Acme appointment.”	Gather authorized contact/site information, assets, history, and appointment details
+
+
+These are recommendations beyond the current mandatory eight, not claims about Thread’s exact tool catalog.
+Each workflow needs defined ordering and failure behavior. For example, if saving the resolution fails, the workflow should not close the ticket. If time saves but the status update fails, report that partial outcome and avoid logging the time again during recovery.
+We should implement known workflows rather than expose an unrestricted “execute this arbitrary chain” tool.
+4. Tools that explain how to use them correctly
+A good tool description needs more than “updates a ticket.” It should explain:
+- When to use it and which related tool to use instead.
+- Accepted references and default behavior.
+- Required information and how to obtain it.
+- Customer-visible, billing, and scheduling effects.
+- What success, partial completion, and retry mean.
+Errors should help the assistant recover:
+“Jamie cannot be assigned to this queue. These eligible technicians are available.”
+
+That is much more useful than returning an upstream validation error. Any suggested alternatives must respect the caller’s access.
+5. Reusable Rarity playbooks
+We should define consistent procedures for triage, documentation, handoff, resolution, and time review.
+A playbook tells the assistant how Rarity approaches the work. A workflow tool performs a defined operation reliably. Permissions remain enforced in code.
+For example, a triage playbook could instruct the assistant to inspect history before suggesting a fix, distinguish attempted actions from proposed actions, and keep internal observations separate from customer-facing communication. These procedures should be available across clients without depending on one client’s proprietary feature.
+6. Consistent results and technician-focused testing
+Every write should provide a short receipt:
+“Internal note saved. Thirty minutes logged to your resource. Ticket remains In Progress.”
+
+Include record links, selected defaults, and any incomplete steps. Keep structured IDs available for follow-up calls.
+We should then test actual requests across clients and measure:
+- Did it choose the correct workflow?
+- How many unnecessary questions or lookups occurred?
+- Did it preserve the intended audience, employee, and time?
+- Did it accurately report partial completion?
+- Could another technician understand the result?
+My recommended next design addition is a “Technician Workflow Contract” covering these six areas. Start with shared resolution/defaults, purpose-specific ticket context, and ticket_document_work; then add handoff, resolution, and workday views. That would make the MCP noticeably easier to use without expanding the initial admin console or introducing another approval layer.

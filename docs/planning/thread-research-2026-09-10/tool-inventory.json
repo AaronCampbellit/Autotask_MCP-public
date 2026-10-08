@@ -1,0 +1,522 @@
+[
+  {
+    "Tool": "search_tickets",
+    "Type": "Read",
+    "Group": "Tickets",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_boards",
+    "Type": "Read",
+    "Group": "Tickets",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_ticket_statuses",
+    "Type": "Read",
+    "Group": "Tickets",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_ticket_priorities",
+    "Type": "Read",
+    "Group": "Tickets",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_ticket_categories",
+    "Type": "Read",
+    "Group": "Tickets",
+    "DocumentedGate": "Autotask workspaces only — hidden elsewhere",
+    "AutotaskAvailability": "Autotask-specific; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_board_classifications",
+    "Type": "Read",
+    "Group": "Tickets",
+    "DocumentedGate": "ConnectWise and HaloPSA workspaces — hidden elsewhere",
+    "AutotaskAvailability": "Excluded for Autotask per canonical reference",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_recap_templates",
+    "Type": "Read",
+    "Group": "Tickets",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "create_ticket",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "update_ticket",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "assign_contact",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "set_ticket_category",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle · Autotask workspaces only",
+    "AutotaskAvailability": "Autotask-specific; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "set_ticket_classification",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle · ConnectWise and HaloPSA workspaces",
+    "AutotaskAvailability": "Excluded for Autotask per canonical reference",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "add_ticket_note",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "merge_ticket",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Excluded for Autotask per canonical reference",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "send_approval",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "log_time_entry",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "run_assistive_ai",
+    "Type": "Write",
+    "Group": "Tickets",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_schedule_entries",
+    "Type": "Read",
+    "Group": "Scheduling",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "schedule_ticket",
+    "Type": "Write",
+    "Group": "Scheduling",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "update_schedule_entry",
+    "Type": "Write",
+    "Group": "Scheduling",
+    "DocumentedGate": "Write toggle",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_clients",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_contacts",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_members",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_thread_docs",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "Always on",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_knowledge_base",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "(Limited release)",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_itglue",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "Integration (Limited release)",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_hudu",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "Integration (Limited release)",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "web_search",
+    "Type": "Read",
+    "Group": "Search & lookups",
+    "DocumentedGate": "Platform",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_intents",
+    "Type": "Read",
+    "Group": "Intents — admin-only",
+    "DocumentedGate": "Admin-only",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_intent",
+    "Type": "Read",
+    "Group": "Intents — admin-only",
+    "DocumentedGate": "Admin-only",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "create_intent",
+    "Type": "Write",
+    "Group": "Intents — admin-only",
+    "DocumentedGate": "Admin-only + write toggle ( intent_tools )",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "update_intent",
+    "Type": "Write",
+    "Group": "Intents — admin-only",
+    "DocumentedGate": "Admin-only + write toggle ( intent_tools )",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "update_variation",
+    "Type": "Write",
+    "Group": "Intents — admin-only",
+    "DocumentedGate": "Admin-only + write toggle ( intent_tools )",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "set_variation_replies",
+    "Type": "Write",
+    "Group": "Intents — admin-only",
+    "DocumentedGate": "Admin-only + write toggle ( intent_tools )",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "set_variation_arguments",
+    "Type": "Write",
+    "Group": "Intents — admin-only",
+    "DocumentedGate": "Admin-only + write toggle ( intent_tools )",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_flows",
+    "Type": "Read",
+    "Group": "Flows — admin-only",
+    "DocumentedGate": "Admin-only",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_flow",
+    "Type": "Read",
+    "Group": "Flows — admin-only",
+    "DocumentedGate": "Admin-only",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "create_flow",
+    "Type": "Write",
+    "Group": "Flows — admin-only",
+    "DocumentedGate": "Admin-only + write toggle ( flow_tools )",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "update_flow",
+    "Type": "Write",
+    "Group": "Flows — admin-only",
+    "DocumentedGate": "Admin-only + write toggle ( flow_tools )",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_flow_actions",
+    "Type": "Read",
+    "Group": "Flows — admin-only",
+    "DocumentedGate": "Admin-only",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_flow_filter_attributes",
+    "Type": "Read",
+    "Group": "Flows — admin-only",
+    "DocumentedGate": "Admin-only",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_flow_filter_attribute_values",
+    "Type": "Read",
+    "Group": "Flows — admin-only",
+    "DocumentedGate": "Admin-only",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_ninjaone_organizations",
+    "Type": "Read",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_ninjaone_devices",
+    "Type": "Read",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_ninjaone_device",
+    "Type": "Read",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_ninjaone_device_link",
+    "Type": "Read",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_ninjaone_device_activities",
+    "Type": "Read",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_ninjaone_alerts",
+    "Type": "Read",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_ninjaone_windows_services",
+    "Type": "Read",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "reboot_ninjaone_device",
+    "Type": "Write",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "set_ninjaone_device_maintenance",
+    "Type": "Write",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "reset_ninjaone_alert",
+    "Type": "Write",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "control_ninjaone_windows_service",
+    "Type": "Write",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "set_ninjaone_device_approval",
+    "Type": "Write",
+    "Group": "NinjaOne — integration *(Limited release)*",
+    "DocumentedGate": "NinjaOne — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_timezest_resources",
+    "Type": "Read",
+    "Group": "TimeZest — integration",
+    "DocumentedGate": "TimeZest — integration",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_timezest_appointment_types",
+    "Type": "Read",
+    "Group": "TimeZest — integration",
+    "DocumentedGate": "TimeZest — integration",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "create_timezest_scheduling_request",
+    "Type": "Write",
+    "Group": "TimeZest — integration",
+    "DocumentedGate": "TimeZest — integration",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_timezest_scheduling_requests",
+    "Type": "Read",
+    "Group": "TimeZest — integration",
+    "DocumentedGate": "TimeZest — integration",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_immybot_tenants",
+    "Type": "Read",
+    "Group": "ImmyBot — integration *(Limited release)*",
+    "DocumentedGate": "ImmyBot — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "search_immybot_computers",
+    "Type": "Read",
+    "Group": "ImmyBot — integration *(Limited release)*",
+    "DocumentedGate": "ImmyBot — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_immybot_computer",
+    "Type": "Read",
+    "Group": "ImmyBot — integration *(Limited release)*",
+    "DocumentedGate": "ImmyBot — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "list_immybot_maintenance_sessions",
+    "Type": "Read",
+    "Group": "ImmyBot — integration *(Limited release)*",
+    "DocumentedGate": "ImmyBot — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "run_immybot_maintenance_session",
+    "Type": "Write",
+    "Group": "ImmyBot — integration *(Limited release)*",
+    "DocumentedGate": "ImmyBot — integration *(Limited release)*",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "get_next_thread",
+    "Type": "Write",
+    "Group": "Dispatch *(where enabled)*",
+    "DocumentedGate": "Write toggle · available where Auto-Dispatch is enabled",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  },
+  {
+    "Tool": "push_knowledge_to_itglue",
+    "Type": "Write",
+    "Group": "Search & lookups",
+    "DocumentedGate": "IT Glue connected, Super Magic access enabled, workspace export enabled",
+    "AutotaskAvailability": "Conditional; runtime discovery required",
+    "Source": "https://docs.getthread.com/super-magic/super-magic-tool-reference"
+  }
+]
